@@ -1,8 +1,8 @@
 export type SiteConfig = typeof siteConfig;
 
 export const siteConfig = {
-  name: "Next.js + NextUI",
-  description: "Make beautiful websites regardless of your design experience.",
+  name: "Bolasys GmbH",
+  description: "Grafische Software für Graviermaschinen.",
   navItems: [
     {
       label: "Home",
@@ -13,8 +13,8 @@ export const siteConfig = {
       href: "/produkte",
     },
     {
-      label: "Preise",
-      href: "/preise",
+      label: "Chat",
+      href: "/chat",
     },
     {
       label: "Kontakt",
@@ -23,24 +23,24 @@ export const siteConfig = {
   ],
   navMenuItems: [
     {
-      label: "Kiosksysteme",
-      href: "kiosksysteme",
-    },
-    {
       label: "GPE",
-      href: "/gpe",
+      href: "/produkte/gpe",
     },
     {
       label: "Designer",
-      href: "/designer",
+      href: "/produkte/designer",
     },
     {
       label: "PageAssembler",
-      href: "/page_assembler",
+      href: "/produkte/pageassembler",
     },
     {
       label: "Cydesigner",
-      href: "/cydesigner",
+      href: "/produkte/cydesigner",
+    },
+    {
+      label: "A la Carte",
+      href: "/produkte/alacarte",
     }
   ],
 };

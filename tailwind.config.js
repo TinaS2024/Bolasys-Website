@@ -8,7 +8,16 @@ module.exports = {
     './node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}'
   ],
   theme: {
+    screens:
+    {
+      "sm": "360px",
+      "md": "850px",
+      "lg": "1200px",
+    },
     extend: {
+      backgroundImage:{
+        "heroImage": "url('../bilder/kein_bild.jpg')"
+      },
       fontFamily: {
         sans: ["var(--font-sans)"],
         mono: ["var(--font-geist-mono)"],

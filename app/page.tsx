@@ -1,28 +1,25 @@
+"use client"
+import { Graph } from "@/components/graph";
+import Titel_Subtitel from "@/components/titel_subtitel";
 
-import { title, subtitle } from "@/components/primitives";
 
-export default function Home() {
+export default function Home() 
+{
+
   return (
-    <section className="flex flex-col items-center justify-center gap-4 py-8 md:py-10">
-      <div className="inline-block max-w-lg text-center justify-center">
-        <h1 className={title({ color: "cyan" })}>Software&nbsp;</h1>
-        <br />
-          <p style={{fontSize: "20pt"}}>zur Steuerung von Lasersystemen.</p>
-        <br />
-        <br />
-        <h1 className={title({ color: "cyan" })}>Designer&nbsp;</h1>
-          <p style={{fontSize: "20pt"}}>zur Erzeugung grafischen Designs.</p>
-        <br />
-        <br />
-        <h1 className={title({ color: "cyan" })}>GPE&nbsp;</h1>
-          <p style={{fontSize: "20pt"}}>mit Auftrags-und Produktionsverwaltungs zur Herstellung von Produkten mit grafischen Designs.</p>  
-      </div>
+<div className="flex  sm:flex-col md:flex-row lg:flex-row xl:flex-row">   
+  <div className="abstand_unten">  
+    <Titel_Subtitel titel="GPE" subtitel="zur Herstellung von Produkten."></Titel_Subtitel>     
+    <Titel_Subtitel titel="SOFTWARE" subtitel="zur Steuerung von Lasersystemen."></Titel_Subtitel>
+    <Titel_Subtitel titel="DESIGNER" subtitel="zur Erzeugung grafischen Designs."></Titel_Subtitel>
+  </div>
 
-      <div className="flex gap-3">
-       
-      </div>
+  <div className="abstand_unten">
+  <Graph></Graph>
+  </div>
+</div>
 
-    </section>
+
   );
 }
 

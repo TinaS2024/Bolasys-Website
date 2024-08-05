@@ -7,7 +7,7 @@ export interface UserProps{
 const TabZeile = ({titel, inhalt}: UserProps) =>
     {
         return(
-            <tr><th>{titel}</th><td>{inhalt}</td></tr>
+            <tr><th style={{paddingRight:"50px"}}>{titel}</th><td>{inhalt}</td></tr>
         )
     }
 

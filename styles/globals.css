@@ -1,3 +1,144 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+h3, p
+{
+  padding:5px;
+}
+
+.grid {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+
+  .abstand_unten
+  {
+    margin-bottom: 200px;
+  }
+
+  .anordnung
+  {
+    z-index:0;
+  }
+
+  #footer
+  {
+    position: fixed;
+    bottom:0px;
+    margin-bottom: 0px;
+  }
+
+  .img1,.img2,.img3,.img4,.img5,.img6, .img7
+  {
+    position: absolute;
+    width:100px;
+    height:100px;
+    z-index:0;
+    filter:brightness(130%)
+  }
+
+  
+  .img1:hover,.img2:hover,.img3:hover,.img4:hover,.img5:hover,.img6:hover, .img7:hover
+  {
+    filter:brightness(200%)
+  }
+
+  /*GPE*/
+  .img1
+  {
+    margin-top: 10%;
+    margin-left: 30%;
+  }
+
+  /* Telefon */
+  .img2
+  {
+    margin-top: -3%;
+    margin-left: 30%;
+  }
+
+  /* Webstore*/
+  .img3
+  {
+    margin-top:2%;
+    margin-left: 15%;
+  }
+
+  /* Shop */
+  .img4
+  {
+    margin-top: 1%;
+    margin-left: 45%;
+  }
+
+  /* E-Mail */
+  .img5
+  {
+    margin-top: 15%;
+    margin-left: 15%;
+  }
+
+  /* Computer */
+  .img6
+  {
+    margin-top: 16%;
+    margin-left: 45%;
+  }
+
+  /* Maschine */
+  .img7
+  {
+    margin-top: 20%;
+    margin-left: 30%;
+  }
+
+
+@media screen and (max-width:810px) {
+  
+  .img1
+  {
+    margin-top: 15%;
+    margin-left: 35%;
+  }
+
+  .img2
+  {
+    margin-top: -15%;
+    margin-left: 37%;
+  }
+
+  .img3
+  {
+    margin-top:-10%;
+    margin-left: 10%;
+  }
+
+  .img4
+  {
+    margin-top: -15%;
+    margin-left: 60%;
+  }
+
+  .img5
+  {
+    margin-top: 15%;
+    margin-left: 5%;
+  }
+
+  .img6
+  {
+    margin-top: 20%;
+    margin-left: 65%;
+  }
+
+  .img7
+  {
+    margin-top: 45%;
+    margin-left: 35%;
+  }
+
+  
+}
