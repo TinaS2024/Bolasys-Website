@@ -11,11 +11,12 @@ const NewNavbar = () =>
     const icon = {
         chevron: <Image src={myIcon} width={25} height={25} alt=""/>
     }
+     {/*endContent={icon.chevron}*/}
     return(
-        <Navbar isBordered>
+        <Navbar isBordered maxWidth="full">
             <NavbarContent justify="start">
 
-            <NavbarBrand className="mr-5">
+            <NavbarBrand className="mr-50">
                 <Image src={myLogo} width={20} height={20} alt="logo"/>
                 <p className="font-bold text-inherit">BOLASYS GMBH</p>
             </NavbarBrand>
@@ -32,7 +33,7 @@ const NewNavbar = () =>
                             <Button 
                             disableRipple 
                             className="p-0 bg-transparent data-[hover=true]:bg-transparent text-lg"
-                            endContent={icon.chevron}
+                           
                             radius="sm"
                             variant="light">
                                 Produkte 
@@ -70,11 +71,10 @@ const NewNavbar = () =>
                     <Link color="foreground" className="text-lg"href="/chat">Chat</Link>
                 </NavbarItem>
                 
-                <NavbarItem>
-                    <Link color="foreground" className="text-lg" href="/impressum">Impressum</Link>
-                </NavbarItem>
 
             </NavbarContent>
+
+
             </NavbarContent>
 
         </Navbar>

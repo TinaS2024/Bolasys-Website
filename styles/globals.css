@@ -16,7 +16,12 @@ h3, p
 
   .abstand_unten
   {
-    margin-bottom: 200px;
+    margin-bottom: 300px;
+  }
+
+  .abstand_oben
+  {
+    margin-top: 250px;
   }
 
   .anordnung
@@ -31,7 +36,7 @@ h3, p
     margin-bottom: 0px;
   }
 
-  .img1,.img2,.img3,.img4,.img5,.img6, .img7
+  .img1,.img2,.img3,.img4,.img5,.img6, .img7, .img8_1, .img8_2, .img8_3, .img8_4
   {
     position: absolute;
     width:100px;
@@ -41,7 +46,7 @@ h3, p
   }
 
   
-  .img1:hover,.img2:hover,.img3:hover,.img4:hover,.img5:hover,.img6:hover, .img7:hover
+  .img1:hover,.img2:hover,.img3:hover,.img4:hover,.img5:hover,.img6:hover, .img7:hover, .img8_1:hover,.img8_2:hover,.img8_3:hover, .img8_4:hover
   {
     filter:brightness(200%)
   }
@@ -50,50 +55,92 @@ h3, p
   .img1
   {
     margin-top: 10%;
-    margin-left: 30%;
+    margin-left: 0%;
   }
 
   /* Telefon */
   .img2
   {
     margin-top: -3%;
-    margin-left: 30%;
+    margin-left: -5%;
   }
 
   /* Webstore*/
   .img3
   {
     margin-top:2%;
-    margin-left: 15%;
+    margin-left: -20%;
   }
 
   /* Shop */
   .img4
   {
     margin-top: 1%;
-    margin-left: 45%;
+    margin-left: 10%;
   }
 
   /* E-Mail */
   .img5
   {
-    margin-top: 15%;
-    margin-left: 15%;
+    margin-top: 10%;
+    margin-left: -20%;
+    width: 80px;
   }
 
   /* Computer */
   .img6
   {
-    margin-top: 16%;
-    margin-left: 45%;
+    margin-top: 10%;
+    margin-left: 10%;
   }
 
   /* Maschine */
   .img7
   {
     margin-top: 20%;
-    margin-left: 30%;
+    margin-left: -15%;
+    width:80px;
   }
+
+  /* Unteren 4 Symbole */
+
+    .img_unten
+  {
+    position: absolute;
+    margin-top: 20%;
+    margin-left: 0%;
+  }
+    /* Montage */
+    .img8_1
+    {
+      position: relative;
+      float: left;
+      width:70px;
+    }
+
+     /* Versand */
+     .img8_2
+     {
+      position: relative;
+      float: left;
+      width:60px;
+     }
+
+      /* Verpackung */
+    .img8_3
+    {
+      position: relative;
+      float: left;
+      width:60px;
+    }
+
+     /* Transport */
+     .img8_4
+     {
+      position: relative;
+      float: left;
+      width: 120px;
+     }
 
 
 @media screen and (max-width:810px) {
@@ -101,44 +148,49 @@ h3, p
   .img1
   {
     margin-top: 15%;
-    margin-left: 35%;
+    margin-left: 0%;
   }
 
   .img2
   {
     margin-top: -15%;
-    margin-left: 37%;
+    margin-left: 2%;
   }
 
   .img3
   {
     margin-top:-10%;
-    margin-left: 10%;
+    margin-left: -25%;
   }
 
   .img4
   {
     margin-top: -15%;
-    margin-left: 60%;
+    margin-left: 25%;
   }
 
   .img5
   {
     margin-top: 15%;
-    margin-left: 5%;
+    margin-left: -30%;
   }
 
   .img6
   {
     margin-top: 20%;
-    margin-left: 65%;
+    margin-left: 30%;
   }
 
   .img7
   {
     margin-top: 45%;
-    margin-left: 35%;
+    margin-left: -25%;
   }
 
-  
+  .img_unten
+  {
+    margin-top: 45%;
+    margin-left: 0% ;
+  }
+
 }
