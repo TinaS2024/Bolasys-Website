@@ -3,15 +3,17 @@
 import { title } from "@/components/primitives";
 import { Card, CardHeader, CardBody, Tab} from "@nextui-org/react";
 import TabZeile from "@/components/tabzeile";
+import Header from "@/components/header";
 
 
 export default function ImpressumPage() {
   return (  
-
+<>
+<Header titel="Impressum"></Header>
     <Card className="max-w-[500px]"> 
       <CardHeader className="bg-[#2695a0] text-center justify-center">
        
-     <h1  style={{fontSize:"26pt"}} className={title()}>Impressum</h1>
+     <h1  style={{fontSize:"26pt"}} className={title()}>Adresse</h1>
       </CardHeader>
       <CardBody> 
       
@@ -30,6 +32,7 @@ export default function ImpressumPage() {
       </CardBody>
             
     </Card>
+    </>
 
   );
 }

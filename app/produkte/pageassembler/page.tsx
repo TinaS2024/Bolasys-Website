@@ -1,16 +1,14 @@
-import { title } from "@/components/primitives";
 import Produkt from "@/components/produkt";
 import bild1 from "@/app/bilder/kein_bild.jpg"
+import Header from "@/components/header";
 
 export default function PageAssembler() {
   
     return (
    
       <>
+          <Header opacity="100%" titel="PageAssembler"></Header>
       <div className="flex justify-center">
-      <h3 style={{fontSize:"26pt",marginTop:"-100px",marginBottom: "100px"}} className={title({ color: "cyan", size:"sm"})}>PageAssembler</h3>
-     </div>
-     <div>
       <Produkt produkt="PageAssembler" bildpfad={bild1} bildname="GPE"/>
       </div>
   </>

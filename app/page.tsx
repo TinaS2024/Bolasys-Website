@@ -7,8 +7,14 @@ export default function Home()
 {
   return (
     <>
+  <div className="flex justify-center">
+ <h3 style={{fontSize:"40pt"}} className="text-white">Bolasys GmbH</h3>
+  </div>
+  <div className="flex justify-center">
+ <h3 style={{fontSize:"30pt"}} className="text-white">in Chemnitz</h3>
+  </div>
+  <div className="flex flex-row sm:flex-col md:flex-row absolute abstand_oben abstand_links">  
 
-  <div className="flex flex-row sm:flex-col md:flex-row absolute abstand_oben">  
     <Titel_Subtitel titel="GPE" subtitel="zur Herstellung von Produkten"></Titel_Subtitel>     
     <Titel_Subtitel titel="DESIGNER" subtitel="zur Erzeugung grafischen Designs"></Titel_Subtitel>  
     <Titel_Subtitel titel="NESTING" subtitel="zur Steuerung von Lasersystemen"></Titel_Subtitel>

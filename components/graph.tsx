@@ -12,6 +12,8 @@ import verpackung from "../app/bilder/Gift.png";
 import transport from "../app/bilder/Car_Transport.png";
 
 import NetworkTooltip from "./network_tooltip";
+import OwnModal from "@/components/ownmodal";
+import Image from "next/image";
 
 
 export const Graph = () => {
@@ -46,8 +48,9 @@ export const Graph = () => {
   return (
  
     <div className="pt-5 abstand_unten"> 
+     
 
-    <div className="img1"><NetworkTooltip titel="GPE" beschreibung={text1} bildpfad={bild0}></NetworkTooltip></div>
+    <div className="img1"><OwnModal className="img1" titel="GPE" inhalt={text1}></OwnModal><Image src={bild0} alt="gpe" width={100} height={100}></Image></div>
     
     <div className="img2"><NetworkTooltip titel="Telefon" beschreibung={text2} bildpfad={bild1}></NetworkTooltip></div>
 
@@ -61,6 +64,11 @@ export const Graph = () => {
       
       <div className="img7"><NetworkTooltip titel="Graviermaschine" beschreibung={text7} bildpfad={bild6}></NetworkTooltip></div>
 
+      <div className="img8"><NetworkTooltip titel="Montage" beschreibung={text8} bildpfad={bild7}></NetworkTooltip></div>
+
+      
+
+{/*}
       <div className="img7 img_unten">
 
       <div className="img8_1"><NetworkTooltip titel="Montage" beschreibung={text8} bildpfad={bild7}></NetworkTooltip></div>
@@ -71,7 +79,7 @@ export const Graph = () => {
 
       <div className="img8_4"><NetworkTooltip titel="Transport" beschreibung={text11} bildpfad={bild10}></NetworkTooltip></div>
    
-    </div>
+    </div>*/}
     
     </div>   
 

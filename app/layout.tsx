@@ -50,17 +50,17 @@ export default function RootLayout({
             <main id="main" className="container mx-auto max-w-7xl pt-20 px-6 flex-grow">
               {children}
             </main>
-            <footer id="footer" style={{zIndex:"1"}} className="w-full flex items-center justify-center py-3  bg-[#2695a0]">
+            <footer id="footer" style={{zIndex:"1"}} className="w-full flex items-center justify-center py-3  bg-black">
               <Link
                 isExternal
                 className="flex items-center gap-1 text-current"
                 href="https://nextui-docs-v2.vercel.app?utm_source=next-app-template"
                 title="nextui.org homepage"
-              >
+              > </Link>
                 <span className="text-white">Powered by</span>
                 <p className="text-cyan-800">NextUI</p>
                 <Link color="foreground" className="text-lg" href="/impressum">Impressum</Link>
-              </Link>
+             
             </footer>
           </div>
         </Providers>

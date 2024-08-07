@@ -55,12 +55,8 @@ const NewNavbar = () =>
                         <Link color="foreground" className="text-lg" href="/produkte/pageassembler">PageAssembler</Link>
                         </DropdownItem>
 
-                        <DropdownItem key="cydesigner">
-                        <Link color="foreground" className="text-lg" href="/produkte/cydesigner">CyDesigner</Link>
-                        </DropdownItem>
-
                         <DropdownItem key="alacarte">
-                        <Link color="foreground" className="text-lg"href="/produkte/alacarte">A la Carte</Link>
+                        <Link color="foreground" className="text-lg"href="/produkte/ui">UI</Link>
                         </DropdownItem>
 
 

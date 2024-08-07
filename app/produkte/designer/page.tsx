@@ -1,17 +1,20 @@
-import { title } from "@/components/primitives";
+
 import Produkt from "@/components/produkt";
 import bild1 from "@/app/bilder/Designer.png";
+import bild2 from "@/app/bilder/kein_bild.jpg"
+import Header from "@/components/header";
 
 export default function Designer() {
   
     return (
    
       <>
-      <div className="flex justify-center">
-      <h3 style={{fontSize:"26pt",marginTop:"-100px",marginBottom: "100px"}} className="text-[#2695a0]">Designer</h3>
-     </div>
+          <Header opacity="100%" titel="Designer"></Header>
      <div>
-      <Produkt produkt="Designer" bildpfad={bild1} bildname="GPE"/>
+      <Produkt produkt="Stempel & Schilder-Designer" bildpfad={bild1} bildname="designer1"/>
+      </div>
+      <div>
+      <Produkt produkt="Cydesigner" bildpfad={bild2} bildname="designer2"/>
       </div>
   </>
   
