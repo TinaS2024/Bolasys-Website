@@ -19,15 +19,17 @@ const OwnModal = ({titel,inhalt,className}:UserProps) =>
     return(
         <div className={className} style={{marginTop:"25px"}}>
         <Button style={{background: "none"}} onPress={onOpen}></Button>
-        <Modal isOpen={isOpen} onOpenChange={onOpenChange}
-        classNames={{base: "border-[#292f46] bg-[#19172c] dark:bg-[#19172c] text-[#a8b0d3]",}}>
+        <Modal 
+        isOpen={isOpen} 
+        onOpenChange={onOpenChange}
+        classNames={{base: "border-[#5ec4d2] bg-[#141939] text-[#5ec4d2]"}}>
             
             <ModalContent>
                 {(onClose:any) =>
                 (
                     <>
-                    <ModalHeader>{titel}</ModalHeader>
-                    <ModalBody>{inhalt}</ModalBody>
+                    <ModalHeader><h3 style={{fontSize:"20pt"}} className="text-[#5ec4d2]">{titel}&nbsp;</h3></ModalHeader>
+                    <ModalBody><p style={{fontSize: "14pt"}} className="text-white">{inhalt}</p></ModalBody>
                  <ModalFooter><Button className="bg-[#5ec4d2] text-black" onPress={onClose}>Close</Button></ModalFooter>
                     </>       
                 )

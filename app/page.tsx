@@ -7,7 +7,7 @@ export default function Home()
 {
   return (
     <>
-  <div className="flex justify-center">
+  <div className="flex justify-center" style={{marginTop:"-300px"}}>
  <h3 style={{fontSize:"40pt"}} className="text-white">Bolasys GmbH</h3>
   </div>
   <div className="flex justify-center">
@@ -19,7 +19,7 @@ export default function Home()
     <Titel_Subtitel titel="DESIGNER" subtitel="zur Erzeugung grafischen Designs"></Titel_Subtitel>  
     <Titel_Subtitel titel="NESTING" subtitel="zur Steuerung von Lasersystemen"></Titel_Subtitel>
     <Titel_Subtitel titel="UI" subtitel="für Maschinen"></Titel_Subtitel>
-  </div>  <Background/>  
+  </div>  <Background></Background>  
 
   
   </>

@@ -10,21 +10,16 @@ export interface UserProps{
     titel: string;
     beschreibung: string;
     bildpfad: StaticImageData;
+    top:string;
+    left:string;
 }
 
 
-const NetworkTooltip = ({titel, beschreibung, bildpfad}: UserProps) => {
+const DesignerTooltip = ({titel, beschreibung, bildpfad,top,left}: UserProps) => {
     
 
-    function showTooltip ()
-        {
-          JSON.stringify(titel)
-          JSON.stringify(beschreibung)
-         /* alert(beschreibung);  */
-        }
-
-
     return(
+        <div style={{marginTop:`${top}`,marginLeft:`${left}`,position:"absolute"}}>
         <Tooltip id="1" className="bg-[#2695a0]" 
         content={
             <div className="px-1 py-2">
@@ -33,12 +28,12 @@ const NetworkTooltip = ({titel, beschreibung, bildpfad}: UserProps) => {
             </div>
         }
         >
-        <Image onClick={showTooltip} src={bildpfad} alt={titel} width={100} height={100}></Image>
+        <Image src={bildpfad} alt={titel} width={100} height={100}></Image>
         </Tooltip>
-
+        </div>
 
     )
     
 }
 
-export default NetworkTooltip;
+export default DesignerTooltip;

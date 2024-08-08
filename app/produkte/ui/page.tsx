@@ -8,9 +8,9 @@ export default function UI() {
      
       <>
           <Header opacity="100%" titel="UI"></Header>
-     <div>
+    {/*  <div>
       <Produkt produkt="UI" bildpfad={bild1} bildname="UI"/>
-      </div>
+      </div>*/}
   </>
 
     );

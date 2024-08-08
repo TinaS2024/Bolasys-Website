@@ -11,7 +11,6 @@ import versand from "../app/bilder/Versandpapiere.png";
 import verpackung from "../app/bilder/Gift.png";
 import transport from "../app/bilder/Car_Transport.png";
 
-import NetworkTooltip from "./network_tooltip";
 import OwnModal from "@/components/ownmodal";
 import Image from "next/image";
 
@@ -47,24 +46,24 @@ export const Graph = () => {
 
   return (
  
-    <div className="pt-5 abstand_unten"> 
+    <div className="pt-5"> 
      
 
-    <div className="img1"><OwnModal className="img1" titel="GPE" inhalt={text1}></OwnModal><Image src={bild0} alt="gpe" width={100} height={100}></Image></div>
+    <div className="img1"><OwnModal className="img1" titel="GPE" inhalt={text1}/><Image src={bild0} alt="gpe" width={100} height={100}></Image></div>
     
-    <div className="img2"><NetworkTooltip titel="Telefon" beschreibung={text2} bildpfad={bild1}></NetworkTooltip></div>
+    <div className="img2"><OwnModal className="img2" titel="Telefon" inhalt={text2}/><Image src={bild1} alt="telefon" width={100} height={100}></Image></div>
 
-      <div className="img3"><NetworkTooltip titel="Webstore" beschreibung={text3} bildpfad={bild2}></NetworkTooltip></div>
+      <div className="img3"><OwnModal className="img3" titel="Webstore" inhalt={text3}/><Image src={bild2} alt="webstore" width={100} height={100}></Image></div>
 
-      <div className="img4"><NetworkTooltip titel="Shop" beschreibung={text4} bildpfad={bild3}></NetworkTooltip></div>
+      <div className="img4"><OwnModal className="img4" titel="Shop" inhalt={text4}/><Image src={bild3} alt="shop" width={100} height={100}></Image></div>
 
-      <div className="img5"><NetworkTooltip titel="E-Mail" beschreibung={text5} bildpfad={bild4}></NetworkTooltip></div>
+      <div className="img5"><OwnModal className="img5" titel="E-Mail" inhalt={text5}/><Image src={bild4} alt="email" width={100} height={100}></Image></div>
 
-      <div className="img6"><NetworkTooltip titel="Externer Computer" beschreibung={text6} bildpfad={bild5}></NetworkTooltip></div>
+      <div className="img6"><OwnModal className="img6" titel="Externer Computer" inhalt={text6}/><Image src={bild5} alt="computer" width={100} height={100}></Image></div>
       
-      <div className="img7"><NetworkTooltip titel="Graviermaschine" beschreibung={text7} bildpfad={bild6}></NetworkTooltip></div>
+      <div className="img7"><OwnModal className="img7" titel="Graviermaschine" inhalt={text7}/><Image src={bild6} alt="graviermaschine" width={100} height={100}></Image></div>
 
-      <div className="img8"><NetworkTooltip titel="Montage" beschreibung={text8} bildpfad={bild7}></NetworkTooltip></div>
+      <div className="img8"><OwnModal className="img8" titel="Montage" inhalt={text8}/><Image src={bild7} alt="montage" width={100} height={100}></Image></div>
 
       
 
