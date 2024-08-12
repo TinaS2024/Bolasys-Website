@@ -25,6 +25,11 @@ cursor: pointer;
     margin-bottom: 300px;
   }
 
+  .abstand_unten_klein
+  {
+    margin-bottom: 50px;
+  }
+
   .abstand_oben
   {
     margin-top: 150px;
@@ -183,6 +188,18 @@ cursor: pointer;
       height: 1300px;
       margin-top: -10%;
       margin-left: -45%;
+     }
+
+     .gif
+     {
+      background-image: url("../app/bilder/galaxy.gif");
+      margin-left: -100%;
+      width:1200px;
+      height: 800px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+
      }
 
 @media screen and (max-width: 450px)

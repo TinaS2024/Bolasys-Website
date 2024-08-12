@@ -10,7 +10,7 @@ export default function GPE() {
   
     return (
       <>
-    <Header titel="GPE" opacity="100%"></Header>
+    <Header titel="GPE" opacity="50%"></Header>
     <Graph></Graph>
     <MyCard></MyCard>
       </>

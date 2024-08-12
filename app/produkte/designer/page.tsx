@@ -20,7 +20,7 @@ export default function Designer() {
     return (
    
       <>
-          <Header opacity="100%" titel="Designer"></Header>
+          <Header opacity="50%" titel="Designer"></Header>
           <div id="designerbild">
           <DesignerTooltip top="1%" left="30%" titel="Header" beschreibung={text1} bildpfad={bild_rechts}/>
           <DesignerTooltip top="10%" left="5%" titel="Zeichenelemente" beschreibung={text2} bildpfad={bild_links}/>

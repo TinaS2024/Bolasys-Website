@@ -17,7 +17,7 @@ export default function Home()
 
     <Titel_Subtitel titel="GPE" subtitel="zur Herstellung von Produkten" path="/produkte/gpe"></Titel_Subtitel>     
     <Titel_Subtitel titel="DESIGNER" subtitel="zur Erzeugung grafischen Designs" path="/produkte/designer"></Titel_Subtitel>  
-    <Titel_Subtitel titel="NESTING" subtitel="zur Steuerung von Lasersystemen" path="/produkte/nesting"></Titel_Subtitel>
+    <Titel_Subtitel titel="NESTING-SOFTWARE" subtitel="zur Steuerung von Lasersystemen" path="/produkte/nestingsoftware"></Titel_Subtitel>
     <Titel_Subtitel titel="UI" subtitel="für Maschinen" path="/produkte/ui"></Titel_Subtitel>
   </div>  <Background></Background>  
 

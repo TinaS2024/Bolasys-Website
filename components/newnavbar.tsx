@@ -41,7 +41,7 @@ const NewNavbar = () =>
                         </DropdownTrigger>
                     </NavbarItem>
 
-                    <DropdownMenu aria-label="Bolays Produkte" className="w-[200px] p-5" itemClasses={{base: "gap-4"}} variant="faded">
+                    <DropdownMenu aria-label="Bolays Produkte" className="w-[250px] p-5" itemClasses={{base: "gap-4"}} variant="faded">
 
                         <DropdownItem key="gpe">
                         <Link color="foreground" className="text-lg" href="/produkte/gpe">GPE</Link>
@@ -51,11 +51,11 @@ const NewNavbar = () =>
                         <Link color="foreground" className="text-lg" href="/produkte/designer">Designer</Link>
                         </DropdownItem>
 
-                        <DropdownItem key="nesting">
-                        <Link color="foreground" className="text-lg" href="/produkte/nesting">Nesting</Link>
+                        <DropdownItem key="nestingsoftware">
+                        <Link color="foreground" className="text-lg" href="/produkte/nestingsoftware">Nesting-Software</Link>
                         </DropdownItem>
 
-                        <DropdownItem key="alacarte">
+                        <DropdownItem key="ui">
                         <Link color="foreground" className="text-lg"href="/produkte/ui">UI</Link>
                         </DropdownItem>
 
