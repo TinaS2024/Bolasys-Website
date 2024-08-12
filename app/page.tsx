@@ -13,12 +13,12 @@ export default function Home()
   <div className="flex justify-center">
  <h3 style={{fontSize:"30pt"}} className="text-white">in Chemnitz</h3>
   </div>
-  <div className="flex flex-row sm:flex-col md:flex-row absolute abstand_oben abstand_links">  
+  <div style={{zIndex: "1"}} className="flex flex-row sm:flex-col md:flex-row absolute abstand_oben abstand_links">  
 
-    <Titel_Subtitel titel="GPE" subtitel="zur Herstellung von Produkten"></Titel_Subtitel>     
-    <Titel_Subtitel titel="DESIGNER" subtitel="zur Erzeugung grafischen Designs"></Titel_Subtitel>  
-    <Titel_Subtitel titel="NESTING" subtitel="zur Steuerung von Lasersystemen"></Titel_Subtitel>
-    <Titel_Subtitel titel="UI" subtitel="für Maschinen"></Titel_Subtitel>
+    <Titel_Subtitel titel="GPE" subtitel="zur Herstellung von Produkten" path="/produkte/gpe"></Titel_Subtitel>     
+    <Titel_Subtitel titel="DESIGNER" subtitel="zur Erzeugung grafischen Designs" path="/produkte/designer"></Titel_Subtitel>  
+    <Titel_Subtitel titel="NESTING" subtitel="zur Steuerung von Lasersystemen" path="/produkte/nesting"></Titel_Subtitel>
+    <Titel_Subtitel titel="UI" subtitel="für Maschinen" path="/produkte/ui"></Titel_Subtitel>
   </div>  <Background></Background>  
 
   

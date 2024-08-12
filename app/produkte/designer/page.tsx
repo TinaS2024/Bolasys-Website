@@ -30,14 +30,6 @@ export default function Designer() {
           <DesignerTooltip top="38%" left="15%" titel="Vorschau" beschreibung={text6} bildpfad={bild_links}/>
           </div>
 
-
-          {/* 
-     <div>
-      <Produkt produkt="Stempel & Schilder-Designer" bildpfad={bild1} bildname="designer1"/>
-      </div>
-      <div>
-      <Produkt produkt="Cydesigner" bildpfad={bild2} bildname="designer2"/>
-      </div>*/}
   </>
   
   
