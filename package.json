@@ -9,6 +9,7 @@
 		"lint": "eslint . --ext .ts,.tsx -c .eslintrc.json --fix"
 	},
 	"dependencies": {
+		"@ai-sdk/openai": "^0.0.45",
 		"@emotion/cache": "^11.13.1",
 		"@emotion/react": "^11.13.0",
 		"@emotion/styled": "^11.13.0",
@@ -35,6 +36,7 @@
 		"@typescript-eslint/eslint-plugin": "^7.10.0",
 		"@typescript-eslint/parser": "^7.10.0",
 		"@upstash/rag-chat": "^1.1.1",
+		"ai": "^3.3.6",
 		"autoprefixer": "10.4.19",
 		"clsx": "^2.0.0",
 		"d3": "^7.9.0",
@@ -54,6 +56,7 @@
 		"next": "14.2.3",
 		"next-images": "^1.8.5",
 		"next-themes": "^0.2.1",
+		"openai": "^4.55.5",
 		"postcss": "8.4.38",
 		"react": "18.3.1",
 		"react-dom": "18.3.1",
