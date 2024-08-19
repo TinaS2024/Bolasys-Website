@@ -51,6 +51,10 @@ const NewNavbar = () =>
                         <Link color="foreground" className="text-lg" href="/produkte/designer">Designer</Link>
                         </DropdownItem>
 
+                        <DropdownItem key="cydesigner">
+                        <Link color="foreground" className="text-lg" href="/produkte/cydesigner">CyDesigner</Link>
+                        </DropdownItem>
+
                         <DropdownItem key="nestingsoftware">
                         <Link color="foreground" className="text-lg" href="/produkte/nestingsoftware">Nesting-Software</Link>
                         </DropdownItem>

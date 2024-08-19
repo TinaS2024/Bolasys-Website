@@ -14,6 +14,11 @@ a
 cursor: pointer;
 }
 
+.tab
+{
+  text-align: left;
+}
+
 .grid {
     display: grid;
     gap: 1rem;

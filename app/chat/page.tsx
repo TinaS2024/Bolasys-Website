@@ -1,29 +1,31 @@
 import Header from "@/components/header";
-import { useChat } from "ai/react";
-import { Textarea } from "@nextui-org/input";
+import { Textarea } from "@nextui-org/react";
+import { Button } from "@nextui-org/react";
 
-/* Chat-Tutorial: https://www.youtube.com/watch?v=sHuIIX79MOs */
 
-export interface UserProps
-{
-      input: any;
-      handleInputChange: any;
-      handleSubmit:any;
-}
 
-const ChatPage = ({input, handleInputChange,handleSubmit}:UserProps) => {
+const ChatPage = ()=>{
+
   return (
     <div style={{marginLeft:"50%"}}>
         <Header titel="Chat" opacity="100%"/>
         <div style={{marginLeft:"-100%",width:"400px"}} className="container h-full w-full flex flex-col py-8">
-        <div className="flex-1 overflow-y-auto"></div>
-        <form onSubmit={handleSubmit} className="mt-auto relative">
-          <Textarea className="w-full text-lg" placeholder="Frage mich etwas!" value={input} onChange={handleInputChange}/>
+        <form>
+        <table className="tab">
+        <tr><td colSpan={2}><Textarea
+          label="Bolasys Chat"
+          placeholder="Fragen Sie uns etwas !"
+          className="max-w-xs"
+          labelPlacement="outside"
+          variant="faded"
+          /></td><td></td></tr>
+        <tr><td></td><td><Button className="bg-[#5ec4d2] text-black mt-2">Absenden</Button></td></tr>
+        </table>
+          
         </form>
         </div>
-        
-   
-    </div>
+      
+        </div>
   );
 }
 

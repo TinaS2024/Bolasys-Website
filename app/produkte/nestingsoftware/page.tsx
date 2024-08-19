@@ -22,7 +22,7 @@ export default function Nesting() {
   return (
    
       <>
-      <div style={{marginLeft:"50%"}}>
+      <div style={{marginLeft:"100%"}}>
       <Header opacity="50%" titel="Nesting-Software"></Header>  
       </div>
       <div style={{marginTop: "-30%",width:"500px"}}>

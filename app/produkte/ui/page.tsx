@@ -6,7 +6,7 @@ export default function UI() {
     return (
      
       <>
-          <Header opacity="50%" titel="UI"></Header>
+          <Header opacity="100%" titel="UI für Maschinenbedienung"></Header>
 
   </>
 
