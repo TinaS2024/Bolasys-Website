@@ -35,6 +35,21 @@ cursor: pointer;
     margin-bottom: 50px;
   }
 
+  #stempelbild:hover
+  {
+    -webkit-transition: all .3s ease-in;
+    -moz-transition: all .3s ease-in;
+    -ms-transition: all .3s ease-in;
+    -o-transition: all .3s ease-in;
+    transition: all .3s ease-in;
+    opacity: 1;
+    transform: scale(2);
+    -ms-transform: scale(2); /* IE 9 */
+    -webkit-transform: scale(2); /* Safari and Chrome */
+    z-index: 10;
+    margin-bottom: 200px;
+  }
+
   .abstand_oben
   {
     margin-top: 150px;
@@ -195,6 +210,18 @@ cursor: pointer;
       margin-left: -45%;
      }
 
+     #cydesigner
+     {
+      background-image: url("../app/bilder/cydesigner.png");
+      position: absolute;
+      background-size: cover;
+      background-repeat: no-repeat;
+      width: 1000px;
+      height: 650px;
+      margin-top: -10%;
+      margin-left: -25%;
+     }
+
      .gif
      {
       background-image: url("../app/bilder/galaxy.gif");
@@ -211,14 +238,19 @@ cursor: pointer;
 {
   #designerbild
   {
-   background-image: url("../app/bilder/Designer.png");
-   position: absolute;
-   background-size: contain;
-   background-repeat: no-repeat;
    width: 600px;
    height: 390px;
    margin-top: -30%;
    margin-left: -45%;
+  }
+
+  #cydesigner
+  {
+    width: 500px;
+    height: 325px;
+    margin-top: -30%;
+    margin-left: -45%;
+
   }
 }
   

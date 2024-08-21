@@ -12,6 +12,7 @@ const ChatPage = ()=>{
         <div style={{marginLeft:"-100%",width:"400px"}} className="container h-full w-full flex flex-col py-8">
         <form>
         <table className="tab">
+          <tbody>
         <tr><td colSpan={2}><Textarea
           label="Bolasys Chat"
           placeholder="Fragen Sie uns etwas !"
@@ -20,6 +21,7 @@ const ChatPage = ()=>{
           variant="faded"
           /></td><td></td></tr>
         <tr><td></td><td><Button className="bg-[#5ec4d2] text-black mt-2">Absenden</Button></td></tr>
+        </tbody>
         </table>
           
         </form>

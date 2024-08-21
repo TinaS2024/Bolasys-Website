@@ -5,6 +5,7 @@ import  { Navbar, NavbarBrand, NavbarContent, NavbarItem, Link, Button, Dropdown
 import myLogo from "../app/bilder/logo.png";
 import Image from "next/image";
 import myIcon from "../app/bilder/expand_icon.png";
+import Login from "./login";
 
 const NewNavbar = () =>
 {
@@ -18,14 +19,12 @@ const NewNavbar = () =>
 
             <NavbarBrand className="mr-50">
                 <Image src={myLogo} width={20} height={20} alt="logo"/>
-                <p className="font-bold text-inherit">BOLASYS GMBH</p>
+                <Link color="foreground" className="text-lg" href="/"> <p className="font-bold text-inherit">BOLASYS GMBH</p></Link>
+              
             </NavbarBrand>
 
             <NavbarContent className="hidden sm:flex" justify="center">
 
-                <NavbarItem>
-                    <Link color="foreground" className="text-lg" href="/">Home</Link>
-                </NavbarItem>
 
                 <Dropdown>
                     <NavbarItem>
@@ -60,7 +59,7 @@ const NewNavbar = () =>
                         </DropdownItem>
 
                         <DropdownItem key="ui">
-                        <Link color="foreground" className="text-lg"href="/produkte/ui">UI</Link>
+                        <Link color="foreground" className="text-lg" href="/produkte/ui">UI</Link>
                         </DropdownItem>
 
 
@@ -68,7 +67,11 @@ const NewNavbar = () =>
                 </Dropdown>
 
                 <NavbarItem>
-                    <Link color="foreground" className="text-lg"href="/chat">Chat</Link>
+                    <Link color="foreground" className="text-lg" href="/chat">Chat</Link>
+                </NavbarItem>
+
+                <NavbarItem>
+                <Login className="" titel="Login" inhalt="Bitte loggen Sie sich ein."/>
                 </NavbarItem>
                 
 

@@ -9,7 +9,7 @@ import Header from "@/components/header";
 export default function ImpressumPage() {
   return (  
 <>
-<div style={{marginLeft:"100%"}}>
+<div style={{marginLeft:"50%"}}>   
 <Header opacity="100%" titel="Impressum"></Header>
 </div>
     <Card className="max-w-[500px]"> 
