@@ -1,9 +1,13 @@
+
+"use client"
 import { Button } from "@nextui-org/button";
 import { Modal, ModalBody, ModalContent, ModalFooter, ModalHeader, useDisclosure } from "@nextui-org/react";
 import gpe from "../app/bilder/Bediensoftware_GPE.png";
 import Link from "next/link";
 import {Input} from "@nextui-org/react";
-import Registration from "./registration";
+import Registration from "../components/registration";
+
+import {supabaseAdmin} from "@/src/lib/supabase";
 
 /* https://www.youtube.com/watch?v=bicCg4GxOP8 */
 
@@ -18,6 +22,18 @@ const Login = ({titel,inhalt,className}:UserProps) =>
 {
     const {isOpen,onOpen,onOpenChange} = useDisclosure();
     const bild0 = gpe;
+
+    const setNewMessage = async () =>
+    {
+        const {data,error} = await supabaseAdmin
+        .from("message")
+        .insert({
+            username: "randomname"
+        })
+        
+    };
+
+    setNewMessage();
 
     return(
         <div className={className}>

@@ -6,7 +6,7 @@ import Titel_Subtitel from "@/components/titel_subtitel";
 
 export default function Home() 
 {
-
+  
   return (
     <>
   <div className="flex justify-center" style={{marginTop:"-300px"}}>
