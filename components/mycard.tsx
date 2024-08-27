@@ -41,7 +41,7 @@ const MyCard = () =>
     </Card>
     
     <Card style={{margin:"15px"}} className="max-w-[400px]">
-      <CardHeader style={{zIndex: "0"}}> <h3 className="text-[#2695a0] text-xl">Montageprpgramm</h3></CardHeader>
+      <CardHeader style={{zIndex: "0"}}> <h3 className="text-[#2695a0] text-xl">Montageprogramm</h3></CardHeader>
       <CardBody>
         <Punkt text={text9}/>
         <Punkt text={text10}/>
