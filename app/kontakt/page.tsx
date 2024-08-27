@@ -40,7 +40,7 @@ const KontaktPage = () =>{
   return (
     <div style={{marginLeft:"50%"}}>
         <Header titel="Kontakt" opacity="100%"/>
-        <div style={{marginLeft:"-100%",width:"400px"}} className="container h-full w-full flex flex-col py-8">
+        <div style={{marginLeft:"-100%"}} className="py-8">
        
         
           <form action={sendEmailAction}>
@@ -65,7 +65,7 @@ const KontaktPage = () =>{
             variant="bordered"/></td><td></td></tr>
             
             <tr><td colSpan={2}>
-             <RadioGroup label="Wählen Sie ein Thema aus." color="warning" defaultValue="GPE">
+             <RadioGroup label="Wählen Sie ein Thema aus." color="warning" defaultValue="gpe">
              <Radio value="gpe" name="thema">GPE</Radio>
               <Radio value="designer" name="thema">Designer</Radio>
               <Radio value="cydesigner" name="thema">CyDesigner</Radio>
@@ -75,16 +75,17 @@ const KontaktPage = () =>{
              
              <tr><td height={30}></td><td></td></tr>
             
-            <tr><td colSpan={2}><Textarea
+            <tr><td colSpan={2}><Textarea style={{width:"400px"}}
               name="nachricht"
               placeholder="Fragen Sie uns etwas !"
               className="max-w-xs"
               variant="faded"
+              minRows={5}
               /></td><td></td></tr>
               
               <tr><td height={30}></td><td></td></tr>
         
-        <tr><td></td><td><Button type="submit" className="bg-[#5ec4d2] text-black mt-2">Absenden</Button></td></tr>
+        <tr><td></td><td><Button type="submit" className="bg-[#0e2d38] text-white mt-2">Absenden</Button></td></tr>
         </tbody>
         </table>    
         </form>

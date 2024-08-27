@@ -67,7 +67,7 @@ cursor: pointer;
   #header
   {
     position: fixed;
-    top:55px;
+    top:80px;
     margin-left: -50%;
   }
 
@@ -252,6 +252,12 @@ cursor: pointer;
     margin-left: -45%;
 
   }
+
+  .abstand_oben
+  {
+    margin-top: 0px;
+  }
+
 }
   
 

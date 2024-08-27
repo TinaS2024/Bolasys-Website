@@ -2,6 +2,7 @@
 import {Resend} from "resend";
 import Email from "./components/email";
 
+
  interface State
 {
     error: string | null;

@@ -46,7 +46,7 @@ export const Graph = () => {
 
   return (
  
-    <div className="pt-5"> 
+    <div className="pt-20"> 
      
 
     <div className="img1"><OwnModal className="img1" titel="GPE" inhalt={text1}/><Image src={bild0} alt="gpe" width={100} height={100}></Image></div>

@@ -14,6 +14,7 @@ const NewNavbar = () =>
     }
      {/*endContent={icon.chevron}*/}
     return(
+        <div className="fixed h-screen-full" style={{zIndex: "10",width:"100%"}}>
         <Navbar isBordered maxWidth="full">
             <NavbarContent justify="start">
 
@@ -85,6 +86,7 @@ const NewNavbar = () =>
             </NavbarContent>
 
         </Navbar>
+        </div>
 
     )
 }

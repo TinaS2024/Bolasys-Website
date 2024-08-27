@@ -18,7 +18,7 @@ import React from "react";
 export const Navbar = () => {
 
   return (
-    <NextUINavbar isBordered maxWidth="xl" position="sticky" className="bg-cyan-500">
+    <NextUINavbar position="static" isBordered maxWidth="xl" className="bg-cyan-500">
       <NavbarContent className="basis-1/5 sm:basis-full" justify="start">
         <ul className="hidden lg:flex gap-4 justify-start ml-2">
           {siteConfig.navItems.map((item) => (

@@ -25,7 +25,7 @@ export default function Nesting() {
       <div style={{marginLeft:"50%"}}>
       <Header opacity="100%" titel="Nesting-Software"></Header>  
       </div>
-      <div style={{marginTop: "-30%",width:"500px"}}>
+      <div style={{width:"500px"}}>
             <div><h3 style={{fontSize:"26pt"}} className="text-[#5ec4d2]">Material-Einsparung durch Nesting mit Bolanest oder GPE</h3></div>
             <div><p style={{fontSize: "16pt"}} className="text-white">{text1}</p>
             <Image id="stempelbild" style={{marginLeft:"5%",marginTop: "10%"}} src={stempel} alt="Stempelbild" width={450} height={450}></Image>
