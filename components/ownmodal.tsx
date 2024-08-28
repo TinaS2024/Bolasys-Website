@@ -1,6 +1,5 @@
 import { Button } from "@nextui-org/button";
 import { Modal, ModalBody, ModalContent, ModalFooter, ModalHeader, useDisclosure } from "@nextui-org/react";
-import gpe from "../app/bilder/Bediensoftware_GPE.png";
 
 export interface UserProps
 {
@@ -12,7 +11,6 @@ export interface UserProps
 const OwnModal = ({titel,inhalt,className}:UserProps) =>
 {
     const {isOpen,onOpen,onOpenChange} = useDisclosure();
-    const bild0 = gpe;
 
     return(
         <div className={className} style={{marginTop:"25px"}}>

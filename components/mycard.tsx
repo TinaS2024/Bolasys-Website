@@ -19,7 +19,7 @@ const MyCard = () =>
   const text12 = "Datenübergabe an Versanddienstleister"
 
     return (
-<div className="card-container flex sm:flex-col md:flex-row abstand_unten">
+<div style={{marginLeft:"-35%"}} className="card-container flex sm:flex-col md:flex-row abstand_unten">
     <Card style={{margin:"15px"}} className="max-w-[400px]">
       <CardHeader style={{zIndex: "0"}}> <h3 className="text-[#2695a0] text-xl">Auftragsverwaltung</h3></CardHeader>
       <CardBody>

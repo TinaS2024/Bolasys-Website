@@ -2,7 +2,7 @@
 "use client"
 import { Button } from "@nextui-org/button";
 import { Modal, ModalBody, ModalContent, ModalFooter, ModalHeader, useDisclosure } from "@nextui-org/react";
-import gpe from "../app/bilder/Bediensoftware_GPE.png";
+import gpe from "@/app/bilder/Bediensoftware_GPE.png";
 import Link from "next/link";
 import {Input} from "@nextui-org/react";
 import Registration from "../components/registration";

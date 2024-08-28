@@ -11,7 +11,7 @@ export default function ImpressumPage() {
 <>
 <div style={{marginLeft:"50%"}}>   
 <Header opacity="100%" titel="Impressum"></Header>
-</div>
+</div >
     <Card className="max-w-[500px]"> 
       <CardHeader className="bg-[#2695a0]/30 text-center justify-center">
        
@@ -20,7 +20,7 @@ export default function ImpressumPage() {
       <CardBody> 
       
         <table> 
-          <tbody>
+          <tbody >
           <TabZeile titel="Firma" inhalt="Bolasys GmbH"></TabZeile>
           <TabZeile titel="Straße" inhalt="Fritz-Wagner-Siedlung 16 "></TabZeile>
           <TabZeile titel="Ort" inhalt="09116 Chemnitz"></TabZeile>

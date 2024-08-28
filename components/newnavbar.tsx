@@ -2,9 +2,9 @@
 import React from "react";
 import  { Navbar, NavbarBrand, NavbarContent, NavbarItem, Link, Button, DropdownTrigger, Dropdown, DropdownMenu, DropdownItem} from "@nextui-org/react";
 
-import myLogo from "../app/bilder/logo.png";
+import myLogo from "@/app/bilder/logo.png";
 import Image from "next/image";
-import myIcon from "../app/bilder/expand_icon.png";
+import myIcon from "@/app/bilder/expand_icon.png";
 import Login from "./login";
 
 const NewNavbar = () =>

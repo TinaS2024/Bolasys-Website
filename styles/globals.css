@@ -67,7 +67,7 @@ cursor: pointer;
   #header
   {
     position: fixed;
-    top:80px;
+    top:73px;
     margin-left: -50%;
   }
 
@@ -83,6 +83,7 @@ cursor: pointer;
     bottom:0px;
     margin-bottom: 0px;
   }
+
 
   .img1,.img2,.img3,.img4,.img5,.img6, .img7, .img8
   {
@@ -204,23 +205,29 @@ cursor: pointer;
       position: absolute;
       background-size: contain;
       background-repeat: no-repeat;
-      width: 2000px;
-      height: 1300px;
-      margin-top: -10%;
-      margin-left: -45%;
-     }
-
-     #cydesigner
-     {
-      background-image: url("../app/bilder/cydesigner.png");
-      position: absolute;
-      background-size: cover;
-      background-repeat: no-repeat;
       width: 1000px;
       height: 650px;
-      margin-top: -10%;
+      margin-top: 1%;
       margin-left: -25%;
      }
+
+     #screen
+     {
+      position: absolute;
+      background-image: url("../app/bilder/cy_screen_dark.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      width:882px;
+      height:584px;
+      margin-top: -5%;
+      margin-left: -25%;
+     }
+
+     #screen:hover
+     {
+      background-image: url("../app/bilder/cy_screen.png");
+     }
+
 
      .gif
      {
@@ -234,13 +241,13 @@ cursor: pointer;
 
      }
 
-@media screen and (max-width: 450px)
+@media screen and (max-width: 500px)
 {
   #designerbild
   {
    width: 600px;
    height: 390px;
-   margin-top: -30%;
+   margin-top: 1%;
    margin-left: -45%;
   }
 
@@ -248,20 +255,35 @@ cursor: pointer;
   {
     width: 500px;
     height: 325px;
-    margin-top: -30%;
+    margin-top: 1%;
     margin-left: -45%;
 
-  }
-
-  .abstand_oben
-  {
-    margin-top: 0px;
   }
 
 }
   
 
 @media screen and (max-width:810px) {
+
+  #designerbild
+  {
+   width: 600px;
+   height: 390px;
+   margin-top: 1%;
+   margin-left: -45%;
+  }
+
+  #screen
+  {
+   position: absolute;
+   background-image: url("../app/bilder/cy_screen_dark.png");
+   background-size: contain;
+   background-repeat: no-repeat;
+   width:441px;
+   height:292px;
+   margin-top:1% ;
+   margin-left: -50%;
+  }
 
   .img1
   {
@@ -315,6 +337,11 @@ cursor: pointer;
   {
     margin-top: 45%;
     margin-left: 0% ;
+  }
+
+  .abstand_oben
+  {
+    margin-top: 0px;
   }
 
 }

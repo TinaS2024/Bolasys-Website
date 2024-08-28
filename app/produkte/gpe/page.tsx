@@ -13,6 +13,8 @@ export default function GPE() {
     <Header titel="GPE" opacity="100%"></Header>
     <Graph></Graph>
     <MyCard></MyCard>
+
+   
       </>
     );
   }

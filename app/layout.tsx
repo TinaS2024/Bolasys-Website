@@ -62,6 +62,7 @@ export default function RootLayout({
                 <span className="text-white">Powered by</span>
                 <p className="text-cyan-800">NextUI</p>
                 <Link color="foreground" className="text-lg" href="/impressum">Impressum</Link>
+
                 
              
             </footer>
