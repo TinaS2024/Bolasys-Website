@@ -8,6 +8,10 @@ h3, p
   padding:5px;
 }
 
+.linebreak
+ {
+  white-space: pre-line;
+ }
 
 a
 {
@@ -28,6 +32,11 @@ cursor: pointer;
   .abstand_unten
   {
     margin-bottom: 300px;
+  }
+
+  .klein_abstand_unten
+  {
+    margin-bottom: 50px;
   }
 
   .abstand_unten_klein

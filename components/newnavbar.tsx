@@ -67,13 +67,15 @@ const NewNavbar = () =>
                     </DropdownMenu>
                 </Dropdown>
 
+               
+                <NavbarItem>
+                    <Link color="foreground" className="text-lg" href="/blogsite">Bolasys Blog</Link>
+                </NavbarItem> 
+                
                 <NavbarItem>
                     <Link color="foreground" className="text-lg" href="/kontakt">Kontakt</Link>
                 </NavbarItem>
 
-                <NavbarItem hidden={true}>
-                    <Link color="foreground" className="text-lg" href="/chat">Chat</Link>
-                </NavbarItem>
 
                 <NavbarItem >
                 <Login className="" titel="Login" inhalt="Bitte loggen Sie sich ein."/>

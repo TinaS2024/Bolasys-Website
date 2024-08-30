@@ -59,9 +59,8 @@ export default function RootLayout({
                 href="https://nextui-docs-v2.vercel.app?utm_source=next-app-template"
                 title="nextui.org homepage"
               > </Link>
-                <span className="text-white">Powered by</span>
-                <p className="text-cyan-800">NextUI</p>
-                <Link color="foreground" className="text-lg" href="/impressum">Impressum</Link>
+                <Link color="foreground" className="text-lg" href="/impressum"><p className="text-cyan-800">Impressum |</p></Link>
+                <Link color="foreground" className="text-lg" href="/agb"><p className="text-cyan-800">&nbsp;AGB</p></Link>
 
                 
              
