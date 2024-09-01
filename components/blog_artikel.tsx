@@ -9,13 +9,15 @@ export interface UserProps
     subject: string;
     content: string;
     bildpfad: StaticImageData;
+    className: string;
+    date: string;
 }
 
 
-const Blog_Artikel = ({titel,subject,content,bildpfad}:UserProps) =>
+const Blog_Artikel = ({titel,subject,content,bildpfad,className,date}:UserProps) =>
 {
 
-    return(<div className="linebreak">
+    return(<div className={className}>
         <Card className="min-w-[450px] py-50 klein_abstand_unten">
             <CardHeader style={{zIndex: "0"}}>
             <div style={{margin:"25px",left:"50px"}}>
@@ -27,7 +29,7 @@ const Blog_Artikel = ({titel,subject,content,bildpfad}:UserProps) =>
             <Divider/> 
             <CardBody className="bg-white/80 text-black">{content}</CardBody>
             <Divider/>
-            <CardFooter className="bg-[#5ec4d2]/40"></CardFooter>
+            <CardFooter className="bg-[#5ec4d2]/40"><p>Veröffentlicht am:&nbsp;{date}</p></CardFooter>
         </Card>
 </div>
     )

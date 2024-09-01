@@ -5,18 +5,16 @@ import { RadioGroup,Radio, Textarea, Input} from "@nextui-org/react";
 import { Button } from "@nextui-org/react";
 import swal from "sweetalert";
 
-import { sendEmail } from "@/actions";
+/*import { sendEmail } from "@/actions";*/
+import { sendOfflineMail} from "@/actions_new";
 import { useEffect } from "react";
 import { useFormState } from "react-dom";
 
+/* https://dev.to/heyjoshlee/using-the-usestate-hook-and-working-with-forms-in-react-js-m6b#:~:text=const%20Form%20%3D%20%28%29%20%3D%3E%20%7B%20const%20%5BformData%2C,you%20need%20to%20use%20the%20setFormData%20%28%29%20function. */
 
-/* E-Mail senden: https://dev.to/shahmir049/how-to-send-emails-using-nextjs-14-resend-and-react-email-2b7g */
-/* https://dev.to/onlyoneerin/how-to-create-and-send-custom-emails-using-react-email-and-resend-api-4fc0 */
- 
-/* Api Key: re_b4SRtHMr_DQsHbNDt7ctJ7KoesXYGe7VG */
 const KontaktPage = () =>{
 
-  const [sendEmailState, sendEmailAction] = useFormState(sendEmail, {
+  const [sendEmailState, sendEmailAction] = useFormState(sendOfflineMail, {
     error:null,
     success:false
   })
@@ -31,6 +29,7 @@ const KontaktPage = () =>{
       swal({title:"Fehler!",text:"E-Mail konte nicht gesendet werden!",icon:"warning",dangerMode:true})
     }
   }, [sendEmailState])
+
 
   const bereiche = [
     {key: "maschine",label: "Maschine"},

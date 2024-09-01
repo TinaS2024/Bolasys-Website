@@ -14,7 +14,7 @@ export const sendEmail = async (prevState: State, formData: FormData) => {
     const email = formData.get("email") as string
     const thema = formData.get("thema") as string
     const nachricht = formData.get("nachricht") as string
-
+ 
     try {
       const resend = new Resend(process.env.RESEND_API_KEY)
       await resend.emails.send({

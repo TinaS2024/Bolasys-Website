@@ -1,4 +1,4 @@
-import { Card, CardBody, CardFooter, CardHeader } from "@nextui-org/react";
+import { Card, CardBody, CardHeader } from "@nextui-org/react";
 import Punkt from "@/components/Punkt";
 //Probleme bei NextUi: Card-Header hat standartmäßig z-index von 10 und überlappt Hedaer, Card-Header lässt Navbar verschwinden, Header wird kleiner bei Fensterverkleinerung
 

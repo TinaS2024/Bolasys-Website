@@ -8,14 +8,14 @@ h3, p
   padding:5px;
 }
 
-.linebreak
- {
-  white-space: pre-line;
- }
-
 a
 {
 cursor: pointer;
+}
+
+.line 
+{
+  white-space: pre-line;
 }
 
 .tab
