@@ -6,6 +6,7 @@ interface State
     error: string | null;
     success: boolean;
 }
+
 const transporter = nodemailer.createTransport({
       service: "GMX",
       auth: {

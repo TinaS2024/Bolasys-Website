@@ -3,32 +3,44 @@
 import Header from "@/components/header";
 import { RadioGroup,Radio, Textarea, Input} from "@nextui-org/react";
 import { Button } from "@nextui-org/react";
-import swal from "sweetalert";
+import swal from "sweetalert"; //Altert-Fenster
 
 /*import { sendEmail } from "@/actions";*/
-import { sendOfflineMail} from "@/actions_new";
-import { useEffect } from "react";
-import { useFormState } from "react-dom";
+import { FormEvent } from "react";
+import {useState} from "react";
 
-/* https://dev.to/heyjoshlee/using-the-usestate-hook-and-working-with-forms-in-react-js-m6b#:~:text=const%20Form%20%3D%20%28%29%20%3D%3E%20%7B%20const%20%5BformData%2C,you%20need%20to%20use%20the%20setFormData%20%28%29%20function. */
+/*https://www.youtube.com/watch?v=Te4ESNxq_xU 14:41  */
+
 
 const KontaktPage = () =>{
+  const [username,setUsername] = useState("")
+  const [email,setEmail] = useState("")
+  const [subject,setSubject] = useState("")
+  const [nachricht,setNachricht] = useState("")
 
-  const [sendEmailState, sendEmailAction] = useFormState(sendOfflineMail, {
-    error:null,
-    success:false
-  })
+  const onSubmit = async (e: FormEvent)=>
+  {
+    e.preventDefault()
+    /*console.log("Data",username,email,subject,nachricht)*/
 
-  useEffect(() => {
-    if (sendEmailState.success)
+    try
     {
-      swal({title:"Erfolg!",text:"E-Mail wurde gesendet!",icon:"success"})
-    }
-    if (sendEmailState.error)
+      const res = await fetch("api/kontakt",{
+        body: JSON.stringify({
+          username,email,subject,nachricht
+
+        }),
+        headers: {
+          "content-type": "application/json",
+        }
+      })
+    } catch (error:any)
     {
-      swal({title:"Fehler!",text:"E-Mail konte nicht gesendet werden!",icon:"warning",dangerMode:true})
+      console.error("Fehler", error)
+
     }
-  }, [sendEmailState])
+  }
+
 
 
   const bereiche = [
@@ -42,40 +54,45 @@ const KontaktPage = () =>{
         <div style={{marginLeft:"-100%"}} className="py-8">
        
         
-          <form action={sendEmailAction}>
+          <form onSubmit={onSubmit}>
+  
         <table className="tab">
           <tbody>
            <tr><td colSpan={2}>
             <Input 
             isRequired type="username" 
-            name="username"
+            id="username"
+            value={username}
+            onChange={e => setUsername(e.target.value)}
             label="Username" 
-            defaultValue="" 
             className="max-w-xs" 
             variant="bordered"/></td><td></td></tr>
            
            <tr><td colSpan={2}> 
             <Input 
             isRequired type="email" 
-            name="email"
+            id="email"
+            value={email}
+            onChange={e => setEmail(e.target.value)}
             label="E-Mail" 
-            defaultValue="" 
             className="max-w-xs" 
             variant="bordered"/></td><td></td></tr>
             
             <tr><td colSpan={2}>
-             <RadioGroup label="Wählen Sie ein Thema aus." color="warning" defaultValue="gpe">
-             <Radio value="gpe" name="thema">GPE</Radio>
-              <Radio value="designer" name="thema">Designer</Radio>
-              <Radio value="cydesigner" name="thema">CyDesigner</Radio>
-              <Radio value="nesting" name="thema">NestingSoftware</Radio>
-              <Radio value="sonstiges" name="thema">Sonstiges</Radio>
+             <RadioGroup label="Wählen Sie ein Thema aus." color="warning" defaultValue="GPE">
+              <Radio value="GPE" onChange={e => setSubject(e.target.value)}>GPE</Radio>
+              <Radio value="designer" onChange={e => setSubject(e.target.value)}>Designer</Radio>
+              <Radio value="Cydesigner" onChange={e => setSubject(e.target.value)}>CyDesigner</Radio>
+              <Radio value="Nesting" onChange={e => setSubject(e.target.value)}>NestingSoftware</Radio>
+              <Radio value="Sonstiges" onChange={e => setSubject(e.target.value)}>Sonstiges</Radio>
              </RadioGroup></td><td></td></tr>
              
              <tr><td height={30}></td><td></td></tr>
             
             <tr><td colSpan={2}><Textarea style={{width:"400px"}}
-              name="nachricht"
+              id="nachricht"
+              value={nachricht}
+              onChange={e => setNachricht(e.target.value)}
               placeholder="Fragen Sie uns etwas !"
               className="max-w-xs"
               variant="faded"

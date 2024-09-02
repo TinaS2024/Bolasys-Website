@@ -2,22 +2,29 @@
 import Header from "@/components/header";
 import Image from "next/image";
 import NestingCard from "@/components/nesting_card";
-import bild1 from "@/app/bilder/clipping.svg";
+import bild1 from "@/app/bilder/clipping_abstand.svg";
 import bild2 from "@/app/bilder/schrumpfen_nest.svg";
 import bild3 from "@/app/bilder/schrumpfen_gpe.svg";
 import bild4 from "@/app/bilder/grosse_formen.svg";
 import bild5 from "@/app/bilder/gleiche_formen.svg";
-import stempel from "@/app/bilder/stempel.png";
+import bild6 from "@/app/bilder/clipping_ohne_abstand.svg";
+import stempel1 from "@/app/bilder/clipping_mit_abstand.png";
+import stempel2 from "@/app/bilder/clipping_ohne_abstand.png";
+import stempel5 from "@/app/bilder/anordnung_bolanest.png";
+
+
+
 
 
 export default function Nesting() {
 
   const text1 = "Wir bieten Software an um Designs für Stempel auf einem Trommelgravier platzsparend anzuordnen."
-  const text2 = "Das Einzeldesign wird am Rand beschnitten."
+  const text2 = "Die Stempel-Designs werde mit Abstand zueinander beschnitten. Dies ist mit Bolanest möglich."
   const text3 = "Die Auswahl des Einzeldesigns wird abgerundet verkleinert."
-  const text4 = "Die Auswahl des Einzeldesigns wird eckig verkleinert.Außerdem sucht das GPE nach ähnlichen Formen und legt sie zusammen."
-  const text5 =" Die Nestingsoftware legt zuerst große Formen zusammen und füllt Lücken mit kleineren Elementen aus."
+  const text4 = "Die Auswahl des Einzeldesigns wird eckig verkleinert. Außerdem sucht das GPE nach ähnlichen Formen und legt sie zusammen."
+  const text5 = "Die Nestingsoftware legt zuerst große Formen zusammen und füllt Lücken mit kleineren Elementen aus. Dreiecke kann Bolanest nicht zusammenlegen wie das GPE."
   const text6 = "Das GPE sucht nach ähnlichen Formen und legt sie zusammen."
+  const text7 = "Die Stempel-Designs werden ohne Abstand zueinander beschnitten. Dies ist mit Bolanest und GPE möglich."
     
   return (
    
@@ -27,22 +34,22 @@ export default function Nesting() {
       </div>
       <div style={{width:"500px"}}>
             <div><h3 style={{fontSize:"20pt"}} className="text-[#5ec4d2]">Material-Einsparung durch Nesting mit Bolanest oder GPE</h3></div>
-            <div><p style={{fontSize: "16pt"}} className="text-white">{text1}</p>
-            <Image id="stempelbild" style={{marginLeft:"5%",marginTop: "10%"}} src={stempel} alt="Stempelbild" width={450} height={450}></Image>
+            <div><p style={{fontSize: "16pt",marginBottom:"50px"}} className="text-white">{text1}</p>
             </div>
             
-
-      <NestingCard className="m-20 items-center" titel="Schritt 1:Clipping" path={bild1} beschreibung={text2}/>
-        
+      <div className="flex flex-row abstand_unten_klein" >
+      <NestingCard pathstemp={stempel1} className="mr-5 min-w-[250px] items-center" titel="Schritt 1A: Beschneidung mit Abstand" path={bild1} width={150} height={150} beschreibung={text2}/>
+      <NestingCard pathstemp={stempel2} className="mr-5 min-w-[250px] items-center" titel="Schritt 1B: Beschneidung ohne Abstand" path={bild6} width={150} height={150} beschreibung={text7}/>
+      </div>
 
     <div className="flex flex-row abstand_unten_klein">
-      <NestingCard className="mr-5 min-w-[250px] items-center" titel="Schritt 2 A: Schrumpfen durch Bolanest" path={bild2} beschreibung={text3} />
-      <NestingCard className="mr-5 min-w-[250px] items-center" titel="Schritt 2 B: Schrumpfen durch GPE" path={bild3} beschreibung={text4} />
+      <NestingCard pathstemp={stempel1} className="mr-5 min-w-[250px] items-center" titel="Schritt 2A: Schrumpfen durch Bolanest" path={bild2} width={100} height={100} beschreibung={text3} />
+      <NestingCard pathstemp={stempel1} className="mr-5 min-w-[250px] items-center" titel="Schritt 2B: Schrumpfen durch GPE" path={bild3} width={100} height={100} beschreibung={text4} />
     </div>
 
     <div className="flex flex-row abstand_unten_klein">
-      <NestingCard className="mr-5 min-w-[250px] items-center" titel="Schritt 3 A: Anordnung durch Bolanest" path={bild4} beschreibung={text5} />
-      <NestingCard className="mr-5 min-w-[250px] items-center" titel="Schritt 3 B: Anordnung durch GPE" path={bild5} beschreibung={text6} />
+      <NestingCard pathstemp={stempel5} className="mr-5 min-w-[250px] items-center" titel="Schritt 3A: Anordnung durch Bolanest" path={bild4} width={100} height={100} beschreibung={text5} />
+      <NestingCard pathstemp={stempel1} className="mr-5 min-w-[250px] items-center" titel="Schritt 3B: Anordnung durch GPE" path={bild5} width={100} height={100} beschreibung={text6} />
     </div>
  
     </div>
