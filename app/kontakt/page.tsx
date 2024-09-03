@@ -13,16 +13,11 @@ import {useState} from "react";
 
 
 const KontaktPage = () =>{
-  const [username,setUsername] = useState("")
-  const [email,setEmail] = useState("")
-  const [subject,setSubject] = useState("")
-  const [nachricht,setNachricht] = useState("")
 
   const onSubmit = async (e: FormEvent)=>
   {
     e.preventDefault()
     /*console.log("Data",username,email,subject,nachricht)*/
-
     try
     {
       const res = await fetch("api/kontakt",{
@@ -37,11 +32,8 @@ const KontaktPage = () =>{
     } catch (error:any)
     {
       console.error("Fehler", error)
-
     }
   }
-
-
 
   const bereiche = [
     {key: "maschine",label: "Maschine"},
