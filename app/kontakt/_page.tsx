@@ -16,11 +16,17 @@ https://www.youtube.com/watch?v=esdFVfFA_nI
 
 const KontaktPage = () =>{
 
-  const [username, setUsername] = useState("")
-  const [email, setEmail] = useState("")
-  const [subject,setSubject] = useState("")
-  const [nachricht,setNachricht] = useState("")
+  const [formData, setFormData] = useState({
+    username: "",
+    email: "",
+    subject: "",
+    nachricht:"",
+  });
 
+  const handleChange = async (e: ChangeEvent<HTMLInputElement>) =>
+  {
+    setFormData({...formData,[e.target.name]: e.target.value })
+  }
   const handleSubmit = async (e: FormEvent)=>
   {
     e.preventDefault()
@@ -32,19 +38,12 @@ const KontaktPage = () =>{
         headers: {
           "content-type": "application/json",
         },
-        body: JSON.stringify({
-          username,
-          email,
-          subject,
-          nachricht,
-        }), 
+        body: JSON.stringify({formData}), 
       });
-      swal({title: "Erfolgreich",text:"E-Mail wurde an Bolasys gesendet!", icon:"success"})
- 
+      const data = await res.json();
     } catch (error:any)
     {
       console.error("Fehler", error)
-      swal({title: "Fehler",text:"Es gab ein Problem beim Versenden der E-Mail!",icon:"error"})
     }
   }
 
@@ -62,8 +61,8 @@ const KontaktPage = () =>{
             <Input 
             isRequired type="username" 
             id="username"
-            value={username}
-            onChange={(e) =>setUsername(e.target.value)}
+            value={formData.username}
+            onChange={handleChange}
             label="Username" 
             className="max-w-xs" 
             variant="bordered"/></td><td></td></tr>
@@ -72,27 +71,27 @@ const KontaktPage = () =>{
             <Input 
             isRequired type="email" 
             id="email"
-            value={email}
-            onChange={(e) =>setEmail(e.target.value)}
+            value={formData.email}
+            onChange={handleChange}
             label="E-Mail" 
             className="max-w-xs" 
             variant="bordered"/></td><td></td></tr>
             
             <tr><td colSpan={2}>
              <RadioGroup label="Wählen Sie ein Thema aus." color="warning" defaultValue="GPE">
-              <Radio name="subject" value="GPE" onChange={(e) =>setSubject(e.target.value)}>GPE</Radio>
-              <Radio name="subject" value="Designer" onChange={(e) =>setSubject(e.target.value)}>Designer</Radio>
-              <Radio name="subject" value="CyDesigner" onChange={(e) =>setSubject(e.target.value)}>CyDesigner</Radio>
-              <Radio name="subject" value="Nesting" onChange={(e) =>setSubject(e.target.value)}>NestingSoftware</Radio>
-              <Radio name="subject" value="Sonstiges" onChange={(e) =>setSubject(e.target.value)}>Sonstiges</Radio>
+              <Radio name="subject" value="GPE" onChange={handleChange}>GPE</Radio>
+              <Radio name="subject" value="Designer" onChange={handleChange}>Designer</Radio>
+              <Radio name="subject" value="CyDesigner" onChange={handleChange}>CyDesigner</Radio>
+              <Radio name="subject" value="Nesting" onChange={handleChange}>NestingSoftware</Radio>
+              <Radio name="subject" value="Sonstiges" onChange={handleChange}>Sonstiges</Radio>
              </RadioGroup></td><td></td></tr>
              
              <tr><td height={30}></td><td></td></tr>
             
             <tr><td colSpan={2}><Textarea style={{width:"400px"}}
               id="nachricht"
-              value={nachricht}
-              onChange={(e) =>setNachricht(e.target.value)}
+              value={formData.nachricht}
+              onChange={handleChange}
               placeholder="Fragen Sie uns etwas !"
               className="max-w-xs"
               variant="faded"
