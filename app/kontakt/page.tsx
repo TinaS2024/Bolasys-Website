@@ -6,7 +6,7 @@ import { Button } from "@nextui-org/react";
 import swal from "sweetalert";
 
 /*import { sendEmail } from "@/actions";*/
-import { ChangeEvent, FormEvent } from "react";
+import {FormEvent } from "react";
 import {useState} from "react";
 
 /*https://www.youtube.com/watch?v=Te4ESNxq_xU 14:41  
@@ -15,7 +15,6 @@ https://www.youtube.com/watch?v=esdFVfFA_nI
 
 
 const KontaktPage = () =>{
-
   const [username, setUsername] = useState("")
   const [email, setEmail] = useState("")
   const [subject,setSubject] = useState("")
@@ -27,7 +26,7 @@ const KontaktPage = () =>{
 
     try
     {
-      const res = await fetch("api/kontakt",{
+      const res = await fetch("../api/kontakt",{
         method: "POST", 
         headers: {
           "content-type": "application/json",

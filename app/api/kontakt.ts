@@ -1,49 +1,45 @@
+import { Cipher } from "crypto";
 import type { NextApiRequest, NextApiResponse } from "next";
-import nodemailer from "nodemailer";
-export interface TransportOptions
-{
-    host: string | undefined;
-    port: number | undefined;
-    service: string | undefined;
-    auth: object | string | undefined;
-}
+import * as nodemailer from "nodemailer";
 
+
+//bolasys_client@outlook.de,kZ4xj8vkVABf9WB
 export default async function handler(req:NextApiRequest, res:NextApiResponse, )
 {
-    if(req.method ==="POST")
-    {
-        const { username,email, subject, nachricht} = req.body;
-        console.log("Data", req.body)
-       
 
-        let transporter = nodemailer.createTransport({
-            host: "",
-            service: "smtp",
-            port: "",
-            debug:true,
+    const transporter = nodemailer.createTransport({
+            host:"smtp-mail.outlook.com",
+            service: "Outlook",
+            port: 587,
+            secureConnection: false,
+            tls: {
+                ciphers: "SSLv3"
+            },
             auth: {
-                user:"" ,//process.env.EMAIL_USER,
-                pass:"" ,//process.env.EMAIL_PASS,
+                user:"bolasys_client@outlook.de" ,//process.env.EMAIL_USER,
+                pass:"kZ4xj8vkVABf9WB" ,//process.env.EMAIL_PASS,
             }
         } as nodemailer.TransportOptions);
 
-        try{
-            let info: unknown = await transporter.sendMail({
-                from:"" ,//process.env.EMAIL_USER,
-                to: email, 
-                subject: subject, 
-                text:"Von: "+username+"Mit der Nachricht: "+nachricht, 
-            });
-            console.log("Nachricht gesendet: %s")
-             res.status(200).json({success: true});
-        } catch(error: any)
-        {
-            console.error("Fehlerhafte E-Mail-Sendung:", error)
-            res.status(500).json({success: false, error: error.message })
-        }
-        
-    } else{
-        res.status(405).json({message: "Methode nicht erlaubt"});
+    const { username,email, subject, nachricht} = req.body;
+
+    if (!nachricht || !username || !nachricht)
+    {
+        return res
+            .status(400)
+            .json({message: "Bitte fülle die fehlenden Felder aus!"})
     }
-  
+
+    const mailData = {
+        from: email,
+        to:"Tina.Schmidtbauer@bolasys.de",
+        subject: subject,
+        text: "Von: "+username+"Mit der Nachricht: "+nachricht,
+    };
+
+
+     transporter.sendMail(mailData);
+
+    return;
+        
 }
