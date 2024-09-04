@@ -9,6 +9,8 @@ import bild5 from "@/app/bilder/gleiche_formen.svg";
 import bild6 from "@/app/bilder/clipping_ohne_abstand.svg";
 import stempel1 from "@/app/bilder/clipping_mit_abstand.png";
 import stempel2 from "@/app/bilder/clipping_ohne_abstand.png";
+import stempel3 from "@/app/bilder/schrumpfen_bolanest.png";
+import stempel4 from "@/app/bilder/gpe_schrumpfen.png";
 import stempel5 from "@/app/bilder/anordnung_bolanest.png";
 import stempel6 from "@/app/bilder/anordnen_gpe.png";
 
@@ -43,8 +45,8 @@ export default function Nesting() {
       </div>
 
     <div className="flex flex-row abstand_unten_klein">
-      <NestingCard pathstemp={stempel1} className="mr-5 min-w-[250px] items-center" titel="Schritt 2A: Schrumpfen durch Bolanest" path={bild2} width={100} height={100} beschreibung={text3} />
-      <NestingCard pathstemp={stempel1} className="mr-5 min-w-[250px] items-center" titel="Schritt 2B: Schrumpfen durch GPE" path={bild3} width={100} height={100} beschreibung={text4} />
+      <NestingCard pathstemp={stempel3} className="mr-5 min-w-[250px] items-center" titel="Schritt 2A: Schrumpfen durch Bolanest" path={bild2} width={100} height={100} beschreibung={text3} />
+      <NestingCard pathstemp={stempel4} className="mr-5 min-w-[250px] items-center" titel="Schritt 2B: Schrumpfen durch GPE" path={bild3} width={100} height={100} beschreibung={text4} />
     </div>
 
     <div className="flex flex-row abstand_unten_klein">
