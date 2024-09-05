@@ -1,10 +1,20 @@
-import { Cipher } from "crypto";
-import type { NextApiRequest, NextApiResponse } from "next";
+
+import { NextRequest,NextResponse } from "next/server";
 import * as nodemailer from "nodemailer";
+
+export interface UserProps
+{
+    username:string;
+    email: string;
+    subject:string;
+    nachricht:string;
+    req: NextRequest;
+    res: NextResponse;
+}
 
 
 //bolasys_client@outlook.de,kZ4xj8vkVABf9WB
-export default async function handler(req:NextApiRequest, res:NextApiResponse, )
+export default async function handler({username,email,subject,nachricht,req, res}:UserProps)
 {
 
     const transporter = nodemailer.createTransport({
@@ -21,24 +31,17 @@ export default async function handler(req:NextApiRequest, res:NextApiResponse, )
             }
         } as nodemailer.TransportOptions);
 
-    const { username,email, subject, nachricht} = req.body;
-
-    if (!nachricht || !username || !nachricht)
-    {
-        return res
-            .status(400)
-            .json({message: "Bitte fülle die fehlenden Felder aus!"})
-    }
 
     const mailData = {
-        from: email,
-        to:"Tina.Schmidtbauer@bolasys.de",
+        from: "Tina.Schmidtbauer@bolasys.de",
+        to:email,
         subject: subject,
         text: "Von: "+username+"Mit der Nachricht: "+nachricht,
     };
 
 
      transporter.sendMail(mailData);
+    
 
     return;
         

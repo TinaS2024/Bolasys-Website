@@ -77,7 +77,7 @@ const NewNavbar = () =>
                 </NavbarItem>
 
 
-                <NavbarItem >
+                <NavbarItem hidden>
                 <Login className="" titel="Login" inhalt="Bitte loggen Sie sich ein."/>
                 </NavbarItem>
                 

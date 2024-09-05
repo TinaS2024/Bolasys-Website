@@ -26,7 +26,7 @@ const KontaktPage = () =>{
 
     try
     {
-      const res = await fetch("../api/kontakt",{
+      const res = await fetch("/api/kontakt",{
         method: "POST", 
         headers: {
           "content-type": "application/json",
@@ -50,13 +50,14 @@ const KontaktPage = () =>{
   return (
     <div style={{marginLeft:"50%"}}>
         <Header titel="Kontakt" opacity="100%"/>
-        <div style={{marginLeft:"-100%"}} className="py-8">
-       
+        <div style={{marginLeft:"-100%"}} className="py-8">     
         
           <form onSubmit={handleSubmit}>
   
         <table className="tab">
           <tbody>
+            <tr><td>Bitte wählen Sie einen Benutzernamen und geben Sie eine E-Mail-Adresse an über die wir uns zurückmelden werden.</td><td></td></tr>
+            <tr><td height={30}></td><td></td></tr>
            <tr><td colSpan={2}>
             <Input 
             isRequired type="username" 
@@ -100,7 +101,7 @@ const KontaktPage = () =>{
               
               <tr><td height={30}></td><td></td></tr>
         
-        <tr><td></td><td><Button type="submit" className="bg-[#0e2d38] text-white mt-2">Absenden</Button></td></tr>
+        <tr><td><Button type="submit" className="bg-[#0e2d38] text-white mt-2">Absenden</Button></td><td></td></tr>
         </tbody>
         </table>    
         </form>
