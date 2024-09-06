@@ -1,5 +1,6 @@
 {
 	"name": "next-app-template",
+	"proxy": "http://127.0.0.1:3000",
 	"version": "0.0.1",
 	"private": true,
 	"scripts": {
@@ -45,6 +46,7 @@
 		"@upstash/rag-chat": "^1.1.1",
 		"ai": "^3.3.6",
 		"autoprefixer": "10.4.19",
+		"axios": "^1.7.7",
 		"clsx": "^2.0.0",
 		"framer-motion": "^11.1.1",
 		"gif-encoder-2": "^1.0.5",
