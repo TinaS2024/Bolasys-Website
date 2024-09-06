@@ -5,13 +5,11 @@ import { RadioGroup,Radio, Textarea, Input} from "@nextui-org/react";
 import { Button } from "@nextui-org/react";
 import swal from "sweetalert";
 
-/*import { sendEmail } from "@/actions";*/
 import {FormEvent } from "react";
 import {useState} from "react";
+import { NextResponse } from "next/server";
 
-/*https://www.youtube.com/watch?v=Te4ESNxq_xU 14:41  
-https://www.youtube.com/watch?v=esdFVfFA_nI
-*/
+
 
 
 const KontaktPage = () =>{
@@ -26,7 +24,7 @@ const KontaktPage = () =>{
 
     try
     {
-      const res = await fetch("/api/kontakt",{
+      const res: Response = await fetch("http://localhost:3000/api/email/",{
         method: "POST", 
         headers: {
           "content-type": "application/json",
@@ -39,6 +37,7 @@ const KontaktPage = () =>{
         }), 
       });
       swal({title: "Erfolgreich",text:"E-Mail wurde an Bolasys gesendet!", icon:"success"})
+      res.json()
  
     } catch (error:any)
     {
