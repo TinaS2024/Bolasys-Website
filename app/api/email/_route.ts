@@ -1,5 +1,6 @@
 
 "use server"
+
 import * as nodemailer from "nodemailer";
 import { NextRequest} from "next/server";
 
@@ -28,7 +29,7 @@ export async function POST({req}:UserProps)
             auth: {
                 user:"bolasys_client@outlook.de" ,
                 pass:"kZ4xj8vkVABf9WB" ,
-            },
+            },             
         } as nodemailer.TransportOptions); 
         
         const mailData = {
@@ -39,13 +40,13 @@ export async function POST({req}:UserProps)
          };
 
         try{
-                const result = await transporter.sendMail(mailData)
-                Response.json({result}, {status:200});
+            const res = await transporter.sendMail(mailData)
+            Response.json({res}, {status:200});
             } catch(error)
             {
                 Response.json({error: "Daten konnten nicht geschickt werden!"},{status:500})
             }
     }
- 
+
         
 }

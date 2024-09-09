@@ -16,24 +16,23 @@ const KontaktPage = () =>{
 
   const handleSubmit = async (e: FormEvent)=>
   {
-    e.preventDefault()
+    e.preventDefault();
 
-    try
-    {
-      const res: Response = await fetch("http://localhost:3000/api/email/",{
-        method: "POST", 
-        headers: {
-          "content-type": "application/json",
-        },
-        body: JSON.stringify({
-          username,
-          email,
-          subject,
-          nachricht,
-        }), 
-      });
+    const res = await fetch("http://localhost:3000/api/email",{
+      method: "POST", 
+      headers: {
+        "content-type": "application/json",
+      },
+      body: JSON.stringify({
+        username: username,
+        email: email,
+        subject: subject,
+        nachricht: nachricht,
+      }),
+      })
+await res.json()
+    try{
       swal({title: "Erfolgreich",text:"E-Mail wurde an Bolasys gesendet!", icon:"success"})
- 
     } catch (error:any)
     {
       console.error("Fehler", error)
