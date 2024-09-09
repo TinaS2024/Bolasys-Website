@@ -7,10 +7,6 @@ import swal from "sweetalert";
 
 import {FormEvent } from "react";
 import {useState} from "react";
-import { NextResponse } from "next/server";
-
-
-
 
 const KontaktPage = () =>{
   const [username, setUsername] = useState("")
@@ -37,7 +33,6 @@ const KontaktPage = () =>{
         }), 
       });
       swal({title: "Erfolgreich",text:"E-Mail wurde an Bolasys gesendet!", icon:"success"})
-      res.json()
  
     } catch (error:any)
     {

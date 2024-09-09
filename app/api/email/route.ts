@@ -29,8 +29,6 @@ export async function POST({req}:UserProps)
                 user:"bolasys_client@outlook.de" ,
                 pass:"kZ4xj8vkVABf9WB" ,
             },
-           
-            
         } as nodemailer.TransportOptions); 
         
         const mailData = {
@@ -47,15 +45,7 @@ export async function POST({req}:UserProps)
             {
                 Response.json({error: "Daten konnten nicht geschickt werden!"},{status:500})
             }
-  
     }
  
-
-    
-
-
-   
-  
-    
         
 }
