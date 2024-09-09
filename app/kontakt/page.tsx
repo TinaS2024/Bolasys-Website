@@ -8,6 +8,7 @@ import swal from "sweetalert";
 import {FormEvent } from "react";
 import {useState} from "react";
 
+
 const KontaktPage = () =>{
   const [username, setUsername] = useState("")
   const [email, setEmail] = useState("")
@@ -16,23 +17,25 @@ const KontaktPage = () =>{
 
   const handleSubmit = async (e: FormEvent)=>
   {
-    e.preventDefault();
+    e.preventDefault()
 
-    const res = await fetch("http://localhost:3000/api/email",{
-      method: "POST", 
-      headers: {
-        "content-type": "application/json",
-      },
-      body: JSON.stringify({
-        username: username,
-        email: email,
-        subject: subject,
-        nachricht: nachricht,
-      }),
-      })
-await res.json()
-    try{
+    try
+    {
+      const res: Response = await fetch("/api/kontakt/",{
+        method: "POST", 
+        headers: {
+          "content-type": "application/json",
+        },
+        body: JSON.stringify({
+          username,
+          email,
+          subject,
+          nachricht,
+        }), 
+      });
       swal({title: "Erfolgreich",text:"E-Mail wurde an Bolasys gesendet!", icon:"success"})
+      res.json()
+ 
     } catch (error:any)
     {
       console.error("Fehler", error)
