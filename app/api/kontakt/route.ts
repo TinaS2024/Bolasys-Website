@@ -1,9 +1,6 @@
 
 import { NextRequest,NextResponse } from "next/server";
 import * as nodemailer from "nodemailer";
-
-import type { NextApiRequest, NextApiResponse } from 'next'
-
 export interface UserProps
 {
     username:string;
@@ -14,10 +11,6 @@ export interface UserProps
     res: NextResponse;
 }
 
-
-//bolasys_client@outlook.de,kZ4xj8vkVABf9WB
-
- 
 type ResponseData = {
   message: string
 }
@@ -25,7 +18,7 @@ type ResponseData = {
 export async function POST(
   req : Request
 )
-//export default async function handler({username,email,subject,nachricht,req, res}:UserProps)
+
 {
     const {username,email,subject,nachricht} = await req.json()
     console.log("send mail")
@@ -47,9 +40,9 @@ export async function POST(
 
      const mailData = {
          from: "bolasys_client@outlook.de",
-         to: "Tina.Schmidtbauer@bolasys.de",//email,
+         to: "Tina.Schmidtbauer@bolasys.de",
          subject: subject,
-         text: "Von: "+username+" mit der E-Mail-Adresse: "+email+ " und der Nachricht: "+nachricht,
+         html: '<h2>Kundenanfrage</h2><p>Von: '+username+'</p><p>Email-Absender: '+email+'</p><p>Nachricht: <br/> '+nachricht+'</p>',
      };
 
 
