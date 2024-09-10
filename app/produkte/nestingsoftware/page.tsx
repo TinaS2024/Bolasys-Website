@@ -20,7 +20,7 @@ import stempel6 from "@/app/bilder/anordnen_gpe.png";
 
 export default function Nesting() {
 
-  const text1 = "Wir bieten Software an um Designs für Stempel auf einem Trommelgravier platzsparend anzuordnen."
+  const text1 = "Wir bieten Software an um Designs auf einer Arbeitsfläche oder Materialplatte automatisch platzsparend anzuordnen."
   const text2 = "Die Stempel-Designs werde mit Abstand zueinander beschnitten. Dies ist mit Bolanest möglich."
   const text3 = "Die Auswahl des Einzeldesigns wird abgerundet verkleinert."
   const text4 = "Die Auswahl des Einzeldesigns wird eckig verkleinert."
@@ -32,10 +32,10 @@ export default function Nesting() {
    
       <>
       <div style={{marginLeft:"50%"}}>
-      <Header opacity="100%" titel="Nesting-Software"></Header>  
+      <Header opacity="100%" titel="Nesting mit Bolanest oder GPE"></Header>  
       </div>
-      <div style={{width:"500px"}}>
-            <div><h3 style={{fontSize:"20pt"}} className="text-[#5ec4d2]">Material-Einsparung durch Nesting mit Bolanest oder GPE</h3></div>
+      <div style={{width:"500px",marginTop:"-150px"}}>
+            <div><h3 style={{fontSize:"24pt"}} className="text-[#5ec4d2]"></h3></div>
             <div><p style={{fontSize: "16pt",marginBottom:"50px"}} className="text-white">{text1}</p>
             </div>
             

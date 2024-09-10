@@ -31,7 +31,7 @@ const list = [
   return (  
 
 <>
-<div style={{marginLeft:"50%"}}>   
+<div style={{marginLeft:"50%",marginTop:"-150px"}}>   
 <Header opacity="100%" titel="Bolasys Blog"></Header>
 </div >
 {list.map((item, index) => (

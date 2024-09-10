@@ -37,8 +37,8 @@ export const Graph = () => {
 
   return (
  
-    <div style={{marginTop:"150px"}}> 
-     
+    <div style={{marginTop:"25px"}}> 
+    
 
     <div className="img1"><OwnModal className="img1" titel="GPE" inhalt={text1}/><Image src={bild0} alt="gpe" width={100} height={100}></Image></div>
     
