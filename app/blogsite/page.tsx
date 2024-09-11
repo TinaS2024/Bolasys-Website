@@ -3,6 +3,7 @@ import Blog_Artikel from "@/components/blog_artikel";
 import Header from "@/components/header";
 import image1 from "@/app/bilder/blog/openai.png";
 import image2 from "@/app/bilder/blog/w3css_logo.png";
+import Login from "@/components/login";
 
 export default async function BlogSite() {
 
@@ -26,19 +27,19 @@ const list = [
   {list.map((item) => (
     item.content.split("\n")
   ))}
-
   
   return (  
 
 <>
 <div style={{marginLeft:"50%",marginTop:"-150px"}}>   
 <Header opacity="100%" titel="Bolasys Blog"></Header>
-</div >
+</div>
+
 {list.map((item, index) => (
   <Blog_Artikel className="line" key={index} titel={item.titel} subject={item.subject} bildpfad={item.bildpfad} content={item.content} date={item.date}></Blog_Artikel>
 ))}
 
-
+<Login className="abstand_unten_klein"/>
    </>
 
   );

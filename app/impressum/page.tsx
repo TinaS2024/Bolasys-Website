@@ -1,7 +1,7 @@
 
 "use client"
 import { title } from "@/components/primitives";
-import { Card, CardHeader, CardBody, Tab} from "@nextui-org/react";
+import { Card, CardHeader, CardBody} from "@nextui-org/react";
 import TabZeile from "@/components/tabzeile";
 import Header from "@/components/header";
 

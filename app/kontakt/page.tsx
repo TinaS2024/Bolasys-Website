@@ -1,6 +1,7 @@
 "use client"
 
 import Header from "@/components/header";
+import { Card, CardHeader, CardBody} from "@nextui-org/react";
 import { RadioGroup,Radio, Textarea, Input} from "@nextui-org/react";
 import { Button } from "@nextui-org/react";
 import swal from "sweetalert";
@@ -44,38 +45,39 @@ const KontaktPage = () =>{
   }
 
   return (
-    <div style={{marginLeft:"50%"}}>
+    <div style={{marginLeft:"50%",marginTop:"-200px"}}>
         <Header titel="Kontakt" opacity="100%"/>
-        <div style={{marginLeft:"-100%"}} className="py-8">     
-        
-          <form onSubmit={handleSubmit}>
+        <div style={{marginLeft:"-100%"}} className="py-8 text-left">     
+        <Card className="max-w-[500px]">
+          <CardHeader>Bitte wählen Sie einen Benutzernamen und geben Sie <br/> eine E-Mail-Adresse an über die wir uns zurückmelden werden.</CardHeader>
+        <CardBody>
+      <form onSubmit={handleSubmit}>
   
         <table className="tab">
           <tbody>
-            <tr><td>Bitte wählen Sie einen Benutzernamen und geben Sie eine E-Mail-Adresse an über die wir uns zurückmelden werden.</td><td></td></tr>
-            <tr><td height={30}></td><td></td></tr>
+          <tr><td height={30}></td><td></td></tr>
            <tr><td colSpan={2}>
             <Input 
-            isRequired type="username" 
+            required type="username" 
+            placeholder="Benutzername"
             id="username"
             value={username}
             onChange={(e) =>setUsername(e.target.value)}
-            label="Username" 
             className="max-w-xs" 
             variant="bordered"/></td><td></td></tr>
-           
+             <tr><td height={5}></td><td></td></tr>
            <tr><td colSpan={2}> 
             <Input 
-            isRequired type="email" 
+            required type="email" 
             id="email"
             value={email}
             onChange={(e) =>setEmail(e.target.value)}
-            label="E-Mail" 
+            placeholder="E-Mail" 
             className="max-w-xs" 
             variant="bordered"/></td><td></td></tr>
-            
+             <tr><td height={30}></td><td></td></tr>
             <tr><td colSpan={2}>
-             <RadioGroup label="Wählen Sie ein Thema aus." color="warning" defaultValue="GPE">
+             <RadioGroup label="Wählen Sie einen Bereich aus zu dem Sie Fragen haben." color="warning" defaultValue="GPE">
               <Radio name="subject" value="GPE" onChange={(e) =>setSubject(e.target.value)}>GPE</Radio>
               <Radio name="subject" value="Designer" onChange={(e) =>setSubject(e.target.value)}>Designer</Radio>
               <Radio name="subject" value="CyDesigner" onChange={(e) =>setSubject(e.target.value)}>CyDesigner</Radio>
@@ -85,7 +87,7 @@ const KontaktPage = () =>{
              
              <tr><td height={30}></td><td></td></tr>
             
-            <tr><td colSpan={2}><Textarea style={{width:"400px"}}
+            <tr><td colSpan={2}><Textarea required style={{width:"400px"}}
               id="nachricht"
               value={nachricht}
               onChange={(e) =>setNachricht(e.target.value)}
@@ -101,11 +103,13 @@ const KontaktPage = () =>{
         </tbody>
         </table>    
         </form>
+        </CardBody>
+        </Card>
+        
         
           
        
         </div>
-      
         </div>
   );
 }

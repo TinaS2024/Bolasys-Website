@@ -14,7 +14,6 @@ export interface UserProps
 const Registration = ({titel,inhalt,className}:UserProps) =>
 {
     const {isOpen,onOpen,onOpenChange} = useDisclosure();
-    const bild0 = gpe;
 
     return(
         <div className={className}>
