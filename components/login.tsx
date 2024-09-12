@@ -4,6 +4,7 @@ import { Button } from "@nextui-org/button";
 import { Modal, ModalBody, ModalContent, ModalFooter, ModalHeader, useDisclosure } from "@nextui-org/react";
 import {Input} from "@nextui-org/react";
 import swal from "sweetalert";
+import Blogmodal from "./blogmodal";
 
 import { useState } from "react";
 import {FormEvent } from "react";
@@ -21,24 +22,42 @@ const Login = ({className}:UserProps) =>
 
     const [email, setEmail] = useState("")    
     const [password, setPassword] = useState("")
-
+    const hiddenDiv: HTMLElement | null = document.getElementById("artikel_blog"); 
+    const einloggen: HTMLElement | null = document.getElementById("log_in");
+    const ausloggen: HTMLElement | null = document.getElementById("log_out");
+    
     const handleSubmit = async (e: FormEvent)=>
         {
           e.preventDefault()
 
           if(email =="tina.schmidtbauer@bolasys.de" && password == "F)mP7$f,k2B)#*L")
-          {
-            swal({title: "Erfolgreich",text:"Anmeldung war Erfolgreich!", icon:"success"})
-          }
+          {   
+            /*swal({title: "Erfolgreich",text:"Anmeldung war Erfolgreich!", icon:"success"})  */
+            if (hiddenDiv != null && einloggen!= null && ausloggen != null)
+            {
+              hiddenDiv.style.display = "block"    
+              einloggen.style.display = "none"    
+              ausloggen.style.display = "block"
+            }
+          }    
           else{
             swal({title: "Fehler",text:"Falscher Benutzername oder Passwort.",icon:"error"})
           }
         }
+
+    const neuladen = () =>
+    {
+      if(ausloggen && einloggen != null)
+        {
+          /* Es scheint einen Bug mit Nextui zu geben bei dem man sich direkt nach dem Ausloggen nicht wieder einloggen kann, es sei denn man setzt die Daten neu.
+          Möglicherweise erkennt das Modal beim wieder-öffnen nicht, dass schon Daten drinnen stehen */
+        }
+      }
       
     return(
         <div className={className}>
         <Button style={{color:"white",backgroundColor:"#0e2d38"}} onPress={onOpen}><p className="text-lg">Login</p></Button>
-        <Modal 
+        <Modal
         isOpen={isOpen} 
         onOpenChange={onOpenChange}
         classNames={{base: "border-[#5ec4d2] bg-[#0e2d38] text-[#5ec4d2] px-10 gap-4 "}}>
@@ -51,14 +70,19 @@ const Login = ({className}:UserProps) =>
                     <ModalBody>
                        
                     <p style={{fontSize: "14pt"}} className="text-white"></p></ModalBody>
-                    <Input required type="text" label="E-Mail" name="email" className="max-w-xs" variant="bordered" value={email} onChange={(e) =>setEmail(e.target.value)}/>
+                    <Input required type="text" label="E-Mail" className="max-w-xs" variant="bordered" value={email} onChange={(e) =>setEmail(e.target.value)}/>
                     <Input required type="password" label="Password" name="password"  className="max-w-xs" variant="bordered" value={password} onChange={(e) =>setPassword(e.target.value)}/>
-                 <ModalFooter><Button className="bg-[#5ec4d2] text-black" type="submit" onPress={onClose}>Login</Button></ModalFooter>
-                   </form>  </>      
+                 <ModalFooter>
+                  <Button style={{display:"none"}} id="log_out" className="bg-[#5ec4d2] text-black" onPress={onClose} >Ausloggen</Button>  
+                  <Button id="log_in" className="bg-[#5ec4d2] text-black" onClick={neuladen} type="submit">Einloggen</Button>    
+                  <div style={{marginTop:"-25px"}}><Blogmodal idName="artikel_blog"/></div>
+                  </ModalFooter>
+                  </form></>      
                   )} 
-                 
             </ModalContent>  
         </Modal>
+     
+  
         </div>
        
     )
