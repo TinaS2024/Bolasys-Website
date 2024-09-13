@@ -5,15 +5,8 @@ import { useState } from "react";
 import { FormEvent } from "react";
 import swal from "sweetalert";
 
-/* https://stackoverflow.com/questions/32546100/how-to-write-data-to-a-json-file-using-javascript */
 
-var obj:
-{
-    titel:string,
-    subtitel:string,
-    inhalt:string,
-    datum:string,
-}
+/* https://dev.to/this-is-learning/readwrite-on-local-json-file-with-nextjs-part-51-8gg */
 
 export interface UserProps
 {
@@ -29,22 +22,25 @@ const Blogmodal = ({idName}:UserProps) =>
     const [inhalt, setInhalt] = useState("")
     const [datum, setDatum] = useState("")
 
-    const handlePost = async (e: FormEvent)=>
+    const saveData = async (e: FormEvent) =>
         {
-          e.preventDefault()
+            e.preventDefault()
+            try{
+                  const res = await fetch("/api/posts/route.ts",{
+                    method: "POST",
+                    headers: {
+                    "Content-Type":"application/json"
+                    },
+                    body: JSON.stringify({"titel": "Open Ai, ChatGPT","subtitel": "Künstliche Intelligenz","inhalt": "Blabla","datum":"01.09.2024"})
+                });
+                const data = res.json();
+                console.log(data)
+                swal({title: "Erfolgreich",text:"Blog-Artikel wurde erstellt!", icon:"success"})
 
-            try
+            }catch(error)
             {
-                var obj = {"titel": titel,"subtitel": subtitel,"inhalt": inhalt,"datum":datum};
-                localStorage.setItem("../app/json/blog.json", JSON.stringify(obj));
-                obj = JSON.parse(localStorage.getItem("../app/json/blog.json") || '""');
-                swal({title: "Erfolgreich",text:"Artikel konnte erstellt werden!", icon:"success"}) 
-                console.log(obj)
-            }
-            catch (error:any)
-            {
-              console.error("Fehler", error)
-              swal({title: "Fehler",text:"Artikel konnte nicht erstellt werden!",icon:"error"})
+                console.error("Fehler", error)
+                swal({title: "Fehler",text:"Es gab ein Problem beim Erstellen des Blog-Artikels.",icon:"error"})
             }
         }
 
@@ -60,7 +56,7 @@ const Blogmodal = ({idName}:UserProps) =>
                 {(onClose:any) =>
                 (
                     <>
-                    <form onSubmit={handlePost}>
+                    <form onSubmit={saveData}>
                     <ModalHeader><h3 style={{fontSize:"20pt"}} className="text-[#5ec4d2]">Neuer Blogartikel</h3></ModalHeader>
                     <ModalBody>
                     <Input required label="Titel" value={titel} placeholder="Titel" className="max-w-xs" variant="bordered" onChange={(e) =>setTitel(e.target.value)} />

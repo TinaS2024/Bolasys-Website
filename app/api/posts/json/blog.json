@@ -1,0 +1,16 @@
+{
+  "artikellist": [
+      {
+    "titel": "Titel 1",
+    "subtitel": "Subtitel 1",
+    "inhalt": "Inhalt 1",
+    "datum":"Datum 1"
+  },
+  {
+    "titel": "Titel 2",
+    "subtitel": "Subtitel 2",
+    "inhalt": "Inhalt 2",
+    "datum":"Datum 2"
+  }
+  ]
+}

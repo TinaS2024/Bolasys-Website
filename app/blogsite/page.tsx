@@ -4,9 +4,26 @@ import Header from "@/components/header";
 import image1 from "@/app/bilder/blog/openai.png";
 import image2 from "@/app/bilder/blog/w3css_logo.png";
 import Login from "@/components/login";
+import {useState,useEffect} from "react";
+
+/* https://nextjs.org/docs/app/building-your-application/data-fetching/fetching */
 
 export default async function BlogSite() {
+  /*const [posts,setPosts] = useState(null)
 
+  useEffect(() =>
+  {
+    async function dataFetch()
+    {
+      let res = await fetch("../api/posts/json/blog.json")
+      let posts = await res.json()
+      setPosts(posts)
+    }
+    dataFetch()
+  }, [])
+
+  if (!posts) return <div>Lade ...</div>*/
+  
 const list = [
     {
       titel: "Open Ai, ChatGPT",
@@ -39,6 +56,12 @@ const list = [
   <Blog_Artikel className="line" key={index} titel={item.titel} subject={item.subject} bildpfad={item.bildpfad} content={item.content} date={item.date}></Blog_Artikel>
 ))}
 
+{/*{posts.map((post:any) =>
+(
+  <Blog_Artikel className="line" titel={post.blog.titel} subject={post.blog_artikel.subtitel} bildpfad={image2} content={post.blog_artikel.inhalt} date={post.blog_artikel.datum}/>
+))
+}*/}
+ 
 <Login className="abstand_unten_klein"/>
    </>
 

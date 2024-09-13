@@ -19,7 +19,7 @@ const KontaktPage = () =>{
   const handleSubmit = async (e: FormEvent)=>
   {
     e.preventDefault()
-
+    
     try
     {
       const res: Response = await fetch("/api/kontakt/",{
