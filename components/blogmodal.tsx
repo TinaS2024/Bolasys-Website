@@ -9,6 +9,8 @@ import swal from "sweetalert";
 
 /* https://dev.to/this-is-learning/readwrite-on-local-json-file-with-nextjs-part-51-8gg */
 
+/* Axios benutzen ? https://stackabuse.com/sending-post-json-requests-with-axios */
+
 export interface UserProps
 {
     idName:string;
@@ -27,21 +29,30 @@ const Blogmodal = ({idName}:UserProps) =>
         {
             e.preventDefault()
             try{
-                  const res = await fetch("/api/posts/route.ts",{
+                  const res = await fetch("/api/posts/",{
                     method: "POST",
                     headers: {
                     "Content-Type":"application/json"
                     },
-                    body: JSON.stringify({"titel": "Open Ai, ChatGPT","subtitel": "Künstliche Intelligenz","inhalt": "Blabla","datum":"01.09.2024"})
-                });
-                const data = res.json();
+                    body: JSON.stringify({
+                        "artikellist": [
+                        {
+                        "titel": titel,
+                        "subtitel": subtitel,
+                        "inhalt": inhalt,
+                        "datum":datum
+                        }]
+                    })
+                })
+                const data = await res.json(); 
                 console.log(data)
-                swal({title: "Erfolgreich",text:"Blog-Artikel wurde erstellt!", icon:"success"})
+
+                swal({title: "Erfolgreich",text:"Blog-Artikel wurde erstellt!", icon:"success"});
 
             }catch(error)
             {
                 console.error("Fehler", error)
-                swal({title: "Fehler",text:"Es gab ein Problem beim Erstellen des Blog-Artikels.",icon:"error"})
+                swal({title: "Fehler",text:"Es gab ein Problem beim Erstellen des Blog-Artikels.",icon:"error"});
             }
         }
 

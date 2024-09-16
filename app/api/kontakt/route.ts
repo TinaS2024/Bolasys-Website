@@ -11,10 +11,6 @@ export interface UserProps
     res: NextResponse;
 }
 
-type ResponseData = {
-  message: string
-}
- 
 export async function POST(req : Request)
 {
     const {username,email,subject,nachricht} = await req.json()
