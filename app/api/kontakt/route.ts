@@ -10,7 +10,7 @@ export interface UserProps
     req: NextRequest;
     res: NextResponse;
 }
-
+ 
 export async function POST(req : Request)
 {
     const {username,email,subject,nachricht} = await req.json()
