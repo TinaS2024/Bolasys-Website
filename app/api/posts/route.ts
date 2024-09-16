@@ -2,12 +2,13 @@ import { NextRequest } from "next/server";
 import fsPromises from "fs/promises";
 import path from "path";
 
-const dataFilePath = path.join(process.cwd(), "../posts/json/blog.json");
+const dataFilePath = path.join(process.cwd(), "/app/json/blog.json", "utf8");
 
 export default async function handlerT(req:NextRequest) 
 {
     if (req.method === "GET")
     {
+        //Die Get-Methode steht in Page.tsx für Blog schon drinnen und ist hier eigentlich überflüssig
         const jsonData = await fsPromises.readFile(dataFilePath);
         const objectData = JSON.parse(jsonData.toString());
         Response.json(objectData),{status:200};
