@@ -2,18 +2,22 @@ import { NextRequest } from "next/server";
 import fsPromises from "fs/promises";
 import path from "path";
 
-export default async function POST(req:NextRequest) 
+export async function POST(req : Request)
+//export default async function POST(req:NextRequest) 
 {
-    if (req.method ==="POST")
+    const {artikel} = await req.json()
+    console.log("artikel", JSON.stringify(artikel))
+    //if (req.method ==="POST")
     {
         const dataFilePath = path.join(process.cwd()+"/app/json/blog.json");
+        console.log("dataFilePath", dataFilePath)
         //const dataFilePath = "../../json/blog.json";
         const jsonData = await fsPromises.readFile(dataFilePath);
         const objectData = JSON.parse(jsonData.toString());
     
-        const {titel,subtitel,inhalt,datum} = await req.json();
+        //const {titel,subtitel,inhalt,datum} = await req.json();
 
-        const newData = {
+/*         const newData = {
             artikellist: [{  
                         
             titel:titel,
@@ -23,12 +27,14 @@ export default async function POST(req:NextRequest)
             }]
             };
         objectData.push(newData);
-
-        const updatedData = JSON.stringify(objectData);
+ */       
+        objectData.artikellist.push(artikel);
+        const updatedData = JSON.stringify(objectData, null, 2);
 
         await fsPromises.writeFile(dataFilePath,updatedData);
 
-        return Response.json({ titel,subtitel,inhalt,datum})   
+        //return Response.json({ titel,subtitel,inhalt,datum})   
+        return Response.json(artikel)   
         }
         
     

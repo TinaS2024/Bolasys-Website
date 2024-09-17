@@ -55,7 +55,7 @@ const list = [
 */}
 
 {
-posts.artikellist.map((post:any) =>
+posts.artikellist.toReversed().map((post:any) =>
 (
   <Blog_Artikel key={post.id} className="line" titel={post.titel} subject={post.subtitel} bildpfad={img_platzhalter} content={post.inhalt} date={post.datum}/>
 ))

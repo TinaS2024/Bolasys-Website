@@ -37,13 +37,13 @@ const Blogmodal = ({idName}:UserProps) =>
                     "Content-Type":"application/json"
                     },
                     body: JSON.stringify({
-                        "artikellist": [
+                        "artikel": 
                         {
                         "titel": titel,
                         "subtitel": subtitel,
                         "inhalt": inhalt,
                         "datum":datum
-                        }]
+                        }
                     })
                 })
                 swal({title: "Erfolgreich",text:"Blog-Artikel wurde erstellt!", icon:"success"});  
