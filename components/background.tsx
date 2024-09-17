@@ -5,10 +5,11 @@ export const Background = () => {
 
   return (
     <header className="w-full flex items-center justify-center py-60">
-    <div className="w-full h-full flex items-center justify-center"
+    <div className="w-full h-full flex items-center justify-center background"
     style={{
     backgroundImage: `url(${banner1.src})`,
     position: "fixed",
+    marginTop: "-200px",
     backgroundSize: "cover",
     backgroundRepeat: "no-repeat",
     width: "100vw",

@@ -25,20 +25,19 @@ export const Graph = () => {
     const bild7 = montage;
 
     const text1 = "Das Herz der Bolays Bedien-Software."
-    const text2 = "Bestellungen und Design mit der Software."
-    const text3 = "Direkte Bestellungen über die Software."
-    const text4 = "Anbindung an Kiosksysteme im Laden." 
-    const text5 = "Kundenanfragen und Abfragen an die Software."
-    const text6 = "Anbindung an externer Software: Buchhaltung & Designprogramme." 
-    const text7 = "Direktverbindung zwischen Software und Maschine."
-
-    const text8 = "Montage der Maschinen.";
+    const text2 = "Bestellen und designen über das GPE."
+    const text3 = "Direkte Onlinebestellungen über das GPE."
+    const text4 = "Anbindung des GPE an Kiosksysteme im externen Laden." 
+    const text5 = "Kundenanfragen und Abfragen an das GPE"
+    const text6 = "Anbindung des GPE an externe Computer." 
+    const text7 = "Direktverbindung zwischen GPE und der Graviermaschine."
+    const text8 = "Anbindung des Montageprogramm an das GPE";
 
 
   return (
  
-    <div style={{marginTop:"150px"}}> 
-     
+    <div style={{marginTop:"25px"}}> 
+    
 
     <div className="img1"><OwnModal className="img1" titel="GPE" inhalt={text1}/><Image src={bild0} alt="gpe" width={100} height={100}></Image></div>
     

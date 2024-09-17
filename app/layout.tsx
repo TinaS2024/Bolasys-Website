@@ -5,7 +5,7 @@ import clsx from "clsx";
 import { Providers } from "./providers";
 import { siteConfig } from "@/config/site";
 import { fontSans } from "@/config/fonts";
-import NewNavbar from "@/components/newnavbar";
+/*import NewNavbar from "@/components/newnavbar";*/
 import { Divider } from "@nextui-org/react";
 
 
@@ -44,7 +44,7 @@ export default function RootLayout({
       >
         <Providers themeProps={{ attribute: "class", defaultTheme: "dark" }}>
           <div className="relative flex flex-col h-screen">     
-            <NewNavbar/>
+        {/*<NewNavbar/>   */} 
 
     
         <Divider />

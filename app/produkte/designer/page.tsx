@@ -10,12 +10,12 @@ export default function Designer() {
   const bild_rechts = pfeil_r;
   const bild_links = pfeil_l;
 
-    const text1 = "Hier finden sich der Warenkorb, die Bezeichnung des Designs, Spracheinstellung und der Abmeldebutton."
-    const text2 = "Hier gibt es Zeichen-Elemente zu finden."
-    const text3 = "Hier können detailierte Einstellungen für die Zeichenelemente eingestellt werden."
-    const text4 = "Hier befindet sich die Leinwand wo das Produkt-Design angezeigt wird."
-    const text5 = "Hier befinden sih die Produktbeschreibung mit Maßen und Preis."
-    const text6 = "Hier gibt es eine kleine Produktvorschau."
+    const text1 = "Warenkorb mit Bezeichnung des Designs, sowie der Spracheinstellung und des Abmeldebutton."
+    const text2 = "Zeichen-Elemente zum Erstellen des Designs"
+    const text3 = "Detailierte Einstellungen für die Zeichenelemente, inklusive erweiterte Einstellungen"
+    const text4 = "Canvas-Anzeige des erstellten Produkts."
+    const text5 = "Produktbeschreibung mit Maßen und Preis."
+    const text6 = "Minimierte Produktvorschau."
   
     return (
    

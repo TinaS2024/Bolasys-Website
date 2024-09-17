@@ -14,7 +14,7 @@ const NewNavbar = () =>
     }
      {/*endContent={icon.chevron}*/}
     return(
-        <div className="fixed h-screen-full" style={{zIndex: "10",width:"100%"}}>
+        <div className="fixed h-screen-full" style={{zIndex: "10",width:"100%",marginTop:"150px"}}>
         <Navbar isBordered maxWidth="full">
             <NavbarContent justify="start">
 
@@ -51,9 +51,9 @@ const NewNavbar = () =>
                         <Link color="foreground" className="text-lg" href="/produkte/designer">Designer</Link>
                         </DropdownItem>
 
-                        <DropdownItem key="cydesigner">
+                        {/*<DropdownItem key="cydesigner">
                         <Link color="foreground" className="text-lg" href="/produkte/cydesigner">CyDesigner</Link>
-                        </DropdownItem>
+                        </DropdownItem>*/}
 
                         <DropdownItem key="nestingsoftware">
                         <Link color="foreground" className="text-lg" href="/produkte/nestingsoftware">Nesting-Software</Link>

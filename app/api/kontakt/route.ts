@@ -1,9 +1,6 @@
 
 import { NextRequest,NextResponse } from "next/server";
 import * as nodemailer from "nodemailer";
-
-import type { NextApiRequest, NextApiResponse } from 'next'
-
 export interface UserProps
 {
     username:string;
@@ -13,23 +10,11 @@ export interface UserProps
     req: NextRequest;
     res: NextResponse;
 }
-
-
-//bolasys_client@outlook.de,kZ4xj8vkVABf9WB
-
  
-type ResponseData = {
-  message: string
-}
- 
-export async function POST(
-  req : Request
-)
-//export default async function handler({username,email,subject,nachricht,req, res}:UserProps)
+export async function POST(req : Request)
 {
     const {username,email,subject,nachricht} = await req.json()
-    console.log("send mail")
-    console.log({username,email,subject,nachricht})
+
     const transporter = nodemailer.createTransport({
             host:"smtp-mail.outlook.com",
             service: "Outlook",
@@ -47,9 +32,9 @@ export async function POST(
 
      const mailData = {
          from: "bolasys_client@outlook.de",
-         to:email,
+         to: "beate.lang@bolasys.de",
          subject: subject,
-         text: "Von: "+username+"Mit der Nachricht: "+nachricht,
+         html: '<h2>Kundenanfrage an Bolasys GmbH</h2><p>Von: '+username+'</p><p>Email-Absender: '+email+'</p><p>Nachricht: <br/> '+nachricht+'</p>',
      };
 
 

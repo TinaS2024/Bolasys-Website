@@ -13,6 +13,7 @@ a
 cursor: pointer;
 }
 
+
 .line 
 {
   white-space: pre-line;
@@ -61,7 +62,7 @@ cursor: pointer;
 
   .abstand_oben
   {
-    margin-top: 150px;
+    margin-top: 100px;
   }
   .abstand_links
   {
@@ -216,7 +217,7 @@ cursor: pointer;
       background-repeat: no-repeat;
       width: 1000px;
       height: 650px;
-      margin-top: 1%;
+      margin-top: -5%;
       margin-left: -25%;
      }
 
@@ -247,7 +248,6 @@ cursor: pointer;
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center;
-
      }
 
 @media screen and (max-width: 500px)
@@ -256,7 +256,7 @@ cursor: pointer;
   {
    width: 600px;
    height: 390px;
-   margin-top: 1%;
+   margin-top: -5%;
    margin-left: -45%;
   }
 
@@ -278,7 +278,7 @@ cursor: pointer;
   {
    width: 600px;
    height: 390px;
-   margin-top: 1%;
+   margin-top: -20%;
    margin-left: -45%;
   }
 
