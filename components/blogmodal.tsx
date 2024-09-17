@@ -5,6 +5,7 @@ import {Input, Textarea} from "@nextui-org/react";
 import { useState } from "react";
 import { FormEvent } from "react";
 import swal from "sweetalert";
+import path from "path";
 
 
 /* https://dev.to/this-is-learning/readwrite-on-local-json-file-with-nextjs-part-51-8gg */
@@ -24,12 +25,13 @@ const Blogmodal = ({idName}:UserProps) =>
     const [subtitel, setSubtitel] = useState("")  
     const [inhalt, setInhalt] = useState("")
     const [datum, setDatum] = useState("")
+    const dataFilePath = path.join(process.cwd()+"/app/json/blog.json");
 
     const saveData = async (e: FormEvent) =>
         {
             e.preventDefault()
             try{
-                  const res = await fetch("/api/posts/",{
+                  const res: Response = await fetch("/api/posts/",{
                     method: "POST",
                     headers: {
                     "Content-Type":"application/json"
@@ -44,10 +46,9 @@ const Blogmodal = ({idName}:UserProps) =>
                         }]
                     })
                 })
-                const data = await res.json(); 
-                console.log(data)
-
-                swal({title: "Erfolgreich",text:"Blog-Artikel wurde erstellt!", icon:"success"});
+                swal({title: "Erfolgreich",text:"Blog-Artikel wurde erstellt!", icon:"success"});  
+                console.log(dataFilePath)
+                res.json()
 
             }catch(error)
             {

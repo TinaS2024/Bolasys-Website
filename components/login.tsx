@@ -32,7 +32,6 @@ const Login = ({className}:UserProps) =>
 
           if(email =="tina.schmidtbauer@bolasys.de" && password == "F)mP7$f,k2B)#*L")
           {   
-            /*swal({title: "Erfolgreich",text:"Anmeldung war Erfolgreich!", icon:"success"})  */
             if (hiddenDiv != null && einloggen!= null && ausloggen != null)
             {
               hiddenDiv.style.display = "block"    
