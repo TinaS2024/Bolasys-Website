@@ -18,7 +18,7 @@ const Header = ({opacity}:UserProps) =>
            backgroundSize: "cover",
            backgroundRepeat: "no-repeat",
            width: "100vw",
-           height: "50vh",
+           height: "59vh",
            opacity: `${opacity}`,
            zIndex:"1"
          }}>
@@ -28,12 +28,11 @@ const Header = ({opacity}:UserProps) =>
             <Titel_Subtitel titel="NESTING" subtitel="" path="/produkte/nestingsoftware"></Titel_Subtitel>
             <Titel_Subtitel titel="UI" subtitel="" path="/produkte/ui"></Titel_Subtitel>
             </div>
-           </div>
            <NewNavbar></NewNavbar>
-           
+               </div>
            </header>
-           
-</>
+       
+        </>
         )
     }
 

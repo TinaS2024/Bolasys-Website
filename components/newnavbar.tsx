@@ -14,7 +14,7 @@ const NewNavbar = () =>
      {/*endContent={icon.chevron}*/}
     return(
         <div className="fixed h-screen-full" style={{zIndex: "10",width:"100%",marginTop:"500px"}}>
-        <Navbar isBordered maxWidth="full"  style={{opacity:"100%"}} classNames={{base: "bg-blue"}}>
+        <Navbar maxWidth="full"  style={{opacity:"60%"}} classNames={{base: "bg-blue"}}>
             <NavbarContent justify="start">
 
             <NavbarBrand className="mr-50">

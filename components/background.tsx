@@ -16,7 +16,6 @@ export const Background = () => {
     height: "100vh",
     opacity: "40%",
   }}>
-    
     </div>
     </header>
   
