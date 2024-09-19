@@ -1,6 +1,7 @@
 "use client"
 
 import Header from "@/components/header";  
+import Titel_Subtitel_nolink from "@/components/titel_subtitel_nolink";
 import OwnModal from "@/components/ownmodal";
 import magento_bild from "@/app/bilder/magento.png";
 import next_bild from "@/app/bilder/Next.jpg";
@@ -18,10 +19,11 @@ export default function UI() {
     return (
      
       <div style={{marginLeft:"50%"}} >
-          <Header opacity="100%" titel="UI-Bedienoberflächen"></Header>
-
-          <div style={{width:"500px",marginLeft:"-100%",marginTop:"-100px"}}>
-            <div><h3 style={{fontSize:"16pt"}} className="text-white">Wir können User-Interfaces mit Java-Script-Frameworks erstellen und Sie in CMS-Systeme einbinden.</h3></div>
+          <Header opacity="100%"></Header>
+          <div style={{width:"500px",marginLeft:"-100%"}}>
+            <div>
+               <Titel_Subtitel_nolink titel="UI" subtitel="Wir können User-Interfaces mit Java-Script-Frameworks erstellen und Sie in CMS-Systeme einbinden."/>  
+            </div>
           </div>
           <div style={{marginLeft:"-80%"}}>
           <div><OwnModal className="py-5" titel="Magento 2" inhalt={text1}/><Image style={{marginTop:"-80px",marginLeft:"100px"}} src={bild1} alt="magento" width={200} height={200}></Image></div>

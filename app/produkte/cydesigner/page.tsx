@@ -6,7 +6,7 @@ export default function CyDesigner() {
     return (
    
       <div style={{marginLeft: "50%"}}>
-          <Header opacity="100%" titel="CyDesigner"></Header>
+          <Header opacity="100%"></Header>
           
           <div id="screen">
           </div>         

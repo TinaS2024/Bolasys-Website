@@ -95,7 +95,7 @@ cursor: pointer;
   }
 
 
-  .img1,.img2,.img3,.img4,.img5,.img6, .img7, .img8
+  .img1,.img2,.img3,.img4,.img5,.img6, .img7, .img8, .img9,.img11
   {
     position: absolute;
     width:100px;
@@ -104,16 +104,30 @@ cursor: pointer;
     filter:brightness(200%)
   }
 
+  .img10
+  {
+    position: absolute;
+    width:100px;
+    height:100px;
+    z-index:0;
+    filter:brightness(150%)
+  }
+
   
-  .img1:hover,.img2:hover,.img3:hover,.img4:hover,.img5:hover,.img6:hover, .img7:hover, .img8_1:hover,.img8_2:hover,.img8_3:hover, .img8_4:hover
+  .img1:hover,.img2:hover,.img3:hover,.img4:hover,.img5:hover,.img6:hover, .img7:hover, .img8:hover, .img9:hover, .img11:hover
   {
     filter:brightness(300%)
   }
 
-  /*GPE*/
+  .img10:hover
+  {
+    filter:brightness(200%)
+  }
+
+  /* Microservice */
   .img1
   {
-    margin-top: 8%;
+    margin-top: 5%;
     margin-left: 0%;
   }
 
@@ -124,105 +138,97 @@ cursor: pointer;
     margin-left: 0%;
   }
 
-  /* Webstore*/
+  /* Webstore */
   .img3
   {
     margin-top:-8%;
-    margin-left: -10%;
+    margin-left: -7%;
   }
 
   /* Shop */
   .img4
   {
-    margin-top: -5%;
-    margin-left: 12%;
+    margin-top: -8%;
+    margin-left: 8%;
   }
 
   /* E-Mail */
   .img5
   {
-    margin-top: 0%;
-    margin-left: -20%;
+    margin-top: -4%;
+    margin-left: -12%;
     width: 80px;
   }
 
   /* Computer */
   .img6
   {
-    margin-top: 10%;
-    margin-left: 15%;
+    margin-top: -1%;
+    margin-left: 14%;
   }
 
   /* Maschine */
   .img7
   {
-    margin-top: 25%;
-    margin-left: 0%;
+    margin-top: 20%; 
+    margin-left: 1%; 
     width:80px;
   }
 
    /* Montage */
    .img8
    {
-     margin-top: 15%;
-     margin-left: -15%;
+     margin-top: 16%;
+     margin-left: 10%;
      width:100px;
    }
 
-  /* Unteren 4 Symbole */
+    /* Transporter */
+  .img9
+  {
+    margin-top: 12%;
+    margin-left: 16%;
+    width:80px;
+  }
 
-    .img_unten
+  /* Designer */
+  .img10
+  {
+    margin-top: 17%; 
+    margin-left: -8%; 
+    width:80px;
+  }
+
+   /* Auftrag */
+   .img11
+   {
+     margin-top: 10%;
+     margin-left: -12%;
+     width:50px;
+   }
+
+  .img_unten
   {
     position: absolute;
     margin-top: 20%;
     margin-left: 0%;
   }
-    /* Montage */
-    .img8_1
+
+
+  #designerbild
     {
-      position: relative;
-      float: left;
-      width:70px;
-    }
-
-     /* Versand */
-     .img8_2
-     {
-      position: relative;
-      float: left;
-      width:60px;
-     }
-
-      /* Verpackung */
-    .img8_3
-    {
-      position: relative;
-      float: left;
-      width:60px;
-    }
-
-     /* Transport */
-     .img8_4
-     {
-      position: relative;
-      float: left;
-      width: 120px;
-     }
-
-     #designerbild
-     {
       background-image: url("../app/bilder/Designer.png");
       position: absolute;
       background-size: contain;
       background-repeat: no-repeat;
       width: 1000px;
       height: 650px;
-      margin-top: -5%;
-      margin-left: -25%;
-     }
+      margin-top: -0%;
+      margin-left: -15%;
+    }
 
-     #screen
-     {
+  #screen
+    {
       position: absolute;
       background-image: url("../app/bilder/cy_screen_dark.png");
       background-size: contain;
@@ -231,7 +237,7 @@ cursor: pointer;
       height:584px;
       margin-top: -5%;
       margin-left: -25%;
-     }
+    }
 
      #screen:hover
      {
@@ -250,7 +256,13 @@ cursor: pointer;
       background-position: center;
      }
 
-@media screen and (max-width: 500px)
+     #nesting_cards
+     {
+       margin-left: -50%;
+     }
+   
+
+@media screen and (max-width: 800px)
 {
   #designerbild
   {
@@ -266,8 +278,13 @@ cursor: pointer;
     height: 325px;
     margin-top: 1%;
     margin-left: -45%;
-
   }
+    
+  #nesting_cards
+  {
+    margin-left: 10%;
+  }
+
 
 }
   
@@ -279,7 +296,7 @@ cursor: pointer;
    width: 600px;
    height: 390px;
    margin-top: -20%;
-   margin-left: -45%;
+   margin-left: -25%;
   }
 
   #screen
@@ -291,56 +308,86 @@ cursor: pointer;
    width:441px;
    height:292px;
    margin-top:1% ;
-   margin-left: -50%;
+   margin-left: -25%;
   }
 
+  /* Microservice */
   .img1
   {
-    margin-top: -5%;
-    margin-left: -5%;
+    margin-top: -15%;
+    margin-left: 0%;
   }
 
+  /* Telefon */
   .img2
   {
-    margin-top: -35%;
-    margin-left: -3%;
+    margin-top: -50%;
+    margin-left: 4%;
   }
 
+  /* Webstore */
   .img3
   {
-    margin-top:-30%;
-    margin-left: -30%;
+    margin-top:-45%;
+    margin-left: -17%;
   }
 
+  /* Shop */
   .img4
   {
-    margin-top: -35%;
-    margin-left: 20%;
+    margin-top: -45%;
+    margin-left: 18%;
   }
 
+  /* E-Mail */
   .img5
   {
-    margin-top: -5%;
-    margin-left: -35%;
+    margin-top: -25%;
+    margin-left: -25%;
   }
 
+  /* Computer */
   .img6
   {
-    margin-top: 0%;
+    margin-top: -23%;
     margin-left: 25%;
   }
 
+  /* Maschine */
   .img7
   {
-    margin-top: 26%;
-    margin-left: 7%;
+    margin-top: 20%; 
+    margin-left: 1%; 
   }
 
-  .img8
+   /* Montage */
+   .img8
+   {
+     margin-top: 11%;
+     margin-left: 22%;
+   }
+
+    /* Transporter */
+  .img9
   {
-    margin-top: 24%;
-    margin-left: -30%;
+    margin-top: -5%;
+    margin-left: 30%;
   }
+
+  /* Designer */
+  .img10
+  {
+    margin-top: 15%; 
+    margin-left: -20%; 
+  }
+
+   /* Auftrag */
+   .img11
+   {
+     margin-top: -5%;
+     margin-left: -25%;
+   }
+
 
   .img_unten
   {
@@ -352,6 +399,13 @@ cursor: pointer;
   {
     margin-top: 0px;
   }
+
+  .card-container
+{
+  position: absolute;
+  margin-left: -45%;
+  top: 32%;
+}
 
 }
 
@@ -372,7 +426,6 @@ cursor: pointer;
   position: absolute;
   margin-left: -45%;
   margin-top: 50%;
-
 }
 
 /* HTML-Canvas Sterne */

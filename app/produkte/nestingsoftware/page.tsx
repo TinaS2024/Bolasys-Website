@@ -1,5 +1,7 @@
 
 import Header from "@/components/header";
+import Titel_Subtitel_nolink from "@/components/titel_subtitel_nolink";
+
 import NestingCard from "@/components/nesting_card";
 import bild1 from "@/app/bilder/clipping_abstand.svg";
 import bild2 from "@/app/bilder/schrumpfen_nest.svg";
@@ -13,10 +15,6 @@ import stempel3 from "@/app/bilder/schrumpfen_bolanest.png";
 import stempel4 from "@/app/bilder/gpe_schrumpfen.png";
 import stempel5 from "@/app/bilder/anordnung_bolanest.png";
 import stempel6 from "@/app/bilder/anordnen_gpe.png";
-
-
-
-
 
 export default function Nesting() {
 
@@ -32,26 +30,24 @@ export default function Nesting() {
    
       <>
       <div style={{marginLeft:"50%"}}>
-      <Header opacity="100%" titel="Nesting mit Bolanest oder GPE"></Header>  
+      <Header opacity="100%"></Header>  
       </div>
-      <div style={{width:"500px",marginTop:"-150px"}}>
-            <div><h3 style={{fontSize:"24pt"}} className="text-[#5ec4d2]"></h3></div>
-            <div><p style={{fontSize: "16pt",marginBottom:"50px"}} className="text-white">{text1}</p>
-            </div>
-            
-      <div className="flex flex-row abstand_unten_klein" >
-      <NestingCard pathstemp={stempel1} className="mr-5 min-w-[250px] items-center" titel="Schritt 1A: Einfaches Clipping mit Abstand" path={bild1} width={150} height={150} beschreibung={text2}/>
-      <NestingCard pathstemp={stempel2} className="mr-5 min-w-[250px] items-center" titel="Schritt 1B: Einfaches Clipping ohne Abstand" path={bild6} width={150} height={150} beschreibung={text7}/>
+      
+      <div style={{width:"500px"}}>
+       <Titel_Subtitel_nolink titel="Nesting" subtitel={text1}/>     
+      <div id="nesting_cards" className="flex flex-row abstand_unten_klein nesting_cards" >
+      <NestingCard pathstemp={stempel1} className="mr-5 md:min-w-[500px] sm:max-w-[200px]" titel="Schritt 1A: Einfaches Clipping mit Abstand" path={bild1} width={150} height={150} beschreibung={text2}/>
+      <NestingCard pathstemp={stempel2} className="mr-5 md:min-w-[500px] sm:max-w-[200px]" titel="Schritt 1B: Einfaches Clipping ohne Abstand" path={bild6} width={150} height={150} beschreibung={text7}/>
       </div>
 
-    <div className="flex flex-row abstand_unten_klein">
-      <NestingCard pathstemp={stempel3} className="mr-5 min-w-[250px] items-center" titel="Schritt 2A: Komplexeres Clipping mit Schrumpfen durch Bolanest" path={bild2} width={100} height={100} beschreibung={text3} />
-      <NestingCard pathstemp={stempel4} className="mr-5 min-w-[250px] items-center" titel="Schritt 2B: Komplexeres Clipping mit Schrumpfen durch GPE" path={bild3} width={100} height={100} beschreibung={text4} />
+    <div id="nesting_cards" className="flex flex-row abstand_unten_klein nesting_cards">
+      <NestingCard pathstemp={stempel3} className="mr-5 md:min-w-[500px] sm:max-w-[200px]" titel="Schritt 2A: Komplexeres Clipping mit Schrumpfen durch Bolanest" path={bild2} width={100} height={100} beschreibung={text3} />
+      <NestingCard pathstemp={stempel4} className="mr-5 md:min-w-[500px] sm:max-w-[200px]" titel="Schritt 2B: Komplexeres Clipping mit Schrumpfen durch GPE" path={bild3} width={100} height={100} beschreibung={text4} />
     </div>
 
-    <div className="flex flex-row abstand_unten_klein">
-      <NestingCard pathstemp={stempel5} className="mr-5 min-w-[250px] items-center" titel="Schritt 3A: Anordnung durch Bolanest" path={bild4} width={100} height={100} beschreibung={text5} />
-      <NestingCard pathstemp={stempel6} className="mr-5 min-w-[250px] items-center" titel="Schritt 3B: Anordnung durch GPE" path={bild5} width={100} height={100} beschreibung={text6} />
+    <div id="nesting_cards" className="flex flex-row abstand_unten_klein nesting_cards">
+      <NestingCard pathstemp={stempel5} className="mr-5 md:min-w-[500px] sm:max-w-[200px]" titel="Schritt 3A: Anordnung durch Bolanest" path={bild4} width={100} height={100} beschreibung={text5} />
+      <NestingCard pathstemp={stempel6} className="mr-5 md:min-w-[500px] sm:max-w-[200px]" titel="Schritt 3B: Anordnung durch GPE" path={bild5} width={100} height={100} beschreibung={text6} />
     </div>
  
     </div>

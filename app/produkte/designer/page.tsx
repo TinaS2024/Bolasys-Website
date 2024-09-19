@@ -1,5 +1,6 @@
 "use client"
 import Header from "@/components/header";
+import Titel_Subtitel_nolink from "@/components/titel_subtitel_nolink";
 import DesignerTooltip from "@/components/designer_tooltip";
 import pfeil_r from "@/app/bilder/pfeil_rechts.png";
 import pfeil_l from "@/app/bilder/pfeil_links.png";
@@ -20,7 +21,12 @@ export default function Designer() {
     return (
    
       <>
-          <Header opacity="100%" titel="Designer"></Header>
+      <div style={{marginLeft:"50%"}}>
+      <Header opacity="100%"></Header>  
+      </div>
+      <div>
+    <Titel_Subtitel_nolink titel="Designer" subtitel=""/>  
+    </div>
           <div id="designerbild">
           <DesignerTooltip top="1%" left="30%" titel="Header" beschreibung={text1} bildpfad={bild_rechts}/>
           <DesignerTooltip top="10%" left="5%" titel="Zeichenelemente" beschreibung={text2} bildpfad={bild_links}/>

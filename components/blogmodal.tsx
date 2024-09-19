@@ -8,9 +8,10 @@ import swal from "sweetalert";
 import path from "path";
 
 
-/* https://dev.to/this-is-learning/readwrite-on-local-json-file-with-nextjs-part-51-8gg */
-
-/* Axios benutzen ? https://stackabuse.com/sending-post-json-requests-with-axios */
+/* To-Do:
+1. Ein Bild aus einem externen Ordner hochladen und im Public-Ordner speichern für die Anzeige auf einen Blog-Artikel. ->https://www.youtube.com/watch?v=lqUfFbW9weM
+2. Das Datum automatisch generieren statt händig eingeben.
+*/
 
 export interface UserProps
 {
@@ -21,10 +22,18 @@ const Blogmodal = ({idName}:UserProps) =>
 {
     const {isOpen,onOpen,onOpenChange} = useDisclosure();
 
+    const date = new Date();
+    const formatiert_date = date.toLocaleString("de-DE", {
+            day: "numeric",
+            month: "short",
+            year: "numeric"
+        });
+
     const [titel, setTitel] = useState("")    
     const [subtitel, setSubtitel] = useState("")  
     const [inhalt, setInhalt] = useState("")
-    const [datum, setDatum] = useState("")
+    const [bildpfad, setBildpfad] = useState("placeholder.png")
+    const [datum, setDatum] = useState(formatiert_date)
     const dataFilePath = path.join(process.cwd()+"/app/json/blog.json");
 
     const saveData = async (e: FormEvent) =>
@@ -42,6 +51,7 @@ const Blogmodal = ({idName}:UserProps) =>
                         "titel": titel,
                         "subtitel": subtitel,
                         "inhalt": inhalt,
+                        "bildpfad": bildpfad,
                         "datum":datum
                         }
                     })
@@ -75,6 +85,7 @@ const Blogmodal = ({idName}:UserProps) =>
                     <Input required label="Titel" value={titel} placeholder="Titel" className="max-w-xs" variant="bordered" onChange={(e) =>setTitel(e.target.value)} />
                     <Input required label="Subtitel" value={subtitel} placeholder="Subtitel" className="max-w-xs" variant="bordered" onChange={(e) =>setSubtitel(e.target.value)} />
                     <Textarea required label="Inhalt" value={inhalt} placeholder="Inhalt" className="max-w-xs" variant="bordered" minRows={5} onChange={(e) =>setInhalt(e.target.value)}/>
+                    {/*<Input required label="Bildpfad" value={bildpfad}  placeholder="placeholder.png" className="max-w-xs" variant="bordered" onChange={(e) =>setBildpfad(e.target.value)}/>*/}
                     <Input required label="Datum" value={datum}  placeholder="01.01.2024" className="max-w-xs" variant="bordered" onChange={(e) =>setDatum(e.target.value)}/>
                     </ModalBody>
                  <ModalFooter><Button className="bg-[#5ec4d2] text-black" type="submit" onPress={onClose}>Artikel erstellen</Button></ModalFooter>

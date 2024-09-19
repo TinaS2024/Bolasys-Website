@@ -19,8 +19,8 @@ const MyCard = () =>
   const text12 = "Datenübergabe an Versanddienstleister"
 
     return (
-<div style={{marginLeft:"-35%"}} className="card-container flex sm:flex-col md:flex-row abstand_unten">
-    <Card style={{margin:"15px"}} className="max-w-[400px]">
+<div style={{marginLeft:"-25%",marginTop:"600px"}} className="card-container flex sm:flex-col md:flex-row">
+    <Card style={{margin:"15px",marginBottom:"100px"}} className="max-w-[400px]">
       <CardHeader style={{zIndex: "0"}}> <h3 className="text-[#2695a0] text-xl">Auftragsverwaltung</h3></CardHeader>
       <CardBody>
         <Punkt text={text1}/>
@@ -31,7 +31,7 @@ const MyCard = () =>
         </CardBody>
     </Card>
 
-    <Card style={{margin:"15px"}} className="max-w-[400px]">
+    <Card style={{margin:"15px",marginBottom:"100px"}} className="max-w-[400px]">
       <CardHeader style={{zIndex: "0"}}> <h3 className="text-[#2695a0] text-xl">Lagermanagement</h3></CardHeader>
       <CardBody>
         <Punkt text={text6}/>
@@ -40,7 +40,7 @@ const MyCard = () =>
         </CardBody>
     </Card>
     
-    <Card style={{margin:"15px"}} className="max-w-[400px]">
+    <Card style={{margin:"15px",marginBottom:"100px"}} className="max-w-[400px]">
       <CardHeader style={{zIndex: "0"}}> <h3 className="text-[#2695a0] text-xl">Montageprogramm</h3></CardHeader>
       <CardBody>
         <Punkt text={text9}/>
@@ -49,7 +49,8 @@ const MyCard = () =>
         <Punkt text={text12}/>
         </CardBody>
     </Card>
-        </div>
+
+        </div>    
     )
 }
 

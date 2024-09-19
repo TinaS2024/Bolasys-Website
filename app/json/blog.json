@@ -4,14 +4,22 @@
       "titel": "Open Ai, ChatGPT",
       "subtitel": "Künstliche Intelligenz",
       "inhalt": "OpenAI ist ein ursprünglich als Non-Profit-Organisation gegründetes und heute auch kommerziell agierendes Unternehmen.\n Es beschäftigt sich mit der Erforschung und Entwicklung von Künstlicher Intelligenz (KI).\n Bekannt wurde OpenAI durch Projekte wie den KI-Bildgenerator DALL-E oder den Chatbot ChatGPT.\n Anfang 2023 wurde bekannt, dass Microsoft eine mehrjährige, milliardenschwere Investition in OpenAI plant.",
+      "bildpfad": "openai.png",
       "datum": "01.09.2024"
     },
     {
       "titel": "W3.CSS",
       "subtitel": "Web-Programmierung",
       "inhalt": "W3.CSS ist ein modernes CSS-Framework mit eingebauter Reaktionsfähigkeit:\n \n • Kleiner und schneller als andere CSS-Frameworks.\n • Einfacher zu erlernen und einfacher zu verwenden als andere CSS-Frameworks. \n • Verwendet nur Standard-CSS (keine jQuery- oder JavaScript-Bibliothek).\n • Beschleunigt und vereinfacht die Webentwicklung.\n • Unterstützt standardmäßig modernes responsives Design (mobile first). \n • Sorgt für CSS-Gleichheit in allen Browsern. Chrome, Firefox, IE, Safari, und mehr. \n • Bietet CSS-Gleichheit für alle Geräte. PC, Laptop, Tablet und Handy:\n Geben Sie auf der linken Seite etwas Markdown ein. \nSehen Sie HTML auf der rechten Seite",
+      "bildpfad": "w3css_logo.png",
       "datum": "30.08.2024"
+    },
+    {
+      "titel": "nvn",
+      "subtitel": "nbvn",
+      "inhalt": "bnvnv",
+      "bildpfad": "placeholder.png",
+      "datum": "18. Sept. 2024"
     }
-  
   ]
 }

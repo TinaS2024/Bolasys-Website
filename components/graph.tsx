@@ -5,12 +5,15 @@ import shop from "@/app/bilder/Shop.png";
 import maschine from "@/app/bilder/Graviermaschine.png";
 import email from "@/app/bilder/E-mail.png";
 import computer from "@/app/bilder/Computer_extern.png";
-
 import montage from "@/app/bilder/Tools.png";
+import transporter from "@/app/bilder/Car_Transport.png";
+import designer from "@/app/bilder/designer_icon.png";
+import auftrag from "@/app/bilder/Auftragsverwaltung.png";
 
 import OwnModal from "@/components/ownmodal";
 import Image from "next/image";
-
+import DesignerTooltip from "./designer_tooltip";
+import leerbild from "@/app/bilder/leerbild.png";
 
 export const Graph = () => {
 
@@ -21,39 +24,50 @@ export const Graph = () => {
     const bild4 = email;
     const bild5 = computer;
     const bild6 = maschine;
-
     const bild7 = montage;
+    const bild8 = transporter;
+    const bild9 = designer;
+    const bild10 = auftrag;
 
-    const text1 = "Das Herz der Bolays Bedien-Software."
+    const text1 = "Microservice, Workflowmanagment BPMN und Broker-Software RabbitMQ."
     const text2 = "Bestellen und designen über das GPE."
     const text3 = "Direkte Onlinebestellungen über das GPE."
     const text4 = "Anbindung des GPE an Kiosksysteme im externen Laden." 
     const text5 = "Kundenanfragen und Abfragen an das GPE"
-    const text6 = "Anbindung des GPE an externe Computer." 
-    const text7 = "Direktverbindung zwischen GPE und der Graviermaschine."
-    const text8 = "Anbindung des Montageprogramm an das GPE";
+    const text6 = "Externe Software die angeschlossen werden kann, Buchhaltung, Kundenverwaltung." 
+    const text7 = "Graviermaschine."
+    const text8 = "Montage und Zuordnung des Produktes."
+    const text9 = "Verpackung und Versand."
+    const text10 = "Webprogramm Designer."
+    const text11 = "Auftragsverwaltung und Lagerkomissionierung."
 
 
   return (
  
-    <div style={{marginTop:"25px"}}> 
+    <div style={{marginTop:"250px"}}> 
     
 
-    <div className="img1"><OwnModal className="img1" titel="GPE" inhalt={text1}/><Image src={bild0} alt="gpe" width={100} height={100}></Image></div>
+    <div className="img1"><DesignerTooltip top="1%" left="30%" titel="Microservice" beschreibung={text1} bildpfad={leerbild}/><OwnModal className="img1" titel="Microservice" inhalt={text1}/><Image src={bild0} alt="microservice" width={100} height={100}></Image></div>
     
-    <div className="img2"><OwnModal className="img2" titel="Telefon" inhalt={text2}/><Image src={bild1} alt="telefon" width={100} height={100}></Image></div>
+    <div className="img2"><DesignerTooltip top="1%" left="30%" titel="Telefon" beschreibung={text2} bildpfad={leerbild}/><OwnModal className="img2" titel="Telefon" inhalt={text2}/><Image src={bild1} alt="telefon" width={100} height={100}></Image></div>
 
-      <div className="img3"><OwnModal className="img3" titel="Webstore" inhalt={text3}/><Image src={bild2} alt="webstore" width={100} height={100}></Image></div>
+      <div className="img3"><DesignerTooltip top="1%" left="30%" titel="Webstore" beschreibung={text3} bildpfad={leerbild}/><OwnModal className="img3" titel="Webstore" inhalt={text3}/><Image src={bild2} alt="webstore" width={100} height={100}></Image></div>
 
-      <div className="img4"><OwnModal className="img4" titel="Shop" inhalt={text4}/><Image src={bild3} alt="shop" width={100} height={100}></Image></div>
+      <div className="img4"><DesignerTooltip top="1%" left="30%" titel="Shop" beschreibung={text4} bildpfad={leerbild}/><OwnModal className="img4" titel="Shop" inhalt={text4}/><Image src={bild3} alt="shop" width={100} height={100}></Image></div>
 
-      <div className="img5"><OwnModal className="img5" titel="E-Mail" inhalt={text5}/><Image src={bild4} alt="email" width={100} height={100}></Image></div>
+      <div className="img5"><DesignerTooltip top="1%" left="30%" titel="E-Mail" beschreibung={text5} bildpfad={leerbild}/><OwnModal className="img5" titel="E-Mail" inhalt={text5}/><Image src={bild4} alt="email" width={100} height={100}></Image></div>
 
-      <div className="img6"><OwnModal className="img6" titel="Externer Computer" inhalt={text6}/><Image src={bild5} alt="computer" width={100} height={100}></Image></div>
+      <div className="img6"><DesignerTooltip top="1%" left="30%" titel="Externe Software" beschreibung={text6} bildpfad={leerbild}/><OwnModal className="img6" titel="Externe Sofware" inhalt={text6}/><Image src={bild5} alt="computer" width={100} height={100}></Image></div>
       
-      <div className="img7"><OwnModal className="img7" titel="Graviermaschine" inhalt={text7}/><Image src={bild6} alt="graviermaschine" width={100} height={100}></Image></div>
+      <div className="img7"><DesignerTooltip top="1%" left="30%" titel="Graviermaschine" beschreibung={text7} bildpfad={leerbild}/><OwnModal className="img7" titel="Graviermaschine" inhalt={text7}/><Image src={bild6} alt="graviermaschine" width={100} height={100}></Image></div>
 
-      <div className="img8"><OwnModal className="img8" titel="Montage" inhalt={text8}/><Image src={bild7} alt="montage" width={100} height={100}></Image></div>
+      <div className="img8"><DesignerTooltip top="1%" left="30%" titel="Montage" beschreibung={text8} bildpfad={leerbild}/><OwnModal className="img8" titel="Montage" inhalt={text8}/><Image src={bild7} alt="montage" width={100} height={100}></Image></div>
+
+      <div className="img9"><DesignerTooltip top="1%" left="30%" titel="Transporter" beschreibung={text9} bildpfad={leerbild}/><OwnModal className="img9" titel="Transporter" inhalt={text9}/><Image src={bild8} alt="transporter" width={130} height={130}></Image></div>
+      
+      <div className="img10"><DesignerTooltip top="1%" left="30%" titel="Designer" beschreibung={text10} bildpfad={leerbild}/><OwnModal className="img10" titel="Designer" inhalt={text10}/><Image src={bild9} alt="designer" width={100} height={100}></Image></div>
+
+      <div className="img11"><DesignerTooltip top="1%" left="30%" titel="Auftrag" beschreibung={text11} bildpfad={leerbild}/><OwnModal className="img11" titel="Auftrag" inhalt={text11}/><Image src={bild10} alt="auftrag" width={70} height={70}></Image></div>
 
     
     </div>   
