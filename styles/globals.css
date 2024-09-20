@@ -108,6 +108,7 @@ hr.new1
     filter:brightness(200%)
   }
 
+
   .img10
   {
     position: absolute;
@@ -211,6 +212,51 @@ hr.new1
      width:50px;
    }
 
+   .pfeil1, .pfeil2, .pfeil3, .pfeil4, .pfeil5, .pfeil6
+   {
+     position:absolute;
+     width:25px;
+     height:25px;
+   }
+
+   .pfeil1
+   {
+    top:-2%;
+    left:38%;
+   }
+
+   
+   .pfeil2
+   {
+    top:14%;
+    left:5%;
+   }
+
+   .pfeil3
+   {
+    top:44%;
+    left:61%;
+   }
+
+   .pfeil4
+   {
+    top:13%;
+    left:30%;
+   }
+
+   .pfeil5
+   {
+    top:24%;
+    left:61%;
+   }
+
+   .pfeil6
+   {
+    top:56%;
+    left:15%;
+   }
+
+
   .img_unten
   {
     position: absolute;
@@ -273,7 +319,7 @@ hr.new1
    width: 600px;
    height: 390px;
    margin-top: -5%;
-   margin-left: -45%;
+   margin-left: -25%;
   }
 
   #cydesigner
@@ -289,19 +335,46 @@ hr.new1
     margin-left: 10%;
   }
 
+  .pfeil1
+  {
+   top:-4%;
+   left:43%;
+  }
+
+  .pfeil2
+  {
+   top:12%;
+   left:5%;
+  }
+
+  .pfeil3
+  {
+   top:44%;
+   left:66%;
+  }
+
+  .pfeil4
+  {
+   top:13%;
+   left:30%;
+  }
+
+  .pfeil5
+  {
+   top:24%;
+   left:66%;
+  }
+
+  .pfeil6
+  {
+   top:56%;
+   left:15%;
+  }
 
 }
   
 
 @media screen and (max-width:810px) {
-
-  #designerbild
-  {
-   width: 600px;
-   height: 390px;
-   margin-top: -20%;
-   margin-left: -25%;
-  }
 
   #screen
   {

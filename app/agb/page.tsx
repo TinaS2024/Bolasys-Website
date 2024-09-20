@@ -1,5 +1,6 @@
 
 import Header from "@/components/header";
+import Titel_Subtitel_nolink from "@/components/titel_subtitel_nolink";
 
 
 
@@ -7,8 +8,11 @@ export default function AGB() {
   return (  
 <>
 <div style={{marginLeft:"50%"}}>   
-<Header opacity="100%" titel="AGB"></Header>
+<Header opacity="100%"></Header>
 </div >
+<div>
+    <Titel_Subtitel_nolink titel="AGB" subtitel=""/>  
+    </div>
 <ul>
  
   <li>Vertragsgegendstand</li>

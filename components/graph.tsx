@@ -12,7 +12,7 @@ import auftrag from "@/app/bilder/Auftragsverwaltung.png";
 
 import OwnModal from "@/components/ownmodal";
 import Image from "next/image";
-import DesignerTooltip from "./designer_tooltip";
+import DesignerTooltip from "@/components/designer_tooltip";
 import leerbild from "@/app/bilder/leerbild.png";
 
 export const Graph = () => {
@@ -29,17 +29,17 @@ export const Graph = () => {
     const bild9 = designer;
     const bild10 = auftrag;
 
-    const text1 = "Microservice, Workflowmanagment BPMN und Broker-Software RabbitMQ."
-    const text2 = "Bestellen und designen über das GPE."
-    const text3 = "Direkte Onlinebestellungen über das GPE."
-    const text4 = "Anbindung des GPE an Kiosksysteme im externen Laden." 
-    const text5 = "Kundenanfragen und Abfragen an das GPE"
-    const text6 = "Externe Software die angeschlossen werden kann, Buchhaltung, Kundenverwaltung." 
-    const text7 = "Graviermaschine."
-    const text8 = "Montage und Zuordnung des Produktes."
-    const text9 = "Verpackung und Versand."
-    const text10 = "Webprogramm Designer."
-    const text11 = "Auftragsverwaltung und Lagerkomissionierung."
+    const text1 = ["Microservice, Workflowmanagment BPMN und Broker-Software RabbitMQ."]
+    const text2 = ["Bestellen und designen über das GPE."]
+    const text3 = ["Direkte Onlinebestellungen über das GPE."]
+    const text4 = ["Anbindung des GPE an Kiosksysteme im externen Laden."]
+    const text5 = ["Kundenanfragen und Abfragen an das GPE."]
+    const text6 = ["Externe Software die angeschlossen werden kann, Buchhaltung, Kundenverwaltung."]
+    const text7 = ["Graviermaschine."]
+    const text8 = ["Montage und Zuordnung des Produktes."]
+    const text9 = ["Verpackung und Versand."]
+    const text10 = ["Webprogramm Designer."]
+    const text11 = ["Auftragsverwaltung und Lagerkomissionierung."]
 
 
   return (

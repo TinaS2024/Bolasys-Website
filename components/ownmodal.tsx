@@ -4,7 +4,7 @@ import { Modal, ModalBody, ModalContent, ModalFooter, ModalHeader, useDisclosure
 export interface UserProps
 {
     titel: string;
-    inhalt: string;
+    inhalt:Array<any>;
     className: string;
 }
 

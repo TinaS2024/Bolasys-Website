@@ -8,7 +8,7 @@ import Image, {StaticImageData } from "next/image";
 
 export interface UserProps{
     titel: string;
-    beschreibung: string;
+    beschreibung: Array<any>;
     bildpfad: StaticImageData;
     top:string;
     left:string;
