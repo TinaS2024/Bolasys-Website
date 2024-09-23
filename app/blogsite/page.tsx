@@ -4,20 +4,14 @@ import Header from "@/components/header";
 import Titel_Subtitel_nolink from "@/components/titel_subtitel_nolink";
 import Login from "@/components/login";
 import fsPromises from "fs/promises";
+import { NextResponse } from "next/server";
 
 
-/* https://nextjs.org/docs/app/building-your-application/data-fetching/fetching */
-
-export interface UserProps
-{
-  posts: any;
-}
-
-export default async function Blogsite({posts}:UserProps) {
+export default async function generateStaticParams() {
   
   const res = await fsPromises.readFile(process.cwd() + "/app/json/blog.json","utf8")
-  posts = JSON.parse(res.toString());
-  Response.json(posts),{status:200};
+  const posts = JSON.parse(res.toString());
+  NextResponse.json(posts),{status:200};
 
   return (  
 

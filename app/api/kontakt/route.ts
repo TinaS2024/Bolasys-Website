@@ -40,5 +40,5 @@ export async function POST(req : Request)
 
      transporter.sendMail(mailData);
     
-    return Response.json({ username,email,subject,nachricht })        
+    return NextResponse.json({ username,email,subject,nachricht })        
 }

@@ -1,4 +1,5 @@
 import fsPromises from "fs/promises";
+import { NextResponse } from "next/server";
 import path from "path";
 
 export async function POST(req : Request)
@@ -15,7 +16,7 @@ export async function POST(req : Request)
 
     await fsPromises.writeFile(dataFilePath,updatedData);
  
-    return Response.json(artikel)   
+    return NextResponse.json(artikel)   
 }
         
     

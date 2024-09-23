@@ -15,8 +15,8 @@ export default function UI() {
   const bild1 = magento_bild;
   const bild2 = next_bild;
 
-  const text1 = "Layout-Design mit Page-Builder und Content-Pflege.";
-  const text2 = "Landingpages mit dem neuen React-Java-Script-Framework Next.";
+  const text1 = ["Layout-Design mit Page-Builder und Content-Pflege."];
+  const text2 = ["Landingpages mit dem neuen React-Java-Script-Framework Next."];
   
     return (
      
