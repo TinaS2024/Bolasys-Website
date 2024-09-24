@@ -9,6 +9,7 @@ import montage from "@/app/bilder/Tools.png";
 import transporter from "@/app/bilder/Car_Transport.png";
 import designer from "@/app/bilder/designer_icon.png";
 import auftrag from "@/app/bilder/Auftragsverwaltung.png";
+import nesting from"@/app/bilder/nesting_icon.png";
 
 import OwnModal from "@/components/ownmodal";
 import Image from "next/image";
@@ -28,6 +29,7 @@ export const Graph = () => {
     const bild8 = transporter;
     const bild9 = designer;
     const bild10 = auftrag;
+    const bild11 = nesting;
 
     const text1 = ["Microservice, Workflowmanagment BPMN und Broker-Software RabbitMQ."]
     const text2 = ["Bestellen und designen über das GPE."]
@@ -40,6 +42,7 @@ export const Graph = () => {
     const text9 = ["Verpackung und Versand."]
     const text10 = ["Webprogramm Designer."]
     const text11 = ["Auftragsverwaltung und Lagerkomissionierung."]
+    const text12 = ["Nesting von Layouts."]
 
 
   return (
@@ -68,7 +71,8 @@ export const Graph = () => {
       <div className="img10"><DesignerTooltip top="1%" left="30%" titel="Designer" beschreibung={text10} bildpfad={leerbild}/><OwnModal className="img10" titel="Designer" inhalt={text10}/><Image src={bild9} alt="designer" width={100} height={100}></Image></div>
 
       <div className="img11"><DesignerTooltip top="1%" left="30%" titel="Auftrag" beschreibung={text11} bildpfad={leerbild}/><OwnModal className="img11" titel="Auftrag" inhalt={text11}/><Image src={bild10} alt="auftrag" width={70} height={70}></Image></div>
-
+      
+      <div className="img12"><DesignerTooltip top="1%" left="30%" titel="Nesting" beschreibung={text12} bildpfad={leerbild}/><OwnModal className="img12" titel="Nesting" inhalt={text12}/><Image src={bild11} alt="nesting" width={70} height={70}></Image></div>
     
     </div>   
 
