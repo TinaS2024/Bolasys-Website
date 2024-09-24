@@ -17,6 +17,13 @@ hr.new1
   border: 1px solid #14353C;
 }
 
+.sprung
+{
+  visibility:hidden;
+  height:0px !important;
+  position:absolute;
+  margin: -400px;
+}
 
 .line 
 {
@@ -504,12 +511,12 @@ hr.new1
     margin-top: 0px;
   }
 
-  .card-container
-{
-  position: absolute;
-  margin-left: -45%;
-  top: 32%;
-}
+    .card-container
+  {
+    position: absolute;
+    left: 50%;
+    top: 32%;
+  }
 
 }
 
@@ -517,7 +524,7 @@ hr.new1
 
 .punkt-container
 {
-  margin:12px;
+  margin:10px;
   float:left;
   width:10px;
   height:10px;
@@ -528,7 +535,7 @@ hr.new1
 .card-container
 {
   position: absolute;
-  margin-left: -45%;
+  margin-left: -50%;
   margin-top: 50%;
 }
 

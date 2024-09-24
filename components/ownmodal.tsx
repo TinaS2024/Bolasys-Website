@@ -1,14 +1,16 @@
 import { Button } from "@nextui-org/button";
 import { Modal, ModalBody, ModalContent, ModalFooter, ModalHeader, useDisclosure } from "@nextui-org/react";
+import Link from "next/link";
 
 export interface UserProps
 {
     titel: string;
     inhalt:Array<any>;
     className: string;
+    link:string;
 }
 
-const OwnModal = ({titel,inhalt,className}:UserProps) =>
+const OwnModal = ({titel,inhalt,className,link}:UserProps) =>
 {
     const {isOpen,onOpen,onOpenChange} = useDisclosure();
 
@@ -25,8 +27,9 @@ const OwnModal = ({titel,inhalt,className}:UserProps) =>
                 (
                     <>
                     <ModalHeader><h3 style={{fontSize:"20pt"}} className="text-[#5ec4d2]">{titel}&nbsp;</h3></ModalHeader>
-                    <ModalBody><p style={{fontSize: "14pt"}} className="text-white">{inhalt}</p></ModalBody>
-                 <ModalFooter><Button className="bg-[#5ec4d2] text-black" onPress={onClose}>Close</Button></ModalFooter>
+                    <ModalBody><p style={{fontSize: "14pt"}} className="text-white">{inhalt}</p>
+                    <Link onClick={onClose} href={"#"+link}>Mehr Text</Link>
+                    </ModalBody>
                     </>       
                 )
 
