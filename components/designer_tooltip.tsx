@@ -1,10 +1,5 @@
-import { Tooltip } from "@nextui-org/tooltip"; 
-//versuchen materialUI zu verwenden statt NextUI https://mui.com/material-ui/react-tooltip/
-
+import { Tooltip } from "@nextui-org/tooltip";
 import Image, {StaticImageData } from "next/image";
-
-
-//trigger="click" funktioniert für Tooltip nicht
 
 export interface UserProps{
     titel: string;

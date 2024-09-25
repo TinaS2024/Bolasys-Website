@@ -1,7 +1,5 @@
 import {Html,Heading,Text} from "@react-email/components";
 
-/*https://dev.to/shahmir049/how-to-send-emails-using-nextjs-14-resend-and-react-email-2b7g*/
-
 export interface UserProps
 {
     username: string;

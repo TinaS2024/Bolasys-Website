@@ -15,13 +15,10 @@ export default function AGB() {
     </div>
 <ul>
  
-  <li>Vertragsgegendstand</li>
-  <li>Vertragsschluss</li>
-  <li>Preise & Zahlungsbedingungen</li>
-  <li>Wartungskosten</li>
-  <li>Gewährleistung & Haftung</li>
-  <li>Widerrufsrecht</li>
-  <li>Datenschutz</li>
+  <li>Bolasy GmbH</li>
+  <li>Herstellung, Installation und Wartung von Software- und Hardwaresystemen</li>
+  <li>Amtsgericht Chemnitz HRB 31641 </li>
+  <li>Fritz-Wagner-Siedlung 16, D-09116 Chemnitz</li>
 </ul>
    
     </>

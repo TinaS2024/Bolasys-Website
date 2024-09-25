@@ -1,11 +1,10 @@
 import { Card, CardBody, CardHeader } from "@nextui-org/react";
 import Punkt from "@/components/Punkt";
-//Probleme bei NextUi: Card-Header hat standartmäßig z-index von 10 und überlappt Hedaer, Card-Header lässt Navbar verschwinden, Header wird kleiner bei Fensterverkleinerung
 
 const MyCard = () =>
 {
 
-  const text1 = "Neue Aufträge nach Vorlage über Telefon, E-Mail, (Web)-Shop oder Computer"
+  const text1 = "Neue Aufträge nach Vorlage"
   const text2 = "Automatisches Erstellen von Aufträgen"
   const text3 = "Auftragsstatus-Monitor"
   const text4 = "Workflow-und Prozessauswahl"
@@ -22,11 +21,27 @@ const MyCard = () =>
   const text15 = "Anordnung von Layouts"
   const text16 = "Erstellung von neuen Layouts für Stempel oder Schiler"
   const text17 = "Einbindung des Designers an Webanwendungen möglich"
+  const text18 = "Buchhaltung"
+  const text19 = "Kundenverwaltung"
+  const text20 = "Kundenanfragen über verschiedene Medien."
+  const text21 = "Kundenabfragen von verschiedenen Aufträgen."
+  const text22 = "Trommelgravierer"
+  const text23 = "Flachbettgravierer"
 
     return (
-<div style={{marginLeft:"-50%",marginTop:"600px"}} className="card-container flex sm:flex-col md:flex-row">
-    <Card style={{margin:"15px",marginBottom:"100px"}} className="max-w-[400px]">
-    <div id="auftrag" className="sprung"></div>
+<div style={{marginLeft:"-25%",marginTop:"600px"}} className="card-container flex sm:flex-col md:flex-row flex-wrap">
+
+<Card style={{margin:"15px",marginBottom:"100px"}} className="w-[400px]">
+    <div id="auftragsannahme" className="sprung"></div>
+      <CardHeader style={{zIndex: "0"}}> <h3 className="text-[#2695a0] text-xl">Auftragsannahme</h3></CardHeader>
+      <CardBody>
+        <Punkt text={text20}/>
+        <Punkt text={text21}/>
+        </CardBody>
+    </Card>
+
+    <Card style={{margin:"15px",marginBottom:"100px"}} className="w-[400px]">
+    <div id="auftragsverwaltung" className="sprung"></div>
       <CardHeader style={{zIndex: "0"}}> <h3 className="text-[#2695a0] text-xl">Auftragsverwaltung</h3></CardHeader>
       <CardBody>
         <Punkt text={text1}/>
@@ -37,7 +52,7 @@ const MyCard = () =>
         </CardBody>
     </Card>
 
-    <Card style={{margin:"15px",marginBottom:"100px"}} className="max-w-[400px]">
+    <Card style={{margin:"15px",marginBottom:"100px"}} className="w-[400px]">
       <div id="lager" className="sprung"></div>
       <CardHeader style={{zIndex: "0"}}> <h3 className="text-[#2695a0] text-xl">Lagermanagement</h3></CardHeader>
       <CardBody>
@@ -47,7 +62,7 @@ const MyCard = () =>
         </CardBody>
     </Card>
     
-    <Card style={{margin:"15px",marginBottom:"100px"}} className="max-w-[400px]">
+    <Card style={{margin:"15px",marginBottom:"100px"}} className="w-[400px]">
     <div id="montage" className="sprung"></div>
       <CardHeader style={{zIndex: "0"}}> <h3 className="text-[#2695a0] text-xl">Montageprogramm</h3></CardHeader>
       <CardBody>
@@ -58,7 +73,7 @@ const MyCard = () =>
         </CardBody>
     </Card>
 
-    <Card style={{margin:"15px",marginBottom:"100px"}} className="max-w-[400px]">
+    <Card style={{margin:"15px",marginBottom:"100px"}} className="w-[400px]">
     <div id="nest" className="sprung"></div>
       <CardHeader style={{zIndex: "0"}}> <h3 className="text-[#2695a0] text-xl">Nesting</h3></CardHeader>
       <CardBody>
@@ -68,12 +83,30 @@ const MyCard = () =>
         </CardBody>
     </Card>
 
-    <Card style={{margin:"15px",marginBottom:"500px"}} className="max-w-[400px]">
+    <Card style={{margin:"15px",marginBottom:"100px"}} className="w-[400px]">
     <div id="design" className="sprung"></div>
       <CardHeader style={{zIndex: "0"}}> <h3 className="text-[#2695a0] text-xl">Designer</h3></CardHeader>
       <CardBody>
         <Punkt text={text16}/>
         <Punkt text={text17}/>
+        </CardBody>
+    </Card>
+
+    <Card style={{margin:"15px",marginBottom:"100px"}} className="w-[400px]">
+    <div id="software" className="sprung"></div>
+      <CardHeader style={{zIndex: "0"}}> <h3 className="text-[#2695a0] text-xl">Externe Software</h3></CardHeader>
+      <CardBody>
+        <Punkt text={text18}/>
+        <Punkt text={text19}/>
+        </CardBody>
+    </Card>
+
+    <Card style={{margin:"15px",marginBottom:"500px"}} className="w-[400px]">
+    <div id="gravier" className="sprung"></div>
+      <CardHeader style={{zIndex: "0"}}> <h3 className="text-[#2695a0] text-xl">Graviermaschine</h3></CardHeader>
+      <CardBody>
+        <Punkt text={text22}/>
+        <Punkt text={text23}/>
         </CardBody>
     </Card>
 

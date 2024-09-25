@@ -25,12 +25,13 @@ export default function ImpressumPage() {
       
         <table> 
           <tbody>
-          <TabZeile titel="Straße" inhalt="Fritz-Wagner-Siedlung 16"></TabZeile>
-          <TabZeile titel="Ort" inhalt="09116 Chemnitz"></TabZeile>
-          <TabZeile titel="Büro-Telefon" inhalt="(03 71) 3 35 06 67"></TabZeile>
-          <TabZeile titel="GF Beate Lang" inhalt="(01 70) 8 17 89 66"></TabZeile>
-          <TabZeile titel="GF Rainer Boes" inhalt="(01 71) 8 50 09 08"></TabZeile>
-          <TabZeile titel=" E-Mail" inhalt="info@bolasys.de"></TabZeile>
+          <TabZeile titel="Firmenadresse:" inhalt="Fritz-Wagner-Siedlung 16"></TabZeile>
+          <TabZeile titel="" inhalt="09116 Chemnitz"></TabZeile>
+          <tr><td style={{height:"25px"}}></td></tr>
+          <TabZeile titel="Büro-Telefon:" inhalt="(03 71) 3 35 06 67"></TabZeile>
+          <TabZeile titel="GF Beate Lang:" inhalt="(01 70) 8 17 89 66"></TabZeile>
+          <TabZeile titel="GF Rainer Boes:" inhalt="(01 71) 8 50 09 08"></TabZeile>
+          <TabZeile titel=" E-Mail:" inhalt="info@bolasys.de"></TabZeile>
         </tbody> 
         </table>  
        

@@ -16,9 +16,9 @@ export default function GPE() {
       </div>
       
     <div>
-    <Titel_Subtitel_nolink titel="GPE" subtitel=""/>  
+    <Titel_Subtitel_nolink titel="GPE" subtitel="Graphical Product Environment"/>  
     </div>
-
+    
     <Graph></Graph>
     <MyCard></MyCard>
 

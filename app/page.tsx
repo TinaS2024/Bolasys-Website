@@ -23,7 +23,7 @@ export default function Home()
    
 
     <div className="flex justify-center">
- <h3 style={{fontSize:"22pt"}} className="text-white text-center">Software zur Produktions-und Maschinensteuerung</h3>
+ <h3 style={{fontSize:"22pt"}} className="text-white text-center"> Herstellung, Installation und Wartung von Software- und Hardwaresystemen</h3>
   </div>  
   
   <div style={{zIndex: "1",marginLeft:"-5%"}} className="flex flex-row sm:flex-col md:flex-row absolute abstand_oben abstand_links py-10">  

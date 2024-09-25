@@ -81,7 +81,7 @@ const KontaktPage = () =>{
             variant="bordered"/></td><td></td></tr>
              <tr><td height={30}></td><td></td></tr>
             <tr><td colSpan={2}>
-             <RadioGroup label="Wählen Sie einen Bereich aus zu dem Sie Fragen haben." color="warning" defaultValue="GPE">
+             <RadioGroup style={{zIndex: "0"}} label="Wählen Sie einen Bereich aus zu dem Sie Fragen haben." color="warning" defaultValue="GPE">
               <Radio name="subject" value="GPE" onChange={(e) =>setSubject(e.target.value)}>GPE</Radio>
               <Radio name="subject" value="Designer" onChange={(e) =>setSubject(e.target.value)}>Designer</Radio>
               <Radio name="subject" value="CyDesigner" onChange={(e) =>setSubject(e.target.value)}>CyDesigner</Radio>
