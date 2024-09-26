@@ -3,7 +3,7 @@
 import { Button } from "@nextui-org/button";
 import { Modal, ModalBody, ModalContent, ModalFooter, ModalHeader, useDisclosure } from "@nextui-org/react";
 import {Input} from "@nextui-org/react";
-import swal from "sweetalert";
+import Swal from "sweetalert2";
 import Blogmodal from "./blogmodal";
 
 import { useState } from "react";
@@ -40,7 +40,7 @@ const Login = ({className}:UserProps) =>
             }
           }    
           else{
-            swal({title: "Fehler",text:"Falscher Benutzername oder Passwort.",icon:"error"})
+            Swal.fire({title:"Fehler", text:"Falscher Benutzernahme oder falsches Passwort.",icon:"error",background:"#0e2d38",color:"white", showCancelButton: true, showConfirmButton:false,cancelButtonColor: "#DD6B55",})
           }
         }
 
@@ -48,8 +48,7 @@ const Login = ({className}:UserProps) =>
     {
       if(ausloggen && einloggen != null)
         {
-          /* Es scheint einen Bug mit Nextui zu geben bei dem man sich direkt nach dem Ausloggen nicht wieder einloggen kann, es sei denn man setzt die Daten neu.
-          Möglicherweise erkennt das Modal beim wieder-öffnen nicht, dass schon Daten drinnen stehen */
+          /*  */
         }
       }
       

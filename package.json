@@ -69,6 +69,7 @@
 		"sonner": "^1.5.0",
 		"start": "^5.1.0",
 		"sweetalert": "^2.1.2",
+		"sweetalert2": "^11.14.1",
 		"tailwind-variants": "^0.1.20",
 		"tailwindcss": "3.4.3",
 		"three": "^0.167.1",
