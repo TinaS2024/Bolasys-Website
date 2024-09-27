@@ -79,6 +79,7 @@
 	"devDependencies": {
 		"@types/d3": "^7.4.3",
 		"@types/nodemailer": "^6.4.15",
+		"kill-port": "^2.0.1",
 		"prisma": "^5.18.0"
 	},
 	"description": "This is a template for creating applications using Next.js 14 (app directory) and NextUI (v2).",
