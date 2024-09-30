@@ -12,10 +12,10 @@ import {useState} from "react";
 
 
 const KontaktPage = () =>{
-  const [username, setUsername] = useState("")
-  const [email, setEmail] = useState("")
-  const [subject,setSubject] = useState("")
-  const [nachricht,setNachricht] = useState("")
+  const [username, setUsername] = useState("");
+  const [email, setEmail] = useState("");
+  const [subject,setSubject] = useState("");
+  const [nachricht,setNachricht] = useState("");
 
   const handleSubmit = async (e: FormEvent)=>
   {
@@ -35,14 +35,14 @@ const KontaktPage = () =>{
           nachricht,
         }), 
       });
-      Swal.fire({title:"Erfolgreich", text:"E-Mail wurde an Bolasys gesendet!",icon:"success",background:"#0e2d38",color:"white",showConfirmButton:false})
+      Swal.fire({title:"Erfolgreich", text:"E-Mail wurde an Bolasys gesendet!",icon:"success",background:"#0e2d38",color:"white",showConfirmButton:false});
       
-      res.json()
+      res.json();
  
     } catch (error:any)
     {
       console.error("Fehler", error)
-      Swal.fire({title:"Fehler", text:"Es gab ein Problem beim Versenden der E-Mail!",icon:"error",background:"#0e2d38",color:"white", showCancelButton: true, showConfirmButton:false,cancelButtonColor: "#DD6B55"})
+      Swal.fire({title:"Fehler", text:"Es gab ein Problem beim Versenden der E-Mail!",icon:"error",background:"#0e2d38",color:"white", showCancelButton: true, showConfirmButton:false,cancelButtonColor: "#DD6B55"});
     }
   }
 

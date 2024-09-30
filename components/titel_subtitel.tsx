@@ -1,7 +1,8 @@
 
 import Link from "next/link";
 
-export interface UserProps{
+export interface UserProps
+{
     titel: string;
     subtitel: string;
     path: string;

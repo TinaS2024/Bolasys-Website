@@ -1,9 +1,6 @@
 "use client"
 import Header from "@/components/header";
 
-//import BoxApp from "@/components/boxapp";
-
-
 const Custom404 = () =>
 {
 

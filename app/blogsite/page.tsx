@@ -9,7 +9,7 @@ import { NextResponse } from "next/server";
 
 export default async function generateStaticParams() {
   
-  const res = await fsPromises.readFile(process.cwd() + "/app/json/blog.json","utf8")
+  const res = await fsPromises.readFile(process.cwd() + "/app/json/blog.json","utf8");
   const posts = JSON.parse(res.toString());
   NextResponse.json(posts),{status:200};
 

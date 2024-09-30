@@ -56,14 +56,14 @@ const Blogmodal = ({idName}:UserProps) =>
                         }
                     })
                 })
-                Swal.fire({title:"Erfolgreich", text:"Blog-Artikel wurde erstellt!",icon:"success",background:"#0e2d38",color:"white",showConfirmButton:false})
-                console.log(dataFilePath)
-                res.json()
+                Swal.fire({title:"Erfolgreich", text:"Blog-Artikel wurde erstellt!",icon:"success",background:"#0e2d38",color:"white",showConfirmButton:false});
+                console.log(dataFilePath);
+                res.json();
 
             }catch(error)
             {
                 console.error("Fehler", error)
-                Swal.fire({title:"Fehler", text:"Es gab ein Problem beim Erstellen des Blog-Artikels.",icon:"error",background:"#0e2d38",color:"white", showCancelButton: true, showConfirmButton:false,cancelButtonColor: "#DD6B55"})
+                Swal.fire({title:"Fehler", text:"Es gab ein Problem beim Erstellen des Blog-Artikels.",icon:"error",background:"#0e2d38",color:"white", showCancelButton: true, showConfirmButton:false,cancelButtonColor: "#DD6B55"});
             }
         }
 

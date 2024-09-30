@@ -1,4 +1,5 @@
-export interface UserProps{
+export interface UserProps
+{
     titel: string;
     inhalt: string
 }

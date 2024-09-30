@@ -34,13 +34,13 @@ const Login = ({className}:UserProps) =>
           {   
             if (hiddenDiv != null && einloggen!= null && ausloggen != null)
             {
-              hiddenDiv.style.display = "block"    
-              einloggen.style.display = "none"    
-              ausloggen.style.display = "block"
+              hiddenDiv.style.display = "block";    
+              einloggen.style.display = "none";    
+              ausloggen.style.display = "block";
             }
           }    
           else{
-            Swal.fire({title:"Fehler", text:"Falscher Benutzernahme oder falsches Passwort.",icon:"error",background:"#0e2d38",color:"white", showCancelButton: true, showConfirmButton:false,cancelButtonColor: "#DD6B55",})
+            Swal.fire({title:"Fehler", text:"Falscher Benutzernahme oder falsches Passwort.",icon:"error",background:"#0e2d38",color:"white", showCancelButton: true, showConfirmButton:false,cancelButtonColor: "#DD6B55"});
           }
         }
 
@@ -48,7 +48,7 @@ const Login = ({className}:UserProps) =>
     {
       if(ausloggen && einloggen != null)
         {
-          /*  */
+          /* Seite neuladen ohne weißen Hintergrund */
         }
       }
       

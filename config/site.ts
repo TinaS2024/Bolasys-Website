@@ -13,10 +13,6 @@ export const siteConfig = {
       href: "/produkte",
     },
     {
-      label: "Chat",
-      href: "/chat",
-    },
-    {
       label: "Kontakt",
       href: "/kontakt",
     },
@@ -31,16 +27,16 @@ export const siteConfig = {
       href: "/produkte/designer",
     },
     {
-      label: "PageAssembler",
-      href: "/produkte/pageassembler",
+      label: "Nestingsoftware",
+      href: "/produkte/nestingsoftware",
     },
     {
       label: "Cydesigner",
       href: "/produkte/cydesigner",
     },
     {
-      label: "A la Carte",
-      href: "/produkte/alacarte",
+      label: "Bolasys Blog",
+      href: "/blogsite",
     }
   ],
 };
