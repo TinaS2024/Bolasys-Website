@@ -23,6 +23,6 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "components/loadGraph.js", "app/page.tsx", "components/graph.tsx", "app/api/email/route.ts", "app/server.ts"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "components/loadGraph.js", "app/page.tsx", "components/graph.tsx", "app/api/email/route.ts"],
   "exclude": ["node_modules"]
 }
