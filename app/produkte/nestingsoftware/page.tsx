@@ -10,7 +10,9 @@ import bild4 from "@/app/bilder/grosse_formen.svg";
 import bild5 from "@/app/bilder/gleiche_formen.svg";
 import bild6 from "@/app/bilder/clipping_ohne_abstand.svg";
 import stempel1 from "@/app/bilder/mit_abstand_o_clipping.png";
+import stamp1 from "@/app/bilder/2_ausschnitt.png";
 import stempel2 from "@/app/bilder/ohne_abstand_o_clipping.png";
+import stamp2 from "@/app/bilder/1_ausschnitt.png";
 import stempel3 from "@/app/bilder/schrumpfen_bolanest.png";
 import stempel4 from "@/app/bilder/gpe_schrumpfen.png";
 import stempel5 from "@/app/bilder/anordnung_bolanest.png";
@@ -36,8 +38,8 @@ export default function Nesting() {
       <div style={{width:"500px"}}>
        <Titel_Subtitel_nolink titel="Nesting" subtitel={text1}/>     
       <div id="nesting-card1" className="flex flex-row abstand_unten_klein" >
-      <NestingCard pathstemp={stempel1} className="mr-5 md:min-w-[500px] sm:max-w-[200px]" titel="Schritt 1A: Einfaches Clipping mit Abstand" path={bild1} width={150} height={150} beschreibung={text2}/>
-      <NestingCard pathstemp={stempel2} className="mr-5 md:min-w-[500px] sm:max-w-[200px]" titel="Schritt 1B: Einfaches Clipping ohne Abstand" path={bild6} width={150} height={150} beschreibung={text7}/>
+      <NestingCard pathstemp={stamp1} className="mr-5 md:min-w-[500px] sm:max-w-[200px]" titel="Schritt 1A: Einfaches Clipping mit Abstand" path={bild1} width={150} height={150} beschreibung={text2}/>
+      <NestingCard pathstemp={stamp2} className="mr-5 md:min-w-[500px] sm:max-w-[200px]" titel="Schritt 1B: Einfaches Clipping ohne Abstand" path={bild6} width={150} height={150} beschreibung={text7}/>
       </div>
 
     <div id="nesting-card2" className="flex flex-row abstand_unten_klein">

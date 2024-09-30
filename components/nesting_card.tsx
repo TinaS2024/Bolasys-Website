@@ -22,7 +22,7 @@ const NestingCard = ({titel,path,beschreibung,className,width,height,pathstemp}:
             <Divider/>
             <div className="zentrieren"><Image src={pathstemp} width={300} height={300} alt=""/></div>
             <Divider/>
-            <div className="zentrieren"><Image style={{marginTop:"2%",marginBottom: "2%"}} src={path} width={width} height={height} alt={titel}/></div>
+            <div className="zentrieren"><Image style={{marginTop:"5%",marginBottom: "2%"}} src={path} width={width} height={height} alt={titel}/></div>
             </CardBody>
             <CardFooter className="bg-[#5ec4d2]/30">{beschreibung}</CardFooter>
         </Card>
