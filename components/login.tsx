@@ -6,7 +6,7 @@ import {Input} from "@nextui-org/react";
 import Swal from "sweetalert2";
 import Blogmodal from "./blogmodal";
 
-import { useState } from "react";
+import {useRef, useState } from "react";
 import {FormEvent } from "react";
 
 /* Supabase: tina.schmidtbauer@bolasys.de F)mP7$f,k2B)#*L*/
@@ -22,21 +22,30 @@ const Login = ({className}:UserProps) =>
 
     const [email, setEmail] = useState("")    
     const [password, setPassword] = useState("")
-    const hiddenDiv: HTMLElement | null = document.getElementById("artikel_blog"); 
-    const einloggen: HTMLElement | null = document.getElementById("log_in");
-    const ausloggen: HTMLElement | null = document.getElementById("log_out");
-    
+
+    const hiddenDiv = useRef<HTMLDivElement | null>(null);
+    const einloggen= useRef<HTMLDivElement | null>(null);
+    const ausloggen = useRef<HTMLDivElement | null>(null);
+
+    /*const hiddenDiv: HTMLElement | null | undefined = window.document.getElementById("artikel_blog"); 
+    const einloggen: HTMLElement | null | undefined = window.document.getElementById("log_in");
+    const ausloggen: HTMLElement | null | undefined = window.document.getElementById("log_out");
+    */
     const handleSubmit = async (e: FormEvent)=>
         {
           e.preventDefault()
 
           if(email =="tina.schmidtbauer@bolasys.de" && password == "F)mP7$f,k2B)#*L")
           {   
-            if (hiddenDiv != null && einloggen!= null && ausloggen != null)
+            if (hiddenDiv != null && einloggen != null && ausloggen != null)
             {
-              hiddenDiv.style.display = "block";    
-              einloggen.style.display = "none";    
-              ausloggen.style.display = "block";
+              if (hiddenDiv.current!.style.visibility === "hidden" && ausloggen.current!.style.visibility ==="hidden")
+              {
+                hiddenDiv.current!.style.visibility = "inherit";  
+                ausloggen.current!.style.visibility = "inherit";
+              }
+                
+              einloggen.current!.style.visibility = "hidden";    
             }
           }    
           else{
@@ -71,9 +80,9 @@ const Login = ({className}:UserProps) =>
                     <Input required type="text" label="E-Mail" className="max-w-xs" variant="bordered" value={email} onChange={(e) =>setEmail(e.target.value)}/>
                     <Input required type="password" label="Password" name="password"  className="max-w-xs" variant="bordered" value={password} onChange={(e) =>setPassword(e.target.value)}/>
                  <ModalFooter>
-                  <Button style={{display:"none"}} id="log_out" className="bg-[#5ec4d2] text-black" onPress={onClose} >Ausloggen</Button>  
-                  <Button id="log_in" className="bg-[#5ec4d2] text-black" onClick={neuladen} type="submit">Einloggen</Button>    
-                  <div style={{marginTop:"-25px"}}><Blogmodal idName="artikel_blog"/></div>
+                  <div style={{position:"relative",left:"28px",visibility:"hidden"}} ref={ausloggen}><Button id="log_out" className="bg-[#5ec4d2] text-black" onPress={onClose} >Ausloggen</Button></div>  
+                  <div style={{position:"relative",left:"30px",visibility:"visible"}} ref={einloggen}><Button id="log_in" className="bg-[#5ec4d2] text-black" onClick={neuladen} type="submit">Einloggen</Button></div>    
+                  <div style={{position:"relative",left:"-25px",visibility:"hidden"}} ref={hiddenDiv}><Blogmodal idName="artikel_blog"/></div>
                   </ModalFooter>
                   </form></>      
                   )} 

@@ -68,7 +68,7 @@ const Blogmodal = ({idName}:UserProps) =>
         }
 
     return(
-        <div id={idName} style={{marginTop:"25px",display:"none"}}>
+        <div id={idName}>
         <Button style={{color:"black",backgroundColor:"#5ec4d2"}} onPress={onOpen}><p className="text-lg">Neuer Artikel</p></Button>
         <Modal 
         isOpen={isOpen} 
@@ -80,7 +80,7 @@ const Blogmodal = ({idName}:UserProps) =>
                 (
                     <>
                     <form onSubmit={saveData}>
-                    <ModalHeader><h3 style={{fontSize:"20pt"}} className="text-[#5ec4d2]">Neuer Blogartikel</h3></ModalHeader>
+                    <ModalHeader style={{fontSize:"14px"}} className="text-[#5ec4d2]">Neuer Blogartikel</ModalHeader>
                     <ModalBody>
                     <Input required label="Titel" value={titel} placeholder="Titel" className="max-w-xs" variant="bordered" onChange={(e) =>setTitel(e.target.value)} />
                     <Input required label="Subtitel" value={subtitel} placeholder="Subtitel" className="max-w-xs" variant="bordered" onChange={(e) =>setSubtitel(e.target.value)} />

@@ -50,34 +50,34 @@ export const Graph = () => {
 
   return (
  
-    <div style={{marginTop:"250px"}}> 
+    <div className="graph-position" style={{marginTop:"300px"}}> 
     
 
-    <div className="img1"><DesignerTooltip top="1%" left="30%" titel="Microservice" beschreibung={text1} bildpfad={leerbild}/><OwnModal link="service" className="img1" titel="Microservice" inhalt={text1}/><Image src={bild0} alt="microservice" width={100} height={100}></Image></div>
+    <div className="img1"><DesignerTooltip top="15%" left="15%" titel="Microservice" beschreibung={text1} bildpfad={leerbild}/><OwnModal link="service" className="img1" titel="Microservice" inhalt={text1}/><Image src={bild0} alt="microservice" width={100} height={100}></Image></div>
     
-    <div className="img2"><DesignerTooltip top="1%" left="30%" titel="Telefon" beschreibung={text2} bildpfad={leerbild}/><OwnModal link="auftragsannahme" className="img2" titel="Telefon" inhalt={text2}/><Image src={bild1} alt="telefon" width={80} height={80}></Image></div>
+    <div className="img2"><DesignerTooltip top="20%" left="5%" titel="Telefon" beschreibung={text2} bildpfad={leerbild}/><OwnModal link="auftragsannahme" className="img2" titel="Telefon" inhalt={text2}/><Image src={bild1} alt="telefon" width={80} height={80}></Image></div>
 
-      <div className="img3"><DesignerTooltip top="1%" left="30%" titel="Webstore" beschreibung={text3} bildpfad={leerbild}/><OwnModal link="auftragsannahme" className="img3" titel="Webstore" inhalt={text3}/><Image src={bild2} alt="webstore" width={80} height={80}></Image></div>
+      <div className="img3"><DesignerTooltip top="10%" left="15%" titel="Webstore" beschreibung={text3} bildpfad={leerbild}/><OwnModal link="auftragsannahme" className="img3" titel="Webstore" inhalt={text3}/><Image src={bild2} alt="webstore" width={80} height={80}></Image></div>
 
-      <div className="img4"><DesignerTooltip top="1%" left="30%" titel="Shop" beschreibung={text4} bildpfad={leerbild}/><OwnModal link="auftragsannahme" className="img4" titel="Shop" inhalt={text4}/><Image src={bild3} alt="shop" width={100} height={100}></Image></div>
+      <div className="img4"><DesignerTooltip top="25%" left="25%" titel="Shop" beschreibung={text4} bildpfad={leerbild}/><OwnModal link="auftragsannahme" className="img4" titel="Shop" inhalt={text4}/><Image src={bild3} alt="shop" width={100} height={100}></Image></div>
 
-      <div className="img5"><DesignerTooltip top="1%" left="30%" titel="E-Mail" beschreibung={text5} bildpfad={leerbild}/><OwnModal link="auftagsannahme" className="img5" titel="E-Mail" inhalt={text5}/><Image src={bild4} alt="email" width={60} height={60}></Image></div>
+      <div className="img5"><DesignerTooltip top="5%" left="0%" titel="E-Mail" beschreibung={text5} bildpfad={leerbild}/><OwnModal link="auftagsannahme" className="img5" titel="E-Mail" inhalt={text5}/><Image src={bild4} alt="email" width={60} height={60}></Image></div>
 
-      <div className="img6"><DesignerTooltip top="1%" left="30%" titel="Externe Software" beschreibung={text6} bildpfad={leerbild}/><OwnModal link="software" className="img6" titel="Externe Sofware" inhalt={text6}/><Image src={bild5} alt="computer" width={100} height={100}></Image></div>
+      <div className="img6"><DesignerTooltip top="1%" left="10%" titel="Externe Software" beschreibung={text6} bildpfad={leerbild}/><OwnModal link="software" className="img6" titel="Externe Sofware" inhalt={text6}/><Image src={bild5} alt="computer" width={100} height={100}></Image></div>
       
-      <div className="img7"><DesignerTooltip top="1%" left="30%" titel="Graviermaschine" beschreibung={text7} bildpfad={leerbild}/><OwnModal link="gravier" className="img7" titel="Graviermaschine" inhalt={text7}/><Image src={bild6} alt="graviermaschine" width={80} height={80}></Image></div>
+      <div className="img7"><DesignerTooltip top="5%" left="5%" titel="Graviermaschine" beschreibung={text7} bildpfad={leerbild}/><OwnModal link="gravier" className="img7" titel="Graviermaschine" inhalt={text7}/><Image src={bild6} alt="graviermaschine" width={80} height={80}></Image></div>
 
-      <div className="img8"><DesignerTooltip top="1%" left="30%" titel="Montage" beschreibung={text8} bildpfad={leerbild}/><OwnModal link="montage" className="img8" titel="Montage" inhalt={text8}/><Image src={bild7} alt="montage" width={80} height={80}></Image></div>
+      <div className="img8"><DesignerTooltip top="10%" left="10%" titel="Montage" beschreibung={text8} bildpfad={leerbild}/><OwnModal link="montage" className="img8" titel="Montage" inhalt={text8}/><Image src={bild7} alt="montage" width={80} height={80}></Image></div>
 
-      <div className="img9"><DesignerTooltip top="1%" left="30%" titel="Transporter" beschreibung={text9} bildpfad={leerbild}/><OwnModal link="transport" className="img9" titel="Transporter" inhalt={text9}/><Image src={bild8} alt="transporter" width={80} height={80}></Image></div>
+      <div className="img9"><DesignerTooltip top="1%" left="10%" titel="Transporter" beschreibung={text9} bildpfad={leerbild}/><OwnModal link="transport" className="img9" titel="Transporter" inhalt={text9}/><Image src={bild8} alt="transporter" width={80} height={80}></Image></div>
       
-      <div className="img10"><DesignerTooltip top="1%" left="30%" titel="Designer" beschreibung={text10} bildpfad={leerbild}/><OwnModal link="design" className="img10" titel="Designer" inhalt={text10}/><Image src={bild9} alt="designer" width={100} height={100}></Image></div>
+      <div className="img10"><DesignerTooltip top="5%" left="20%" titel="Designer" beschreibung={text10} bildpfad={leerbild}/><OwnModal link="design" className="img10" titel="Designer" inhalt={text10}/><Image src={bild9} alt="designer" width={100} height={100}></Image></div>
 
-      <div className="img11"><DesignerTooltip top="1%" left="30%" titel="Auftragsverwaltung" beschreibung={text11} bildpfad={leerbild}/><OwnModal link="auftragsverwaltung" className="img11" titel="Auftragsverwaltung" inhalt={text11}/><Image src={bild10} alt="auftragsverwaltung" width={50} height={50}></Image></div>
+      <div className="img11"><DesignerTooltip top="5%" left="-5%" titel="Auftragsverwaltung" beschreibung={text11} bildpfad={leerbild}/><OwnModal link="auftragsverwaltung" className="img11" titel="Auftragsverwaltung" inhalt={text11}/><Image src={bild10} alt="auftragsverwaltung" width={50} height={50}></Image></div>
       
-      <div className="img12"><DesignerTooltip top="1%" left="30%" titel="Nesting" beschreibung={text12} bildpfad={leerbild}/><OwnModal link="nest" className="img12" titel="Nesting" inhalt={text12}/><Image src={bild11} alt="nesting" width={60} height={60}></Image></div>
+      <div className="img12"><DesignerTooltip top="1%" left="0%" titel="Nesting" beschreibung={text12} bildpfad={leerbild}/><OwnModal link="nest" className="img12" titel="Nesting" inhalt={text12}/><Image src={bild11} alt="nesting" width={60} height={60}></Image></div>
       
-      <div className="img13"><DesignerTooltip top="1%" left="30%" titel="Lager" beschreibung={text13} bildpfad={leerbild}/><OwnModal link="lager" className="img13" titel="Lager" inhalt={text12}/><Image src={bild12} alt="lager" width={70} height={70}></Image></div>
+      <div className="img13"><DesignerTooltip top="10%" left="5%" titel="Lager" beschreibung={text13} bildpfad={leerbild}/><OwnModal link="lager" className="img13" titel="Lager" inhalt={text12}/><Image src={bild12} alt="lager" width={70} height={70}></Image></div>
     
     </div>   
 

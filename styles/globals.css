@@ -129,7 +129,6 @@ hr.new1
     filter:brightness(150%);
   }
 
-  
   .img1:hover,.img2:hover,.img3:hover,.img4:hover,.img5:hover,.img6:hover, .img7:hover, .img8:hover, .img9:hover, .img11:hover, .img12:hover, .img13:hover
   {
     filter:brightness(300%);
@@ -406,6 +405,11 @@ hr.new1
    height:292px;
    margin-top:1% ;
    margin-left: -25%;
+  }
+
+  .graph-position
+  {
+    margin-left:80px;
   }
 
   /* Microservice */

@@ -14,7 +14,7 @@ const DesignerTooltip = ({titel, beschreibung, bildpfad,top,left}: UserProps) =>
     
 
     return(
-        <div style={{marginTop:`${top}`,marginLeft:`${left}`,position:"absolute"}}>
+        <div className="sm:size-10 md:size-16" style={{marginTop:`${top}`,marginLeft:`${left}`,position:"absolute",zIndex:"5"}}>
         <Tooltip id="1" className="bg-[#2695a0]" 
         content={
             <div className="px-1 py-2">
