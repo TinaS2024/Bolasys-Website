@@ -32,7 +32,7 @@ export async function POST(req : Request)
 
      const mailData = {
          from: "info@bolasys.de", //"bolasys_client@outlook.de",
-         to: "tina.Schmidtbauer@bolasys.de",
+         to: "Tina.Schmidtbauer@bolasys.de",
          subject: subject,
          html: '<h2>Kundenanfrage an Bolasys GmbH</h2><p>Von: '+username+'</p><p>Email-Absender: '+email+'</p><p>Nachricht: <br/> '+nachricht+'</p>',
      };

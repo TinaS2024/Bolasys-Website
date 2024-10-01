@@ -10,6 +10,7 @@ export interface UserProps
     link:string;
 }
 
+// Auf der statischen Seite des Build sind die Modale verscoben
 const OwnModal = ({titel,inhalt,className,link}:UserProps) =>
 {
     const {isOpen,onOpen,onOpenChange} = useDisclosure();

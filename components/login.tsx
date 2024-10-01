@@ -52,14 +52,6 @@ const Login = ({className}:UserProps) =>
             Swal.fire({title:"Fehler", text:"Falscher Benutzernahme oder falsches Passwort.",icon:"error",background:"#0e2d38",color:"white", showCancelButton: true, showConfirmButton:false,cancelButtonColor: "#DD6B55"});
           }
         }
-
-    const neuladen = () =>
-    {
-      if(ausloggen && einloggen != null)
-        {
-          /* Seite neuladen ohne weißen Hintergrund */
-        }
-      }
       
     return(
         <div className={className}>
@@ -81,7 +73,7 @@ const Login = ({className}:UserProps) =>
                     <Input required type="password" label="Password" name="password"  className="max-w-xs" variant="bordered" value={password} onChange={(e) =>setPassword(e.target.value)}/>
                  <ModalFooter>
                   <div style={{position:"relative",left:"28px",visibility:"hidden"}} ref={ausloggen}><Button id="log_out" className="bg-[#5ec4d2] text-black" onPress={onClose} >Ausloggen</Button></div>  
-                  <div style={{position:"relative",left:"30px",visibility:"visible"}} ref={einloggen}><Button id="log_in" className="bg-[#5ec4d2] text-black" onClick={neuladen} type="submit">Einloggen</Button></div>    
+                  <div style={{position:"relative",left:"30px",visibility:"visible"}} ref={einloggen}><Button id="log_in" className="bg-[#5ec4d2] text-black" type="submit">Einloggen</Button></div>    
                   <div style={{position:"relative",left:"-25px",visibility:"hidden"}} ref={hiddenDiv}><Blogmodal idName="artikel_blog"/></div>
                   </ModalFooter>
                   </form></>      
