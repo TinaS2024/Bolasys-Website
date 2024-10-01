@@ -1,0 +1,7 @@
+npm run dev -- startet den Entwicklungsserver
+npm run build -- erstellt eine Build-Version der Webseite
+npm run start -- startet die Build-Version der Webseite
+
+Wichtig: Der E-Mail-Provider Outlook benutzt seit dem 16. September 2024 eine 2-Faktor-Authentifizierung,
+wodurch keine Mail mehr vom CLiente über Outlook an Bolasys oder Cylas geschickt werden können.
+Man könnte einen info@bolays.de und info@cylas.de - Account über Strato selbst erstellen ohne 2-Faktor-Authenifizierung.
