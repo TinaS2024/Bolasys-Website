@@ -16,23 +16,23 @@ export async function POST(req : Request)
     const {username,email,subject,nachricht} = await req.json()
 
     const transporter = nodemailer.createTransport({
-            host:"smtp-mail.outlook.com",
-            service: "Outlook",
-            port: 587,
+            host: "smtp.strato.de", //"smtp-mail.outlook.com",
+            service: "Strato", //"Outlook",
+            port: 465, //587,
             secureConnection: false,
             tls: {
                 ciphers: "SSLv3"
             },
             auth: {
-                user:"bolasys_client@outlook.de" ,//process.env.EMAIL_USER,
-                pass:"kZ4xj8vkVABf9WB" ,//process.env.EMAIL_PASS,
+                user: "info@bolasys.de", //"bolasys_client@outlook.de" 
+                pass: "42sysalob-WS" //"kZ4xj8vkVABf9WB" 
             }
         } as nodemailer.TransportOptions);
 
 
      const mailData = {
-         from: "bolasys_client@outlook.de",
-         to: "beate.lang@bolasys.de",
+         from: "info@bolasys.de", //"bolasys_client@outlook.de",
+         to: "tina.Schmidtbauer@bolasys.de",
          subject: subject,
          html: '<h2>Kundenanfrage an Bolasys GmbH</h2><p>Von: '+username+'</p><p>Email-Absender: '+email+'</p><p>Nachricht: <br/> '+nachricht+'</p>',
      };
