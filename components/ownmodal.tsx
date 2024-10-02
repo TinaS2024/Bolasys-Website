@@ -1,4 +1,4 @@
-import { Button } from "@nextui-org/button";
+import { Button } from "@nextui-org/react";
 import { Modal, ModalBody, ModalContent, ModalHeader, useDisclosure } from "@nextui-org/react";
 import Link from "next/link";
 
@@ -6,18 +6,19 @@ export interface UserProps
 {
     titel: string;
     inhalt:Array<any>;
-    className: string;
     link:string;
+    links:string;
+    oben:string;
 }
 
-// Auf der statischen Seite des Build sind die Modale verscoben
-const OwnModal = ({titel,inhalt,className,link}:UserProps) =>
+// Auf der statischen Seite des Build sind die Modale verschoben... wenn man background:none wegnimmt sieht man die Button und kann sie verschieben
+const OwnModal = ({titel,inhalt,link,links,oben}:UserProps) =>
 {
     const {isOpen,onOpen,onOpenChange} = useDisclosure();
 
     return(
-        <div className={className} style={{marginTop:"25px"}}>
-        <Button style={{background: "none"}} onPress={onOpen}></Button>
+        <div style={{position:"absolute",left:`${links}`,top:`${oben}`}}>
+        <Button style={{background:"none",zIndex:"5"}} onPress={onOpen}></Button> 
         <Modal 
         isOpen={isOpen} 
         onOpenChange={onOpenChange}

@@ -2,9 +2,9 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   width="47.155205mm"
-   height="21.692669mm"
-   viewBox="0 0 47.155205 21.692669"
+   width="50.771076mm"
+   height="24.30488mm"
+   viewBox="0 0 50.771076 24.30488"
    version="1.1"
    id="svg1"
    inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
@@ -26,36 +26,66 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
-     inkscape:zoom="1"
-     inkscape:cx="283"
-     inkscape:cy="394"
-     inkscape:window-width="1346"
+     inkscape:zoom="2"
+     inkscape:cx="300.25"
+     inkscape:cy="626.5"
+     inkscape:window-width="1803"
      inkscape:window-height="1040"
-     inkscape:window-x="2341"
-     inkscape:window-y="0"
+     inkscape:window-x="1912"
+     inkscape:window-y="29"
      inkscape:window-maximized="0"
-     inkscape:current-layer="layer1" />
+     inkscape:current-layer="layer1"
+     showguides="true">
+    <sodipodi:guide
+       position="-44.236438,264.4753"
+       orientation="0,-1"
+       id="guide12"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="-40.003103,276.3154"
+       orientation="1,0"
+       id="guide13"
+       inkscape:locked="false" />
+  </sodipodi:namedview>
   <defs
      id="defs1" />
   <g
      inkscape:label="Ebene 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-120.63473,-146.55317)">
+     transform="translate(-119.04737,-145.01071)">
     <path
        style="fill:none;stroke:#008080;stroke-width:1;stroke-dasharray:none;stroke-opacity:1"
-       d="m 121.44375,167.74583 10.05417,-20.10833 10.84791,20.10833 z"
+       d="m 121.44375,167.74583 10.0074,-18.93903 10.28664,18.89226 z"
        id="path7"
-       inkscape:export-filename="gleiche_formen.svg"
+       inkscape:export-filename="gleiche_formen.png"
        inkscape:export-xdpi="96"
-       inkscape:export-ydpi="96" />
+       inkscape:export-ydpi="96"
+       sodipodi:nodetypes="cccc" />
     <path
        style="fill:none;stroke:#008080;stroke-width:1;stroke-dasharray:none;stroke-opacity:1"
-       d="m 146.05,167.74583 10.05417,-20.10833 10.84791,20.10833 z"
-       id="path8" />
+       d="m 146.23709,167.74583 10.72366,-19.51107 9.99133,19.51107 z"
+       id="path8"
+       sodipodi:nodetypes="cccc" />
     <path
        style="fill:none;stroke:#008080;stroke-width:1;stroke-dasharray:none;stroke-opacity:1"
-       d="m 133.87917,147.05317 10.05417,20.10833 10.84791,-20.10833 z"
-       id="path9" />
+       d="m 133.92595,146.86608 10.17041,18.47544 10.45103,-18.52221 z"
+       id="path9"
+       sodipodi:nodetypes="cccc" />
+    <path
+       style="fill:none;stroke:#ff0000;stroke-width:0.499999;stroke-dasharray:none"
+       d="m 119.45938,168.93646 11.95302,-23.18039 12.57573,22.9706 z"
+       id="path13"
+       sodipodi:nodetypes="cccc" />
+    <path
+       style="fill:none;stroke:#ff0000;stroke-width:0.499999;stroke-dasharray:none"
+       d="m 144.07366,168.76542 13.01135,-23.22991 12.31779,23.52521 z"
+       id="path14"
+       sodipodi:nodetypes="cccc" />
+    <path
+       style="fill:none;stroke:#ff0000;stroke-width:0.499999;stroke-dasharray:none"
+       d="m 131.41104,145.59738 12.60783,22.58314 12.94853,-22.85437 z"
+       id="path15"
+       sodipodi:nodetypes="cccc" />
   </g>
 </svg>
