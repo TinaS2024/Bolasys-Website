@@ -1,7 +1,13 @@
 import banner1 from "@/app/bilder/banner2.png";
 
-export const Background = () => {
+export interface UserProps
+{
+  opacity: string;
+}
 
+export const Background = ({opacity}:UserProps) => {
+
+ 
 
   return (
     <header className="w-full flex items-center justify-center py-60">
@@ -14,7 +20,7 @@ export const Background = () => {
     backgroundRepeat: "no-repeat",
     width: "100vw",
     height: "100vh",
-    opacity: "40%",
+    opacity: `${opacity}`,
   }}>
     </div>
     </header>

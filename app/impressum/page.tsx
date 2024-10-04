@@ -4,17 +4,22 @@ import { title } from "@/components/primitives";
 import Titel_Subtitel_nolink from "@/components/titel_subtitel_nolink";
 import { Card, CardHeader, CardBody} from "@nextui-org/react";
 import TabZeile from "@/components/tabzeile";
-import Header from "@/components/header";
+import HeaderNeu from "@/components/header_new";
+import { Background } from "@/components/background";
 
 
 export default function ImpressumPage() {
+
+  const text = [""]
+
   return (  
 <>
-<div style={{marginLeft:"50%"}}>   
-<Header opacity="100%"></Header>
-</div >
+<div style={{marginLeft:"50%"}}>
+      <HeaderNeu></HeaderNeu>  
+      <Background opacity="20%"></Background>
+      </div>
 <div>
- <Titel_Subtitel_nolink titel="Impressum" subtitel=""/>  
+ <Titel_Subtitel_nolink titel="Impressum" subtitel={text}/>  
   </div>
     <Card className="max-w-[500px]"> 
       <CardHeader className="bg-[#2695a0]/30 text-center justify-center">

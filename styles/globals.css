@@ -12,6 +12,7 @@ a
 {
 cursor: pointer;
 }
+
 hr.new1
 {
   border: 1px solid #14353C;
@@ -26,7 +27,7 @@ hr.new1
   visibility:hidden;
   height:0px !important;
   position:absolute;
-  margin: -400px;
+  margin: -100px;
 }
 
 .line 
@@ -39,62 +40,71 @@ hr.new1
   text-align: left;
 }
 
-.grid {
-    display: grid;
-    gap: 1rem;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  }
+.grid 
+{
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
 
-  .abstand_unten
-  {
-    margin-bottom: 300px;
-  }
+.abstand_unten
+{
+  margin-bottom: 300px;
+}
 
-  .klein_abstand_unten
-  {
-    margin-bottom: 50px;
-  }
+.klein_abstand_unten
+{
+  margin-bottom: 50px;
+}
 
-  .abstand_unten_klein
-  {
-    margin-bottom: 50px;
-  }
+.abstand_unten_klein
+{
+  margin-bottom: 50px;
+}
 
-  #stempelbild:hover
-  {
-    -webkit-transition: all .3s ease-in;
-    -moz-transition: all .3s ease-in;
-    -ms-transition: all .3s ease-in;
-    -o-transition: all .3s ease-in;
-    transition: all .3s ease-in;
-    opacity: 1;
-    transform: scale(2);
-    -ms-transform: scale(2); /* IE 9 */
-    -webkit-transform: scale(2); /* Safari and Chrome */
-    z-index: 10;
-    margin-bottom: 200px;
-  }
+#stempelbild:hover
+{
+  -webkit-transition: all .3s ease-in;
+  -moz-transition: all .3s ease-in;
+  -ms-transition: all .3s ease-in;
+  -o-transition: all .3s ease-in;
+  transition: all .3s ease-in;
+  opacity: 1;
+  transform: scale(2);
+  -ms-transform: scale(2); /* IE 9 */
+  -webkit-transform: scale(2); /* Safari and Chrome */
+  z-index: 10;
+  margin-bottom: 200px;
+}
 
-  .abstand_oben
-  {
-    margin-top: 100px;
-  }
-  .abstand_links
-  {
-    margin-left: 50px;
-  }
+.abstand_oben
+{
+  margin-top: 100px;
+}
 
-  .anordnung
-  {
-    z-index:0;
-  }
+.abstand_links
+{
+  margin-left: 50px;
+}
 
-  #header
-  {
-    position: fixed;
-    top:73px;
-    margin-left: -50%;
-  }
+.anordnung
+{
+  z-index:0;
+}
+
+#header
+{
+  position: fixed;
+  top:73px;
+  margin-left: -50%;
+}
+
+#header_neu
+{
+  position: fixed;
+  top:-225px;
+  margin-left: -50%;
+}
 
 #main
 {
@@ -102,233 +112,268 @@ hr.new1
 }
 
 
-  #footer
+#footer
+{
+  position: fixed;
+  bottom:0px;
+  margin-bottom: 0px;
+}
+
+
+.img1,.img2,.img3,.img4,.img5,.img6, .img7, .img8, .img9,.img11, .img12, .img13
+{
+  position: absolute;
+  width:100px;
+  height:100px;
+  z-index:0;
+  filter:brightness(200%);
+}
+
+
+.img10
+{
+  position: absolute;
+  width:100px;
+  height:100px;
+  z-index:0;
+  filter:brightness(150%);
+}
+
+.img1:hover,.img2:hover,.img3:hover,.img4:hover,.img5:hover,.img6:hover, .img7:hover, .img8:hover, .img9:hover, .img11:hover, .img12:hover, .img13:hover
+{
+  filter:brightness(300%);
+}
+
+.img10:hover
+{
+  filter:brightness(200%);
+}
+
+/* Microservice */
+.img1
+{
+  margin-top: 5%;
+  margin-left: 5%;
+}
+
+/* Telefon */
+.img2
+{
+  margin-top: -10%;
+  margin-left: 5%;
+}
+
+/* Webstore */
+.img3
+{
+  margin-top:-8%;
+  margin-left: -2%;
+}
+
+/* Shop */
+.img4
+{
+  margin-top: -8%;
+  margin-left: 13%;
+}
+
+/* E-Mail */
+.img5
+{
+  margin-top: -3%;
+  margin-left: -7%;
+}
+
+/* Computer */
+.img6
+{
+  margin-top: -1%;
+  margin-left: 19%;
+}
+
+/* Maschine */
+.img7
+{
+  margin-top: 19%; 
+  margin-left: 12%; 
+}
+
+/* Montage */
+.img8
+{
+  margin-top: 13%;
+  margin-left: 18%;
+}
+
+/* Transporter */
+.img9
+{
+  margin-top: 7%;
+  margin-left: 20%;
+}
+
+/* Designer */
+.img10
+{
+  margin-top: 11%; 
+  margin-left: -8%; 
+}
+
+/* Auftrag */
+.img11
   {
-    position: fixed;
-    bottom:0px;
-    margin-bottom: 0px;
+  margin-top: 4%; 
+  margin-left: -8%; 
   }
 
+/* Nesting */
+.img12
+{
+  margin-top: 20%; 
+  margin-left: 5%; 
+}
 
-  .img1,.img2,.img3,.img4,.img5,.img6, .img7, .img8, .img9,.img11, .img12, .img13
-  {
-    position: absolute;
-    width:100px;
-    height:100px;
-    z-index:0;
-    filter:brightness(200%);
-  }
-
-
-  .img10
-  {
-    position: absolute;
-    width:100px;
-    height:100px;
-    z-index:0;
-    filter:brightness(150%);
-  }
-
-  .img1:hover,.img2:hover,.img3:hover,.img4:hover,.img5:hover,.img6:hover, .img7:hover, .img8:hover, .img9:hover, .img11:hover, .img12:hover, .img13:hover
-  {
-    filter:brightness(300%);
-  }
-
-  .img10:hover
-  {
-    filter:brightness(200%);
-  }
-
-  /* Microservice */
-  .img1
-  {
-    margin-top: 5%;
-    margin-left: 5%;
-  }
-
-  /* Telefon */
-  .img2
-  {
-    margin-top: -10%;
-    margin-left: 5%;
-  }
-
-  /* Webstore */
-  .img3
-  {
-    margin-top:-8%;
-    margin-left: -2%;
-  }
-
-  /* Shop */
-  .img4
-  {
-    margin-top: -8%;
-    margin-left: 13%;
-  }
-
-  /* E-Mail */
-  .img5
-  {
-    margin-top: -3%;
-    margin-left: -7%;
-  }
-
-  /* Computer */
-  .img6
-  {
-    margin-top: -1%;
-    margin-left: 19%;
-  }
-
-  /* Maschine */
-  .img7
-  {
-    margin-top: 19%; 
-    margin-left: 12%; 
-  }
-
-   /* Montage */
-   .img8
-   {
-     margin-top: 13%;
-     margin-left: 18%;
-   }
-
-    /* Transporter */
-  .img9
-  {
-    margin-top: 7%;
-    margin-left: 20%;
-  }
-
-  /* Designer */
-  .img10
-  {
-    margin-top: 17%; 
-    margin-left: -4%; 
-  }
-
-   /* Auftrag */
-   .img11
-   {
-     margin-top: 4%; 
-     margin-left: -8%; 
-   }
-
-    /* Nesting */
-    .img12
-    {
-      margin-top: 20%; 
-      margin-left: 5%; 
-     }
-
-        /* Lager */
-    .img13
-    {
-      margin-top: 11%; 
-      margin-left: -8%; 
-     }
+ /* Lager */
+.img13
+{
+  margin-top: 17%; 
+  margin-left: -4%; 
+}
 
 
-   .pfeil1, .pfeil2, .pfeil3, .pfeil4, .pfeil5, .pfeil6
-   {
-     position:absolute;
-     width:25px;
-     height:25px;
-   }
+.pfeil1, .pfeil2, .pfeil3, .pfeil4, .pfeil5, .pfeil6
+{
+  position:absolute;
+  width:25px;
+  height:25px;
+}
 
-   .pfeil1
-   {
-    top:-2%;
-    left:38%;
-   }
+.pfeil1
+{
+  top:-2%;
+  left:38%;
+}
 
    
-   .pfeil2
-   {
-    top:14%;
-    left:5%;
-   }
+.pfeil2
+{
+  top:14%;
+  left:5%;
+}
 
-   .pfeil3
-   {
-    top:44%;
-    left:61%;
-   }
+.pfeil3
+{
+  top:44%;
+  left:61%;
+}
 
-   .pfeil4
-   {
-    top:13%;
-    left:30%;
-   }
+.pfeil4
+{
+  top:13%;
+  left:30%;
+}
 
-   .pfeil5
-   {
-    top:24%;
-    left:61%;
-   }
+.pfeil5
+{
+  top:24%;
+  left:61%;
+}
 
-   .pfeil6
-   {
-    top:56%;
-    left:15%;
-   }
-
-
-  .img_unten
-  {
-    position: absolute;
-    margin-top: 20%;
-    margin-left: 0%;
-  }
+.pfeil6
+{
+  top:56%;
+  left:15%;
+}
 
 
-  #designerbild
-    {
-      background-image: url("../app/bilder/Designer.png");
-      position: absolute;
-      background-size: contain;
-      background-repeat: no-repeat;
-      width: 1000px;
-      height: 650px;
-      margin-top: -0%;
-      margin-left: -15%;
-    }
-
-  #screen
-    {
-      position: absolute;
-      background-image: url("../app/bilder/cy_screen_dark.png");
-      background-size: contain;
-      background-repeat: no-repeat;
-      width:882px;
-      height:584px;
-      margin-top: -5%;
-      margin-left: -25%;
-    }
-
-     #screen:hover
-     {
-      background-image: url("../app/bilder/cy_screen.png");
-     }
+.img_unten
+{
+  position: absolute;
+  margin-top: 20%;
+  margin-left: 0%;
+}
 
 
-     .gif
-     {
-      background-image: url("../app/bilder/galaxy.gif");
-      margin-left: -100%;
-      width:1200px;
-      height: 800px;
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center;
-     }
+#designerbild
+{
+  background-image: url("../app/bilder/Designer.png");
+  position: absolute;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 1000px;
+  height: 650px;
+  margin-top: 2%;
+  margin-left: -8%;
+}
 
-     #nesting-card1, #nesting-card2, #nesting-card3
-     {
-       margin-left: -50%;
-     }
+#screen
+{
+  position: absolute;
+  background-image: url("../app/bilder/cy_screen_dark.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width:882px;
+  height:584px;
+  margin-top: -5%;
+  margin-left: -25%;
+}
+
+#screen:hover
+{
+  background-image: url("../app/bilder/cy_screen.png");
+}
+
+
+.gif
+{
+  background-image: url("../app/bilder/galaxy.gif");
+  margin-left: -100%;
+  width:1200px;
+  height: 800px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#nesting-card1, #nesting-card2, #nesting-card3
+{
+  margin-left: -50%;
+}
+
+/* Listen-Punkte */
+.punkt-container
+{
+  margin:10px;
+  float:left;
+  width:10px;
+  height:10px;
+  border-radius: 10px;
+  background-color: #2695a0;
+}
+
+.card-container
+{
+  position: absolute;
+  margin-left: -30%;
+  margin-top: 50%;
+}
+
+/* HTML-Canvas Sterne */
+#outerspace
+{
+  border: 1px solid #111;
+  border-radius: 10px;
+  filter: drop-shadow(0px 0px 10px #3339);
+  margin-top: -10%;
+  margin-left: -50%;
+}
+
+.nesting_text
+{
+  width:1000px;
+  margin-left:-40%;
+  margin-bottom:5%;
+}
    
 
 @media screen and (max-width: 800px)
@@ -337,8 +382,8 @@ hr.new1
   {
    width: 600px;
    height: 390px;
-   margin-top: -5%;
-   margin-left: -25%;
+   margin-top: 2%;
+   margin-left: -10%;
   }
 
   #cydesigner
@@ -390,6 +435,19 @@ hr.new1
    left:15%;
   }
 
+  .nach_links
+  {
+    margin-left:-5%;
+  }
+
+  .nesting_text
+  {
+    width:1000px;
+    margin-left:-40%;
+    margin-bottom:5%;
+  }
+
+
 }
   
 
@@ -415,7 +473,7 @@ hr.new1
   /* Microservice */
   .img1
   {
-    margin-top: -15%;
+    margin-top: -5%;
     margin-left: 7%;
     width:70px;
   }
@@ -423,7 +481,7 @@ hr.new1
   /* Telefon */
   .img2
   {
-    margin-top: -50%;
+    margin-top: -40%;
     margin-left: 9%;
     width:50px;
   }
@@ -431,7 +489,7 @@ hr.new1
   /* Webstore */
   .img3
   {
-    margin-top:-42%;
+    margin-top:-32%;
     margin-left: -10%;
     width:50px;
   }
@@ -439,7 +497,7 @@ hr.new1
   /* Shop */
   .img4
   {
-    margin-top: -45%;
+    margin-top: -35%;
     margin-left: 23%;
     width:70px;
   }
@@ -447,7 +505,7 @@ hr.new1
   /* E-Mail */
   .img5
   {
-    margin-top: -30%;
+    margin-top: -20%;
     margin-left: -20%;
     width:50px;
   }
@@ -455,7 +513,7 @@ hr.new1
   /* Computer */
   .img6
   {
-    margin-top: -30%;
+    margin-top: -20%;
     margin-left: 33%;
     width:70px;
   }
@@ -463,7 +521,7 @@ hr.new1
   /* Maschine */
   .img7
   {
-    margin-top: 18%; 
+    margin-top: 28%; 
     margin-left: 20%; 
     width:50px;
   }
@@ -471,15 +529,15 @@ hr.new1
    /* Montage */
    .img8
    {
-     margin-top: 2%;
+     margin-top: 12%;
      margin-left: 33%;
      width:70px;
    }
 
-    /* Transporter */
+  /* Transporter */
   .img9
   {
-    margin-top: -12%;
+    margin-top: -2%;
     margin-left: 38%;
     width:70px;
   }
@@ -487,35 +545,34 @@ hr.new1
   /* Designer */
   .img10
   {
-    margin-top: 15%; 
-    margin-left: -15%; 
+    margin-top: 10%; 
+    margin-left: -19%; 
     width:60px;
   }
 
-   /* Auftrag */
-   .img11
-   {
-     margin-top: -15%;
-     margin-left: -20%;
-     width:40px;
-   }
+  /* Auftrag */
+  .img11
+  {
+    margin-top: -5%;
+    margin-left: -20%;
+    width:40px;
+  }
 
-    /* Nesting */
-    .img12
-    {
-      margin-top: 22%;
-      margin-left: 5%;
-      width:40px;
-     }
+  /* Nesting */
+  .img12
+  {
+    margin-top: 32%;
+    margin-left: 5%;
+    width:40px;
+  }
 
-    /* Lager */
-    .img13
-    {
-      margin-top: 0%; 
-      margin-left: -19%; 
-      width:50px;
-     }
-
+  /* Lager */
+  .img13
+  {
+    margin-top: 25%;
+    margin-left: -15%; 
+    width:50px;
+  }
 
   .img_unten
   {
@@ -535,34 +592,12 @@ hr.new1
     top: 40%;
   }
 
+  .nesting_text
+  {
+    width:450px;
+    margin-left:8%;
+    margin-bottom:5%;
+  }
+
 }
 
-/* Listen-Punkte */
-
-.punkt-container
-{
-  margin:10px;
-  float:left;
-  width:10px;
-  height:10px;
-  border-radius: 10px;
-  background-color: #2695a0;
-}
-
-.card-container
-{
-  position: absolute;
-  margin-left: -30%;
-  margin-top: 50%;
-}
-
-/* HTML-Canvas Sterne */
-
-#outerspace
-{
-  border: 1px solid #111;
-  border-radius: 10px;
-  filter: drop-shadow(0px 0px 10px #3339);
-  margin-top: -10%;
-  margin-left: -50%;
-}

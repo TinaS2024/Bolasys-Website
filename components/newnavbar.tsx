@@ -13,22 +13,43 @@ const NewNavbar = () =>
     }
      {/*endContent={icon.chevron}*/}
     return(
-        <div className="fixed h-screen-full" style={{zIndex: "10",width:"100%",marginTop:"500px"}}>
+        <div className="fixed h-screen-full" style={{zIndex:"10",width:"100%",marginTop:"500px"}}>
             <hr className="new1"/>
         <Navbar maxWidth="full"  style={{opacity:"100%"}} classNames={{base: "bg-blue"}}>
             <NavbarContent justify="start">
 
             <NavbarBrand className="mr-50">
                 <Image src={myLogo} width={20} height={20} alt="logo"/>
-                <Link color="foreground" className="text-lg" href="/"> <p className="font-bold text-inherit">BOLASYS GMBH</p></Link>
+                <Link color="foreground" className="text-lg" href="/"> <p className="font-bold text-xl text-inherit">BOLASYS GMBH &nbsp; </p></Link>    
+                </NavbarBrand>
+
+            </NavbarContent>
               
-            </NavbarBrand>
+        
 
-            <NavbarContent className="hidden sm:flex" justify="center">
+            <NavbarContent className="hidden sm:flex " justify="center">
 
-                {/*
-                <Dropdown>
-                    <NavbarItem>
+            <NavbarItem className="lg:block md:block sm:hidden">
+                    <Link color="foreground" className="text-lg" href="/produkte/gpe">GPE</Link>
+            </NavbarItem>
+
+            <NavbarItem className="lg:block md:block sm:hidden">
+                    <Link color="foreground" className="text-lg" href="/produkte/designer">DESIGNER</Link>
+            </NavbarItem>
+
+            <NavbarItem className="lg:block md:block sm:hidden">
+                    <Link color="foreground" className="text-lg" href="/produkte/nestingsoftware">NESTING</Link>
+            </NavbarItem>
+
+            <NavbarItem className="lg:block md:block sm:hidden">
+                    <Link color="foreground" className="text-lg" href="/produkte/ui">UI</Link>
+            </NavbarItem>
+            </NavbarContent>
+
+
+                
+                <Dropdown >
+                    <NavbarItem className="lg:hidden md:hidden sm:block">
                         <DropdownTrigger>
                             <Button 
                             disableRipple 
@@ -36,27 +57,23 @@ const NewNavbar = () =>
                            
                             radius="sm"
                             variant="light">
-                                Produkte 
+                                Produkte
                             </Button>
                         </DropdownTrigger>
                     </NavbarItem>
 
-                    <DropdownMenu aria-label="Bolays Produkte" className="w-[250px] p-5" itemClasses={{base: "gap-4"}} variant="faded">
+                    <DropdownMenu aria-label="Bolays Produkte" className="w-[250px] p-5 lg:hidden md:hidden sm:block" itemClasses={{base: "gap-4"}} variant="faded">
 
                         <DropdownItem key="gpe">
                         <Link color="foreground" className="text-lg" href="/produkte/gpe">GPE</Link>
                         </DropdownItem>
 
                         <DropdownItem key="designer">
-                        <Link color="foreground" className="text-lg" href="/produkte/designer">Designer</Link>
-                        </DropdownItem>
-
-                        <DropdownItem key="cydesigner">
-                        <Link color="foreground" className="text-lg" href="/produkte/cydesigner">CyDesigner</Link>
+                        <Link color="foreground" className="text-lg" href="/produkte/designer">DESIGNER</Link>
                         </DropdownItem>
 
                         <DropdownItem key="nestingsoftware">
-                        <Link color="foreground" className="text-lg" href="/produkte/nestingsoftware">Nesting-Software</Link>
+                        <Link color="foreground" className="text-lg" href="/produkte/nestingsoftware">NESTING</Link>
                         </DropdownItem>
 
                         <DropdownItem key="ui">
@@ -66,7 +83,8 @@ const NewNavbar = () =>
 
                     </DropdownMenu>
                 </Dropdown>
-                */}
+                
+                <NavbarContent className="hidden sm:flex" justify="end">
                
                 <NavbarItem>
                     <Link color="foreground" className="text-lg" href="/blogsite">Bolasys Blog</Link>
@@ -75,9 +93,6 @@ const NewNavbar = () =>
                 <NavbarItem>
                     <Link color="foreground" className="text-lg" href="/kontakt">Kontakt</Link>
                 </NavbarItem>
-
-
-            </NavbarContent>
 
 
             </NavbarContent>

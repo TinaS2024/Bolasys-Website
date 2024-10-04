@@ -33,9 +33,9 @@ export default function Home()
     {/*<Titel_Subtitel titel="CYDESIGNER" subtitel="zur Erzeugung von Stempel-Layouts im PC" path="/produkte/cydesigner"></Titel_Subtitel> */} 
     <Titel_Subtitel titel="NESTING" subtitel="zur optimalen Nutzung ihrer Produktionssysteme" path="/produkte/nestingsoftware"></Titel_Subtitel>
     <Titel_Subtitel titel="UI" subtitel="Bedienoberflächen für Lasergravierer und ähnliche Produktionssysteme" path="/produkte/ui"></Titel_Subtitel>
-  </div>  <Background></Background>  
+  </div>  
+  <Background opacity="40%"></Background>
 
-  
   </>
 
   );

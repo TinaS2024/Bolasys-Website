@@ -101,7 +101,7 @@ const MyCard = () =>
         </CardBody>
     </Card>
 
-    <Card style={{margin:"15px",marginBottom:"500px"}} className="w-[400px]">
+    <Card style={{margin:"15px",marginBottom:"100px"}} className="w-[400px]">
     <div id="gravier" className="sprung"></div>
       <CardHeader style={{zIndex: "0"}}> <h3 className="text-[#2695a0] text-xl">Graviermaschine</h3></CardHeader>
       <CardBody>

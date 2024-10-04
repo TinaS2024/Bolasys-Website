@@ -5,7 +5,7 @@ import Image, { StaticImageData } from "next/image";
 {
     titel:string;
     path:StaticImageData;
-    beschreibung: string;
+    beschreibung: Array<any>;
     className: string;
     width: number;
     height: number;

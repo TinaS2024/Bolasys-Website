@@ -1,6 +1,7 @@
 
 import Blog_Artikel from "@/components/blog_artikel";
-import Header from "@/components/header";
+import HeaderNeu from "@/components/header_new";
+import { Background } from "@/components/background";
 import Titel_Subtitel_nolink from "@/components/titel_subtitel_nolink";
 import Login from "@/components/login";
 import fsPromises from "fs/promises";
@@ -8,6 +9,8 @@ import { NextResponse } from "next/server";
 
 
 export default async function generateStaticParams() {
+
+  const text = [""];
   
   const res = await fsPromises.readFile(process.cwd() + "/app/json/blog.json","utf8");
   const posts = JSON.parse(res.toString());
@@ -16,11 +19,12 @@ export default async function generateStaticParams() {
   return (  
 
 <>
-<div style={{marginLeft:"50%"}}>   
-<Header opacity="100%"></Header>
-</div>
+<div style={{marginLeft:"50%"}}>
+      <HeaderNeu></HeaderNeu>  
+      <Background opacity="20%"></Background>
+      </div>
 <div>
- <Titel_Subtitel_nolink titel=" Bolasys Blog" subtitel=""/>  
+ <Titel_Subtitel_nolink titel=" Bolasys Blog" subtitel={text}/>  
   </div>
 
 {

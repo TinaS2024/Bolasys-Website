@@ -50,7 +50,7 @@ export const Graph = () => {
 
   return (
  
-    <div className="graph-position" style={{marginTop:"300px"}}> 
+    <div className="graph-position" style={{marginTop:"280px"}}> 
     
 
     <div className="img1">

@@ -1,6 +1,7 @@
 "use client"
 
-import Header from "@/components/header";
+import HeaderNeu from "@/components/header_new";
+import { Background } from "@/components/background";
 import Titel_Subtitel_nolink from "@/components/titel_subtitel_nolink";
 import { Card, CardHeader, CardBody} from "@nextui-org/react";
 import { RadioGroup,Radio, Textarea, Input} from "@nextui-org/react";
@@ -16,6 +17,8 @@ const KontaktPage = () =>{
   const [email, setEmail] = useState("");
   const [subject,setSubject] = useState("");
   const [nachricht,setNachricht] = useState("");
+
+  const text = ["Wir können User-Interfaces mit Java-Script-Frameworks erstellen und Sie in CMS-Systeme einbinden."];
 
   const handleSubmit = async (e: FormEvent)=>
   {
@@ -48,10 +51,12 @@ const KontaktPage = () =>{
 
   return (
     <div style={{marginLeft:"50%"}}>
-        <Header opacity="100%"/>
+      <HeaderNeu></HeaderNeu>  
+      <Background opacity="20%"></Background>
+   
         <div style={{marginLeft:"-100%"}} className="py-8 text-left">   
         <div>
-               <Titel_Subtitel_nolink titel="Kontakt" subtitel="Wir können User-Interfaces mit Java-Script-Frameworks erstellen und Sie in CMS-Systeme einbinden."/>  
+               <Titel_Subtitel_nolink titel="Kontakt" subtitel={text}/>  
             </div>
         <Card className="max-w-[500px]">
           <CardHeader style={{zIndex: "0"}}>Bitte wählen Sie einen Benutzernamen und geben Sie <br/> eine E-Mail-Adresse an über die wir uns zurückmelden werden.</CardHeader>

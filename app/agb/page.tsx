@@ -1,17 +1,22 @@
 
-import Header from "@/components/header";
+import HeaderNeu from "@/components/header_new";
+import { Background } from "@/components/background";
 import Titel_Subtitel_nolink from "@/components/titel_subtitel_nolink";
 
 
 
 export default function AGB() {
+
+  const text = [""];
+
   return (  
 <>
-<div style={{marginLeft:"50%"}}>   
-<Header opacity="100%"></Header>
-</div >
+<div style={{marginLeft:"50%"}}>
+      <HeaderNeu></HeaderNeu>  
+      <Background opacity="20%"></Background>
+      </div>
 <div>
-    <Titel_Subtitel_nolink titel="AGB" subtitel=""/>  
+    <Titel_Subtitel_nolink titel="AGB" subtitel={text}/>  
     </div>
 <ul>
  
