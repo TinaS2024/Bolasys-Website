@@ -302,9 +302,10 @@ hr.new1
   background-repeat: no-repeat;
   width: 1000px;
   height: 650px;
-  margin-top: 2%;
+  margin-top: 5%;
   margin-left: -8%;
 }
+
 
 #screen
 {
@@ -382,8 +383,8 @@ hr.new1
   {
    width: 600px;
    height: 390px;
-   margin-top: 2%;
-   margin-left: -10%;
+   margin-top: 15%;
+   margin-left: -0%;
   }
 
   #cydesigner

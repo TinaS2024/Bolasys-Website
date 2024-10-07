@@ -7,8 +7,65 @@ import DesignerTooltip from "@/components/designer_tooltip";
 import pfeil_r from "@/app/bilder/pfeil_rechts.png";
 import pfeil_l from "@/app/bilder/pfeil_links.png";
 
+import { Button } from "@nextui-org/button";
+import { Modal, ModalBody, ModalContent, useDisclosure } from "@nextui-org/react";
+import { useState, useEffect } from "react";
+import Image from "next/image";
+import { StaticImageData } from "next/image";
+import bild1 from "@/app/bilder/satz1.png";
+import bild2 from "@/app/bilder/satz2.png";
+import bild3 from "@/app/bilder/satz3.png";
 
-export default function Designer() {
+//Slider: https://medium.com/@dissanayakewishwajith/creating-an-image-slider-with-next-js-tailwind-css-and-typescript-4dbeeb9c0df6#:~:text=In%20this%20tutorial,%20I%E2%80%99ll%20show%20you
+
+
+interface ImageData
+{
+    src: StaticImageData;
+}
+
+const bilder: ImageData[] =
+    [
+      {
+        src: bild1,               
+      },
+      {
+        src: bild2,               
+      },
+      {
+        src: bild3,            
+      },  
+    ];
+      
+export default function Designer() 
+{
+  const {isOpen,onOpen,onOpenChange} = useDisclosure();
+  const [currendIndex,setCurrentIndex] = useState<number>(0);
+  const [isHovered] = useState<boolean>(false);
+
+
+  const nextSlide = ():void =>
+    {
+      setCurrentIndex(
+        (prevIndex) => (prevIndex +1) % bilder.length);
+    };
+
+    useEffect(() =>
+    {
+      if(!isHovered)
+      {
+        const interval = setInterval(() => {
+          nextSlide();
+        }, 3000);
+
+        return () =>
+        {
+          clearInterval(interval);
+        };
+      }
+    
+    }, [isHovered]);
+  
 
   const bild_rechts = pfeil_r;
   const bild_links = pfeil_l;
@@ -21,7 +78,7 @@ export default function Designer() {
     const text5 = ["Produktbeschreibung mit Maßen und Preis."]
     const text6 = ["Minimierte Produktvorschau."]
 
-
+      
     return (
    
       <>
@@ -30,14 +87,44 @@ export default function Designer() {
       <Background opacity="20%"></Background>
       </div> 
     <Titel_Subtitel_nolink titel="Designer" subtitel={text0}/>  
-          <div id="designerbild">
+          <div id="designerbild" className="flex">
             <div><DesignerTooltip top="-1%" left="30%" titel="Header" beschreibung={text1} bildpfad={bild_rechts}/><OwnModal_nolink oben="-2%" links="30%" className="pfeil1" titel="Header" inhalt={text1}/></div>
             <div><DesignerTooltip top="10%" left="5%" titel="Zeichenelemente" beschreibung={text2} bildpfad={bild_links}/><OwnModal_nolink oben="12%" links="5%" className="pfeil2" titel="Zeichenelemente" inhalt={text2}/></div>
             <div><DesignerTooltip top="30%" left="53%" titel="Attribute" beschreibung={text3} bildpfad={bild_rechts}/><OwnModal_nolink oben="45%" links="52%" className="pfeil3" titel="Attribute" inhalt={text3}/></div>
             <div><DesignerTooltip top="10%" left="30%" titel="Canvas" beschreibung={text4} bildpfad={bild_links}/><OwnModal_nolink oben="15%" links="30%" className="pfeil4" titel="Canvas" inhalt={text4}/></div>
             <div><DesignerTooltip top="17%" left="53%" titel="Produktdetails" beschreibung={text5} bildpfad={bild_rechts}/><OwnModal_nolink oben="25%" links="52%" className="pfeil5" titel="Produktdetails" inhalt={text5}/></div>
             <div><DesignerTooltip top="38%" left="15%" titel="Vorschau" beschreibung={text6} bildpfad={bild_links}/><OwnModal_nolink oben="55%" links="15%" className="pfeil6" titel="Vorschau" inhalt={text6}/></div>
-          </div>
+          </div> 
+          <Button style={{marginTop:"25px"}} className="bg-[#5ec4d2] text-black" onPress={onOpen} ><p className="text-xl">Design-Beispiele</p></Button>
+          <Modal 
+        isOpen={isOpen} 
+        onOpenChange={onOpenChange}
+        classNames={{base: "border-[#5ec4d2] bg-[#0e2d38] text-[#5ec4d2]"}}>
+            
+            <ModalContent style={{marginLeft:"-2%",marginTop:"6%"}} className=" sm:min-w-[400px] sm:min-h-[300px]  md:min-w-[800px] md:min-h-[600px]  lg:min-w-[1200px] lg:min-h-[900px]">
+                {
+                (
+                    <>
+                    <ModalBody >{bilder.map((_,index)=>
+                    (
+                      <>
+                      <div>
+                        <Image src={bilder[currendIndex].src} alt="" layout="fill" objectFit="cover"></Image>
+                      </div>
+                    <div key={index} className={`${index == currendIndex}transition-all duration-500 ease-in-out`}>
+
+                    </div>
+                    </>)
+                    )}
+                    </ModalBody>
+                    </>       
+                )
+
+                }
+                 
+            </ModalContent>  
+        </Modal>
+          
   </>
   
   

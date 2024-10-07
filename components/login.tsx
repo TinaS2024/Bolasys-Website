@@ -72,7 +72,7 @@ const Login = ({className}:UserProps) =>
                     <Input required type="text" label="E-Mail" className="max-w-xs" variant="bordered" value={email} onChange={(e) =>setEmail(e.target.value)}/>
                     <Input required type="password" label="Password" name="password"  className="max-w-xs" variant="bordered" value={password} onChange={(e) =>setPassword(e.target.value)}/>
                  <ModalFooter>
-                  <div style={{position:"relative",left:"28px",visibility:"hidden"}} ref={ausloggen}><Button id="log_out" className="bg-[#5ec4d2] text-black" onPress={onClose} >Ausloggen</Button></div>  
+                  <div style={{position:"relative",left:"28px",visibility:"hidden"}} ref={ausloggen}><Button id="log_out" className="bg-[#5ec4d2] text-black" onPress={onClose}>Ausloggen</Button></div>  
                   <div style={{position:"relative",left:"30px",visibility:"visible"}} ref={einloggen}><Button id="log_in" className="bg-[#5ec4d2] text-black" type="submit">Einloggen</Button></div>    
                   <div style={{position:"relative",left:"-25px",visibility:"hidden"}} ref={hiddenDiv}><Blogmodal idName="artikel_blog"/></div>
                   </ModalFooter>
