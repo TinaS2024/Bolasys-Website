@@ -9,12 +9,13 @@ import Blogmodal from "./blogmodal";
 import {useRef, useState } from "react";
 import {FormEvent } from "react";
 
-/* Supabase: tina.schmidtbauer@bolasys.de F)mP7$f,k2B)#*L*/
-
 export interface UserProps
 {
     className: string;
 }
+
+const username = process.env.NEXT_PUBLIC_USERNAME_BLOG;
+const passwort = process.env.NEXT_PUBLIC_PASSWORD_BLOG;
 
 const Login = ({className}:UserProps) =>
 {
@@ -27,15 +28,11 @@ const Login = ({className}:UserProps) =>
     const einloggen= useRef<HTMLDivElement | null>(null);
     const ausloggen = useRef<HTMLDivElement | null>(null);
 
-    /*const hiddenDiv: HTMLElement | null | undefined = window.document.getElementById("artikel_blog"); 
-    const einloggen: HTMLElement | null | undefined = window.document.getElementById("log_in");
-    const ausloggen: HTMLElement | null | undefined = window.document.getElementById("log_out");
-    */
     const handleSubmit = async (e: FormEvent)=>
         {
           e.preventDefault()
-
-          if(email =="tina.schmidtbauer@bolasys.de" && password == "F)mP7$f,k2B)#*L")
+          
+          if(email == username && password == passwort)
           {   
             if (hiddenDiv != null && einloggen != null && ausloggen != null)
             {
@@ -46,10 +43,12 @@ const Login = ({className}:UserProps) =>
               }
                 
               einloggen.current!.style.visibility = "hidden";    
-            }
+           }
           }    
           else{
+            
             Swal.fire({title:"Fehler", text:"Falscher Benutzernahme oder falsches Passwort.",icon:"error",background:"#0e2d38",color:"white", showCancelButton: true, showConfirmButton:false,cancelButtonColor: "#DD6B55"});
+          
           }
         }
       

@@ -11,6 +11,8 @@ import Swal from "sweetalert2";
 import {FormEvent } from "react";
 import {useState} from "react";
 
+//Hier wird eigentlich ein Captcha benötigt
+
 
 const KontaktPage = () =>{
   const [username, setUsername] = useState("");
@@ -23,7 +25,7 @@ const KontaktPage = () =>{
   const handleSubmit = async (e: FormEvent)=>
   {
     e.preventDefault()
-    
+
     try
     {
       const res: Response = await fetch("/api/kontakt/",{
@@ -87,7 +89,7 @@ const KontaktPage = () =>{
             variant="bordered"/></td><td></td></tr>
              <tr><td height={30}></td><td></td></tr>
             <tr><td colSpan={2}>
-             <RadioGroup style={{zIndex: "0"}} label="Wählen Sie einen Bereich aus zu dem Sie Fragen haben." color="warning" defaultValue="GPE">
+             <RadioGroup style={{zIndex: "0"}} label="Wählen Sie einen Bereich aus zu dem Sie Fragen haben." color="warning" defaultValue="Sonstiges">
               <Radio name="subject" value="GPE" onChange={(e) =>setSubject(e.target.value)}>GPE</Radio>
               <Radio name="subject" value="Designer" onChange={(e) =>setSubject(e.target.value)}>Designer</Radio>
               <Radio name="subject" value="CyDesigner" onChange={(e) =>setSubject(e.target.value)}>CyDesigner</Radio>
