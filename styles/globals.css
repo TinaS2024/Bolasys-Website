@@ -379,6 +379,18 @@ hr.new1
 
 @media screen and (max-width: 800px)
 {
+
+  #home_bg
+  {
+    margin-top: -75px;
+  }
+
+
+  .sm-links
+  {
+    left:-10%;
+  }
+
   #designerbild
   {
    width: 600px;

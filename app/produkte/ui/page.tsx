@@ -25,7 +25,7 @@ export default function UI() {
           <>
      <div style={{marginLeft:"50%"}}>
       <HeaderNeu></HeaderNeu>  
-      <Background opacity="20%"></Background>
+      <Background left="-255px" opacity="20%"></Background>
       </div>
           <Titel_Subtitel_nolink titel="UI" subtitel={text0}/>  
   

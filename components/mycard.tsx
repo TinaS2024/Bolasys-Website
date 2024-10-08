@@ -31,7 +31,7 @@ const MyCard = () =>
     return (
 <div style={{marginLeft:"-25%",marginTop:"600px"}} className="card-container flex sm:flex-col md:flex-row flex-wrap">
 
-<Card style={{margin:"15px",marginBottom:"100px"}} className="w-[400px]">
+<Card style={{margin:"15px",marginBottom:"100px"}} className="w-[400px] sm-links">
     <div id="auftragsannahme" className="sprung"></div>
       <CardHeader style={{zIndex: "0"}}> <h3 className="text-[#2695a0] text-xl">Auftragsannahme</h3></CardHeader>
       <CardBody>
@@ -40,7 +40,7 @@ const MyCard = () =>
         </CardBody>
     </Card>
 
-    <Card style={{margin:"15px",marginBottom:"100px"}} className="w-[400px]">
+    <Card style={{margin:"15px",marginBottom:"100px"}} className="w-[400px] sm-links">
     <div id="auftragsverwaltung" className="sprung"></div>
       <CardHeader style={{zIndex: "0"}}> <h3 className="text-[#2695a0] text-xl">Auftragsverwaltung</h3></CardHeader>
       <CardBody>
@@ -52,7 +52,7 @@ const MyCard = () =>
         </CardBody>
     </Card>
 
-    <Card style={{margin:"15px",marginBottom:"100px"}} className="w-[400px]">
+    <Card style={{margin:"15px",marginBottom:"100px"}} className="w-[400px] sm-links">
       <div id="lager" className="sprung"></div>
       <CardHeader style={{zIndex: "0"}}> <h3 className="text-[#2695a0] text-xl">Lagermanagement</h3></CardHeader>
       <CardBody>
@@ -62,7 +62,7 @@ const MyCard = () =>
         </CardBody>
     </Card>
     
-    <Card style={{margin:"15px",marginBottom:"100px"}} className="w-[400px]">
+    <Card style={{margin:"15px",marginBottom:"100px"}} className="w-[400px] sm-links ">
     <div id="montage" className="sprung"></div>
       <CardHeader style={{zIndex: "0"}}> <h3 className="text-[#2695a0] text-xl">Montageprogramm</h3></CardHeader>
       <CardBody>
@@ -73,7 +73,7 @@ const MyCard = () =>
         </CardBody>
     </Card>
 
-    <Card style={{margin:"15px",marginBottom:"100px"}} className="w-[400px]">
+    <Card style={{margin:"15px",marginBottom:"100px"}} className="w-[400px] sm-links">
     <div id="nest" className="sprung"></div>
       <CardHeader style={{zIndex: "0"}}> <h3 className="text-[#2695a0] text-xl">Nesting</h3></CardHeader>
       <CardBody>
@@ -83,7 +83,7 @@ const MyCard = () =>
         </CardBody>
     </Card>
 
-    <Card style={{margin:"15px",marginBottom:"100px"}} className="w-[400px]">
+    <Card style={{margin:"15px",marginBottom:"100px"}} className="w-[400px] sm-links">
     <div id="design" className="sprung"></div>
       <CardHeader style={{zIndex: "0"}}> <h3 className="text-[#2695a0] text-xl">Designer</h3></CardHeader>
       <CardBody>
@@ -92,7 +92,7 @@ const MyCard = () =>
         </CardBody>
     </Card>
 
-    <Card style={{margin:"15px",marginBottom:"100px"}} className="w-[400px]">
+    <Card style={{margin:"15px",marginBottom:"100px"}} className="w-[400px] sm-links">
     <div id="software" className="sprung"></div>
       <CardHeader style={{zIndex: "0"}}> <h3 className="text-[#2695a0] text-xl">Externe Software</h3></CardHeader>
       <CardBody>
@@ -101,7 +101,7 @@ const MyCard = () =>
         </CardBody>
     </Card>
 
-    <Card style={{margin:"15px",marginBottom:"100px"}} className="w-[400px]">
+    <Card style={{margin:"15px",marginBottom:"100px"}} className="w-[400px] sm-links ">
     <div id="gravier" className="sprung"></div>
       <CardHeader style={{zIndex: "0"}}> <h3 className="text-[#2695a0] text-xl">Graviermaschine</h3></CardHeader>
       <CardBody>

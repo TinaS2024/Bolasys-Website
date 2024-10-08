@@ -16,7 +16,7 @@ export default function ImpressumPage() {
 <>
 <div style={{marginLeft:"50%"}}>
       <HeaderNeu></HeaderNeu>  
-      <Background opacity="20%"></Background>
+      <Background left="-200px" opacity="20%"></Background>
       </div>
 <div>
  <Titel_Subtitel_nolink titel="Impressum" subtitel={text}/>  

@@ -1,6 +1,6 @@
 "use client"
 import React from "react";
-import  { Navbar, NavbarBrand, NavbarContent, NavbarItem, Link, Button, DropdownTrigger, Dropdown, DropdownMenu, DropdownItem} from "@nextui-org/react";
+import  { Navbar, NavbarBrand, NavbarContent, NavbarItem, Link, Button, DropdownTrigger, Dropdown, DropdownMenu, DropdownItem, DropdownSection} from "@nextui-org/react";
 
 import myLogo from "@/app/bilder/logo.png";
 import Image from "next/image";
@@ -64,20 +64,31 @@ const NewNavbar = () =>
 
                     <DropdownMenu aria-label="Bolays Produkte" className="w-[250px] p-5 lg:hidden md:hidden sm:block" itemClasses={{base: "gap-4"}} variant="faded">
 
+                    <DropdownSection aria-label="Produkte" showDivider>
                         <DropdownItem key="gpe">
-                        <Link color="foreground" className="text-lg" href="/produkte/gpe">GPE</Link>
+                        <Link className="text-lg text-[#5ec4d2]" href="/produkte/gpe">GPE</Link>
                         </DropdownItem>
 
                         <DropdownItem key="designer">
-                        <Link color="foreground" className="text-lg" href="/produkte/designer">DESIGNER</Link>
+                        <Link className="text-lg text-[#5ec4d2]" href="/produkte/designer">DESIGNER</Link>
                         </DropdownItem>
 
                         <DropdownItem key="nestingsoftware">
-                        <Link color="foreground" className="text-lg" href="/produkte/nestingsoftware">NESTING</Link>
+                        <Link className="text-lg text-[#5ec4d2]" href="/produkte/nestingsoftware">NESTING</Link>
                         </DropdownItem>
 
                         <DropdownItem key="ui">
-                        <Link color="foreground" className="text-lg" href="/produkte/ui">UI</Link>
+                        <Link className="text-lg text-[#5ec4d2]" href="/produkte/ui">UI</Link>
+                        </DropdownItem>
+
+                        </DropdownSection>
+                        
+                        <DropdownItem key="bolasys_blog">
+                        <Link color="foreground" className="text-lg" href="/blogsite">Bolasys Blog</Link>
+                        </DropdownItem>
+
+                        <DropdownItem key="contact">
+                        <Link color="foreground" className="text-lg" href="/kontakt">Kontakt</Link>
                         </DropdownItem>
 
 
@@ -86,11 +97,11 @@ const NewNavbar = () =>
                 
                 <NavbarContent className="hidden sm:flex" justify="end">
                
-                <NavbarItem>
+                <NavbarItem className="lg:block md:block sm:hidden">
                     <Link color="foreground" className="text-lg" href="/blogsite">Bolasys Blog</Link>
                 </NavbarItem> 
                 
-                <NavbarItem>
+                <NavbarItem className="lg:block md:block sm:hidden">
                     <Link color="foreground" className="text-lg" href="/kontakt">Kontakt</Link>
                 </NavbarItem>
 

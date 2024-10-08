@@ -33,23 +33,23 @@ export default function Nesting() {
       <>
       <div style={{marginLeft:"50%"}}>
       <HeaderNeu></HeaderNeu>  
-      <Background opacity="20%"></Background>
+      <Background left="-240px" opacity="20%"></Background>
       </div> 
       <div className="nesting_text"><Titel_Subtitel_nolink titel="Nesting" subtitel={text1}/> </div>
       <div style={{width:"500px"}}>
       <div id="nesting-card1" className="flex flex-row abstand_unten_klein" >
-      <NestingCard pathstemp={stamp1} className="mr-5 md:min-w-[550px] sm:max-w-[250px]" titel="Beispiel 1A: Clippen, rechteckige Schneidlinien, Standardabstand" path={bild1} width={150} height={150} beschreibung={text2}/>
-      <NestingCard pathstemp={stamp2} className="mr-5 md:min-w-[550px] sm:max-w-[250px]" titel='Beispiel 1B: Vermeidung "doppelter" Schneidlinien' path={bild6} width={150} height={150} beschreibung={text3}/>
+      <NestingCard pathstemp={stamp1} className="mr-5 md:min-w-[550px] sm:min-w-[200px]" titel="Beispiel 1A: Clippen, rechteckige Schneidlinien, Standardabstand" path={bild1} width={150} height={150} beschreibung={text2}/>
+      <NestingCard pathstemp={stamp2} className="mr-5 md:min-w-[550px] sm:min-w-[200px]" titel='Beispiel 1B: Vermeidung "doppelter" Schneidlinien' path={bild6} width={150} height={150} beschreibung={text3}/>
       </div>
 
     <div id="nesting-card2" className="flex flex-row abstand_unten_klein">
-      <NestingCard pathstemp={stempel3} className="mr-5 md:min-w-[550px] sm:max-w-[250px]" titel="Beispiel 2A: Clippen und Schrumpfen 1" path={bild2} width={100} height={100} beschreibung={text4} />
-      <NestingCard pathstemp={stempel4} className="mr-5 md:min-w-[550px] sm:max-w-[250px]" titel="Beispiel 2B: Clippen und Schrumpfen 2" path={bild3} width={100} height={100} beschreibung={text5} />
+      <NestingCard pathstemp={stempel3} className="mr-5 md:min-w-[550px] sm:min-w-[200px]" titel="Beispiel 2A: Clippen und Schrumpfen 1" path={bild2} width={100} height={100} beschreibung={text4} />
+      <NestingCard pathstemp={stempel4} className="mr-5 md:min-w-[550px] sm:min-w-[200px]" titel="Beispiel 2B: Clippen und Schrumpfen 2" path={bild3} width={100} height={100} beschreibung={text5} />
     </div>
 
     <div id="nesting-card3" className="flex flex-row abstand_unten_klein">
-      <NestingCard pathstemp={stempel5} className="mr-5 md:min-w-[550px] sm:max-w-[250px]" titel="Beispiel 3A: Anordnung mit Schrumpfen nach Beispiel 2A" path={bild4} width={100} height={100} beschreibung={text6} />
-      <NestingCard pathstemp={stempel6} className="mr-5 md:min-w-[550px] sm:max-w-[250px]" titel="Beispiel 3B: Anordnung nach Beispiel 2B" path={bild5} width={100} height={100} beschreibung={text7} />
+      <NestingCard pathstemp={stempel5} className="mr-5 md:min-w-[550px] sm:min-w-[200px]" titel="Beispiel 3A: Anordnung mit Schrumpfen nach Beispiel 2A" path={bild4} width={100} height={100} beschreibung={text6} />
+      <NestingCard pathstemp={stempel6} className="mr-5 md:min-w-[550px] sm:min-w-[200px]" titel="Beispiel 3B: Anordnung nach Beispiel 2B" path={bild5} width={100} height={100} beschreibung={text7} />
     </div>
  
     </div>

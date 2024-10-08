@@ -34,7 +34,7 @@ export default function Home()
     <Titel_Subtitel titel="NESTING" subtitel="zur optimalen Nutzung ihrer Produktionssysteme" path="/produkte/nestingsoftware"></Titel_Subtitel>
     <Titel_Subtitel titel="UI" subtitel="Bedienoberflächen für Lasergravierer und ähnliche Produktionssysteme" path="/produkte/ui"></Titel_Subtitel>
   </div>  
-  <Background opacity="40%"></Background>
+  <div id="home_bg"><Background left="0" opacity="40%"></Background></div>
 
   </>
 
