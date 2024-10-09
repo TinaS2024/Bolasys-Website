@@ -1,9 +1,9 @@
 import gpe from "@/app/bilder/Bediensoftware_GPE.png";
-import phone from "@/app/bilder/Telephon.png";
-import webstore from "@/app/bilder/Webstore.png";
-import shop from "@/app/bilder/Shop.png";
+import phone from "@/app/bilder/Telephon_green.png";
+import webstore from "@/app/bilder/Webstore_green.png";
+import shop from "@/app/bilder/Shop_green.png";
 import maschine from "@/app/bilder/Graviermaschine.png";
-import email from "@/app/bilder/E-mail.png";
+import email from "@/app/bilder/E-mail_green.png";
 import computer from "@/app/bilder/Computer_extern.png";
 import montage from "@/app/bilder/Tools.png";
 import transporter from "@/app/bilder/Car_Transport.png";
@@ -33,101 +33,101 @@ export const Graph = () => {
     const bild11 = nesting;
     const bild12 = lager;
 
-    const text1 = ["Microservice, Workflowmanagment und Broker-Software."] //BPMN; RabbitMQ
-    const text2 = ["Auftragsannahme über Telefon oer Handy."]
-    const text3 = ["Auftragsannahme über einen Webstore."]
-    const text4 = ["Auftragsannahme über einen Shop."]
-    const text5 = ["Auftragsannahme über E-Mail."]
-    const text6 = ["Externe Software die angeschlossen werden kann."]
-    const text7 = ["Graviermaschine die an Software angeschlossen ist."]
-    const text8 = ["Montage und Zuordnung des Produktes."]
-    const text9 = ["Verpackung und Versand."]
-    const text10 = ["WebApp-Designer."]
-    const text11 = ["Auftragsverwaltung."]
-    const text12 = ["Nesting von Layouts."]
-    const text13 = ["Lagerkommissionierung"]
+    const text1 = ["Microservice, Workflowmanagment und Broker-Software."] 
+    const text2 = ["Unmittelbar im GPE, z.B. bei telefonischem Kontakt."]
+    const text3 = ["Automatische Auftragsgenerierung und Übernahme von Designs im GPE."]
+    const text4 = ['Kiosk-System mit direktem Anschluss an das GPE ("GPE-Frontend").']
+    const text5 = ["Angebote, Auftragsannahme, Proof-Mails."]
+    const text6 = ["Möglicher Anschluss von cloudgestützter Software für Buchhaltung, Design, Kunden-& Lagerverwaltung."]
+    const text7 = ["Interface für Graviermaschinen."]
+    const text8 = ["Software für die Montage und Zuordnung des Produktes."]
+    const text9 = ["Komissionierungs-und Versandmodul."]
+    const text10 = ["Verwendung des Bolasys-Designer oder Anbindung von Design-Fremdsoftware an das GPE."]
+    const text11 = ["Software zum Erstellen von Aufträgen mit oder ohne Vorlage, sowie Anzeige von Arbeitsschritten."]
+    const text12 = ["Nestingsoftware für die die optimierte Anordnung von Designs mit Zeitersparnis und Materialeinsparung."]
+    const text13 = ["Komissionierungsmanagement mit Komponentenlisten und Produktionseinheiten für Wegoptimierung."]
 
 
   return (
  
-    <div className="graph-position" style={{marginTop:"280px"}}> 
+    <div className="graph-position" style={{marginTop:"200px"}}> 
     
 
     <div className="img1">
       <DesignerTooltip top="15%" left="15%" titel="Microservice" beschreibung={text1} bildpfad={leerbild}/>
-      <OwnModal links="10px" oben="15px" link="service" titel="Microservice" inhalt={text1}/>
+      <OwnModal className="modal_klein_img1" links="-10px" oben="100px" link="service" titel="Microservice" inhalt={text1}/>
       <Image src={bild0} alt="microservice" width={100} height={100}></Image>
     </div>
     
     <div className="img2">
-      <DesignerTooltip top="20%" left="5%" titel="Telefon" beschreibung={text2} bildpfad={leerbild}/>
-      <OwnModal links="" oben="20px" link="auftragsannahme" titel="Telefon" inhalt={text2}/>
+      <DesignerTooltip top="20%" left="5%" titel="Auftragsvorbereitung und Annahme über Telefon:" beschreibung={text2} bildpfad={leerbild}/>
+      <OwnModal className="modal_klein_img2" links="-8px" oben="80px" link="auftragsannahme" titel="Telefon" inhalt={text2}/>
       <Image src={bild1} alt="telefon" width={80} height={80}></Image>
     </div>
 
       <div className="img3">
-        <DesignerTooltip top="10%" left="15%" titel="Webstore" beschreibung={text3} bildpfad={leerbild}/>
-        <OwnModal links="" oben="" link="auftragsannahme" titel="Webstore" inhalt={text3}/>
+        <DesignerTooltip top="10%" left="15%" titel="Auftragsvorbereitung und Annahme über Webstore:" beschreibung={text3} bildpfad={leerbild}/>
+        <OwnModal className="modal_klein_img3" links="-5px" oben="60px" link="auftragsannahme" titel="Webstore" inhalt={text3}/>
         <Image src={bild2} alt="webstore" width={80} height={80}></Image>
       </div>
 
-      <div className="img4"
-      ><DesignerTooltip top="25%" left="25%" titel="Shop" beschreibung={text4} bildpfad={leerbild}/>
-      <OwnModal links="" oben="20px" link="auftragsannahme" titel="Shop" inhalt={text4}/>
-      <Image src={bild3} alt="shop" width={100} height={100}></Image>
+      <div className="img4">
+        <DesignerTooltip top="25%" left="25%" titel="Auftragsvorbereitung und Annahme über Shop:" beschreibung={text4} bildpfad={leerbild}/>
+        <OwnModal className="modal_klein_img4" links="10px" oben="80px" link="auftragsannahme" titel="Shop" inhalt={text4}/>
+        <Image src={bild3} alt="shop" width={100} height={100}></Image>
       </div>
 
       <div className="img5">
-        <DesignerTooltip top="5%" left="0%" titel="E-Mail" beschreibung={text5} bildpfad={leerbild}/>
-        <OwnModal links="" oben="" link="auftagsannahme" titel="E-Mail" inhalt={text5}/>
+        <DesignerTooltip top="5%" left="0%" titel="Auftragsvorbereitung und Annahme über E-Mail:" beschreibung={text5} bildpfad={leerbild}/>
+        <OwnModal className="modal_klein_img5" links="-10px" oben="50px" link="auftagsannahme" titel="E-Mail" inhalt={text5}/>
         <Image src={bild4} alt="email" width={60} height={60}></Image>
       </div>
 
       <div className="img6">
         <DesignerTooltip top="1%" left="10%" titel="Externe Software" beschreibung={text6} bildpfad={leerbild}/>
-        <OwnModal links="10px" oben="" link="software" titel="Externe Sofware" inhalt={text6}/>
+        <OwnModal className="modal_klein_img6" links="-10px" oben="55px" link="software" titel="Externe Sofware" inhalt={text6}/>
         <Image src={bild5} alt="computer" width={100} height={100}></Image>
       </div>
       
       <div className="img7">
         <DesignerTooltip top="5%" left="5%" titel="Graviermaschine" beschreibung={text7} bildpfad={leerbild}/>
-        <OwnModal links="" oben="10px" link="gravier" titel="Graviermaschine" inhalt={text7}/>
-        <Image src={bild6} alt="graviermaschine" width={80} height={80}></Image>
+        <OwnModal className="modal_klein_img7" links="-30px" oben="60px" link="gravier" titel="Graviermaschine" inhalt={text7}/>
+        <Image src={bild6} alt="graviermaschine" width={70} height={70}></Image>
       </div>
 
       <div className="img8">
         <DesignerTooltip top="10%" left="10%" titel="Montage" beschreibung={text8} bildpfad={leerbild}/>
-        <OwnModal links="" oben="" link="montage" titel="Montage" inhalt={text8}/>
+        <OwnModal className="modal_klein_img8" links="-5px" oben="70px" link="montage" titel="Montage" inhalt={text8}/>
         <Image src={bild7} alt="montage" width={80} height={80}></Image>
       </div>
 
       <div className="img9">
-        <DesignerTooltip top="1%" left="10%" titel="Transporter" beschreibung={text9} bildpfad={leerbild}/>
-        <OwnModal links="" oben="" link="transport" titel="Transporter" inhalt={text9}/>
-        <Image src={bild8} alt="transporter" width={80} height={80}></Image>
+        <DesignerTooltip top="1%" left="10%" titel="Transport" beschreibung={text9} bildpfad={leerbild}/>
+        <OwnModal className="modal_klein_img9" links="-10px" oben="50px" link="transport" titel="Transport" inhalt={text9}/>
+        <Image src={bild8} alt="transport" width={80} height={80}></Image>
       </div>
       
       <div className="img10">
         <DesignerTooltip top="5%" left="20%" titel="Designer" beschreibung={text10} bildpfad={leerbild}/>
-        <OwnModal links="10px" oben="" link="design" titel="Designer" inhalt={text10}/>
+        <OwnModal className="modal_klein_img10" links="5px" oben="80px" link="design" titel="Designer" inhalt={text10}/>
         <Image src={bild9} alt="designer" width={100} height={100}></Image>
       </div>
 
       <div className="img11">
         <DesignerTooltip top="5%" left="-5%" titel="Auftragsverwaltung" beschreibung={text11} bildpfad={leerbild}/>
-        <OwnModal links="-20px" oben="" link="auftragsverwaltung" titel="Auftragsverwaltung" inhalt={text11}/>
+        <OwnModal className="modal_klein_img11" links="-50px" oben="65px" link="auftragsverwaltung" titel="Auftragsverwaltung" inhalt={text11}/>
         <Image src={bild10} alt="auftragsverwaltung" width={50} height={50}></Image>
       </div>
       
       <div className="img12">
         <DesignerTooltip top="1%" left="0%" titel="Nesting" beschreibung={text12} bildpfad={leerbild}/>
-        <OwnModal links="" oben="" link="nest" titel="Nesting" inhalt={text12}/>
+        <OwnModal className="modal_klein_img12" links="-10px" oben="50px" link="nest" titel="Nesting" inhalt={text12}/>
         <Image src={bild11} alt="nesting" width={60} height={60}></Image>
       </div>
       
       <div className="img13">
         <DesignerTooltip top="10%" left="5%" titel="Lager" beschreibung={text13} bildpfad={leerbild}/>
-        <OwnModal links="" oben="" link="lager" titel="Lager" inhalt={text12}/>
+        <OwnModal className="modal_klein_img13" links="-5px" oben="60px" link="lager" titel="Lager" inhalt={text12}/>
         <Image src={bild12} alt="lager" width={70} height={70}></Image>
       </div>
     

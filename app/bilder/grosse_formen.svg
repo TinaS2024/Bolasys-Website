@@ -3,12 +3,12 @@
 
 <svg
    width="64.132294mm"
-   height="22.989601mm"
-   viewBox="0 0 64.132294 22.989601"
+   height="22.726713mm"
+   viewBox="0 0 64.132294 22.726713"
    version="1.1"
    id="svg1"
    inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
-   sodipodi:docname="Zeichnung.svg"
+   sodipodi:docname="grosse_formen.svg"
    inkscape:export-filename="gleiche_formen.svg"
    inkscape:export-xdpi="96"
    inkscape:export-ydpi="96"
@@ -27,12 +27,12 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
      inkscape:zoom="2"
-     inkscape:cx="300.25"
-     inkscape:cy="626.5"
+     inkscape:cx="256.75"
+     inkscape:cy="102"
      inkscape:window-width="1803"
      inkscape:window-height="1040"
-     inkscape:window-x="1912"
-     inkscape:window-y="29"
+     inkscape:window-x="1920"
+     inkscape:window-y="0"
      inkscape:window-maximized="0"
      inkscape:current-layer="layer1"
      showguides="true">
@@ -57,18 +57,18 @@
     <path
        id="rect14"
        style="fill:none;stroke:#008080;stroke-width:1.22498"
-       d="m 41.387488,157.27498 h 40.256274 v 9.30002 l -27.848962,0.29255 -0.08438,9.76161 H 41.387488 Z"
-       sodipodi:nodetypes="ccccccc"
-       inkscape:export-filename="..\Documents\Next\NextUI\bolasys\app\bilder\grosse_formen.png"
+       d="m 41.387488,157.27498 h 40.256274 v 9.30002 c -40.184809,0.42214 -12.768757,-10e-6 -40.256274,-10e-6 z"
+       sodipodi:nodetypes="ccccc"
+       inkscape:export-filename="..\Documents\Next\NextUI\bolasys\app\bilder\grosse_formen.svg"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
     <rect
-       style="fill:none;stroke:#008080;stroke-width:0.95297;stroke-dasharray:none"
+       style="fill:none;stroke:#008080;stroke-width:1.02252;stroke-dasharray:none"
        id="rect15"
-       width="21.213696"
-       height="5.8678632"
-       x="56.597317"
-       y="169.83899" />
+       width="24.716022"
+       height="5.7983146"
+       x="56.632092"
+       y="169.87376" />
     <rect
        style="fill:none;stroke:#008080;stroke-width:1;stroke-dasharray:none"
        id="rect16"
@@ -78,9 +78,9 @@
        y="156.89792" />
     <path
        style="fill:none;stroke:#ff0000;stroke-width:0.499999;stroke-dasharray:none"
-       d="m 39.687499,155.83958 h 43.65625 V 168.275 H 55.5625 v 10.05417 H 39.687499 Z"
+       d="m 39.687499,155.83958 h 43.65625 V 168.275 h -43.65625 z"
        id="path10"
-       sodipodi:nodetypes="ccccccc" />
+       sodipodi:nodetypes="ccccc" />
     <path
        style="fill:none;stroke:#ff0000;stroke-width:0.499999;stroke-dasharray:none"
        d="m 83.24453,155.83957 20.07526,5e-5 v 22.09271 l -19.711457,0.1323 z"
@@ -88,7 +88,7 @@
        sodipodi:nodetypes="ccccc" />
     <path
        style="fill:none;stroke:#ff0000;stroke-width:0.476;stroke-dasharray:none"
-       d="m 79.016217,168.39575 0.106852,9.08578 -23.539833,-0.0701 0.0682,-9.14464 z"
+       d="m 83.24955,168.39575 0.106852,9.08578 -28.302333,0.0622 0.0682,-9.27693 z"
        id="path12"
        sodipodi:nodetypes="ccccc" />
   </g>

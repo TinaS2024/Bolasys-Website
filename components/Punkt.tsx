@@ -1,6 +1,6 @@
 export interface UserProps
 {
-    text:string;
+    text:Array<any>;
 }
 
 

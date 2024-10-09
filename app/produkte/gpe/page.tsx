@@ -9,7 +9,7 @@ import { Background } from "@/components/background";
 
 export default function GPE() {
 
-  const text =["Graphical Product Environment."]
+  const text =["Vertriebs und Produktionsumgebung im Besonderen für graphische Erzeugnisse, wie Schilder, Stempel, personalisierte Produkte und Druckerzeugnisse.",<br/>, "Das GPE unterstützt Arbeitsschritte vom Angebot bis Versand. Dabei werden automatisch ablaufende Computerprozesse und von Personen ausgeführte Arbeitsprozesse eingebunden.",<br/>, "Als Ausgabegeräte sind Lasersysteme eingebunden. Andere Ausgabegeräte können hinzugefügt werden.",<br/>, "Zur Buchhaltung existieren Anbindungen an externe Systeme. "]
 
   
     return (
@@ -19,7 +19,7 @@ export default function GPE() {
       <Background left="-125px" opacity="20%"></Background>
       </div>
       
-    <div>
+    <div className="gpe_text">
     <Titel_Subtitel_nolink titel="GPE" subtitel={text}/>  
     </div>
      

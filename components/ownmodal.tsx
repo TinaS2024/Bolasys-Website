@@ -9,16 +9,16 @@ export interface UserProps
     link:string;
     links:string;
     oben:string;
+    className: string;
 }
 
-// Auf der statischen Seite des Build sind die Modale verschoben... wenn man background:none wegnimmt sieht man die Button und kann sie verschieben
-const OwnModal = ({titel,inhalt,link,links,oben}:UserProps) =>
+const OwnModal = ({titel,inhalt,link,links,oben,className}:UserProps) =>
 {
     const {isOpen,onOpen,onOpenChange} = useDisclosure();
 
     return(
         <div style={{position:"absolute",left:`${links}`,top:`${oben}`}}>
-        <Button style={{background:"none",zIndex:"5"}} onPress={onOpen}></Button> 
+        <Button className={className} style={{background:"none",zIndex:"5",fontSize:"10pt",color:"#5ec4d2"}} onPress={onOpen}>{titel}</Button> 
         <Modal 
         isOpen={isOpen} 
         onOpenChange={onOpenChange}

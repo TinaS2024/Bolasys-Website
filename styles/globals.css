@@ -119,8 +119,7 @@ hr.new1
   margin-bottom: 0px;
 }
 
-
-.img1,.img2,.img3,.img4,.img5,.img6, .img7, .img8, .img9,.img11, .img12, .img13
+.img1,.img6, .img7, .img8, .img9,.img11, .img12, .img13
 {
   position: absolute;
   width:100px;
@@ -130,7 +129,7 @@ hr.new1
 }
 
 
-.img10
+.img2,.img3,.img4,.img5, .img10
 {
   position: absolute;
   width:100px;
@@ -139,12 +138,12 @@ hr.new1
   filter:brightness(150%);
 }
 
-.img1:hover,.img2:hover,.img3:hover,.img4:hover,.img5:hover,.img6:hover, .img7:hover, .img8:hover, .img9:hover, .img11:hover, .img12:hover, .img13:hover
+.img1:hover,.img3:hover,.img4:hover,.img5:hover,.img6:hover, .img7:hover, .img8:hover, .img9:hover, .img11:hover, .img12:hover, .img13:hover
 {
   filter:brightness(300%);
 }
 
-.img10:hover
+.img2:hover,.img3:hover,.img4:hover,.img5:hover,.img10:hover
 {
   filter:brightness(200%);
 }
@@ -195,49 +194,49 @@ hr.new1
 .img7
 {
   margin-top: 19%; 
-  margin-left: 12%; 
+  margin-left: 14%; 
 }
 
 /* Montage */
 .img8
 {
   margin-top: 13%;
-  margin-left: 18%;
+  margin-left: 20%;
 }
 
 /* Transporter */
 .img9
 {
   margin-top: 7%;
-  margin-left: 20%;
+  margin-left: 22%;
 }
 
 /* Designer */
 .img10
 {
-  margin-top: 11%; 
-  margin-left: -8%; 
+  margin-top: 12%; 
+  margin-left: -10%; 
 }
 
 /* Auftrag */
 .img11
   {
   margin-top: 4%; 
-  margin-left: -8%; 
+  margin-left: -10%; 
   }
 
 /* Nesting */
 .img12
 {
   margin-top: 20%; 
-  margin-left: 5%; 
+  margin-left: -2%; 
 }
 
  /* Lager */
 .img13
 {
-  margin-top: 17%; 
-  margin-left: -4%; 
+  margin-top: 20%; 
+  margin-left: 5%; 
 }
 
 
@@ -348,6 +347,7 @@ hr.new1
   float:left;
   width:10px;
   height:10px;
+  margin-bottom:120px;
   border-radius: 10px;
   background-color: #2695a0;
 }
@@ -369,11 +369,16 @@ hr.new1
   margin-left: -50%;
 }
 
-.nesting_text
+.nesting_text, .gpe_text
 {
   width:1000px;
   margin-left:-40%;
   margin-bottom:5%;
+}
+
+.graph-position
+{
+  margin-left:25%;
 }
    
 
@@ -453,7 +458,7 @@ hr.new1
     margin-left:-5%;
   }
 
-  .nesting_text
+  .nesting_text, .gpe_text
   {
     width:1000px;
     margin-left:-40%;
@@ -480,7 +485,7 @@ hr.new1
 
   .graph-position
   {
-    margin-left:80px;
+    margin-left:40%;
   }
 
   /* Microservice */
@@ -491,6 +496,12 @@ hr.new1
     width:70px;
   }
 
+  .modal_klein_img1
+  {
+    top:-40px;
+    left:-10px;
+  }
+
   /* Telefon */
   .img2
   {
@@ -499,28 +510,52 @@ hr.new1
     width:50px;
   }
 
+  .modal_klein_img2
+  {
+    top:-35px;
+    left:-12px;
+  }
+
   /* Webstore */
   .img3
   {
-    margin-top:-32%;
+    margin-top:-35%;
     margin-left: -10%;
     width:50px;
+  }
+
+  .modal_klein_img3
+  {
+    top:-25px;
+    left:-15px;
   }
 
   /* Shop */
   .img4
   {
-    margin-top: -35%;
+    margin-top: -40%;
     margin-left: 23%;
     width:70px;
+  }
+
+  .modal_klein_img4
+  {
+    top:-25px;
+    left:-15px;
   }
 
   /* E-Mail */
   .img5
   {
-    margin-top: -20%;
+    margin-top: -21%;
     margin-left: -20%;
     width:50px;
+  }
+
+  .modal_klein_img5
+  {
+    top:-15px;
+    left:-10px;
   }
 
   /* Computer */
@@ -531,60 +566,108 @@ hr.new1
     width:70px;
   }
 
+  .modal_klein_img6
+  {
+    top:-20px;
+    left:-15px;
+  }
+
   /* Maschine */
   .img7
   {
-    margin-top: 28%; 
-    margin-left: 20%; 
+    margin-top: 30%; 
+    margin-left: 26%; 
     width:50px;
+  }
+
+  .modal_klein_img7
+  {
+    top:-25px;
+    left:-15px;
   }
 
    /* Montage */
    .img8
    {
      margin-top: 12%;
-     margin-left: 33%;
+     margin-left: 38%;
      width:70px;
+   }
+
+   .modal_klein_img8
+   {
+     top:-22px;
+     left:-10px;
    }
 
   /* Transporter */
   .img9
   {
     margin-top: -2%;
-    margin-left: 38%;
+    margin-left: 40%;
     width:70px;
+  }
+
+  .modal_klein_img9
+  {
+    top:-12px;
+    left:-5px;
   }
 
   /* Designer */
   .img10
   {
-    margin-top: 10%; 
-    margin-left: -19%; 
+    margin-top: 14%; 
+    margin-left: -23%; 
     width:60px;
+  }
+
+  .modal_klein_img10
+  {
+    top:-40px;
+    left:-15px;
   }
 
   /* Auftrag */
   .img11
   {
     margin-top: -5%;
-    margin-left: -20%;
+    margin-left: -25%;
     width:40px;
+  }
+
+  .modal_klein_img11
+  {
+    top:-22px;
+    left:-10px;
   }
 
   /* Nesting */
   .img12
   {
     margin-top: 32%;
-    margin-left: 5%;
+    margin-left: -10%;
     width:40px;
+  }
+
+  .modal_klein_img12
+  {
+    top:-22px;
+    left:-10px;
   }
 
   /* Lager */
   .img13
   {
-    margin-top: 25%;
-    margin-left: -15%; 
+    margin-top: 32%;
+    margin-left: 7%; 
     width:50px;
+  }
+
+  .modal_klein_img13
+  {
+    top:-25px;
+    left:-10px;
   }
 
   .img_unten
@@ -605,7 +688,7 @@ hr.new1
     top: 40%;
   }
 
-  .nesting_text
+  .nesting_text, .gpe_text
   {
     width:450px;
     margin-left:8%;
