@@ -54,7 +54,7 @@ const KontaktPage = () =>{
   return (
     <div style={{marginLeft:"50%"}}>
       <HeaderNeu></HeaderNeu>  
-      <Background left="-238px" opacity="20%"></Background>
+      <Background left="-238px" opacity="10%"></Background>
    
         <div style={{marginLeft:"-100%"}} className="py-8 text-left">   
         <div>

@@ -26,7 +26,7 @@ export default function Home()
  <h3 style={{fontSize:"22pt"}} className="text-white text-center"> Herstellung, Installation und Wartung von Software- und Hardwaresystemen</h3>
   </div>  
   
-  <div style={{zIndex: "1",marginLeft:"-5%"}} className="flex flex-row sm:flex-col md:flex-row absolute abstand_oben abstand_links py-10">  
+  <div className="home_titel flex flex-row sm:flex-col md:flex-row absolute abstand_oben abstand_links py-10">  
 
     <Titel_Subtitel titel="GPE" subtitel="Produktionsvertriebsumgebung für grafische Produkte" path="/produkte/gpe"></Titel_Subtitel>     
     <Titel_Subtitel titel="DESIGNER" subtitel="Layouterstellung für eingebettete Webanwendungen und als Standalone-Systeme" path="/produkte/designer"></Titel_Subtitel>

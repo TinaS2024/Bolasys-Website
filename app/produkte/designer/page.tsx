@@ -84,7 +84,7 @@ export default function Designer()
       <>
       <div style={{marginLeft:"50%"}}>
       <HeaderNeu></HeaderNeu>  
-      <Background left="-246px" opacity="20%"></Background>
+      <Background left="-246px" opacity="10%"></Background>
       </div> 
     <Titel_Subtitel_nolink titel="Designer" subtitel={text0}/>  
           <div id="designerbild" className="flex">

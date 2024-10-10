@@ -12,6 +12,8 @@ import auftrag from "@/app/bilder/Auftragsverwaltung.png";
 import nesting from"@/app/bilder/nesting_darkblue.png";
 import lager from "@/app/bilder/Lagermanagement_darkblue.png";
 
+import pfeil from "@/app/bilder/big_arrow.png";
+
 import OwnModal from "@/components/ownmodal";
 import Image from "next/image";
 import DesignerTooltip from "@/components/designer_tooltip";
@@ -33,30 +35,31 @@ export const Graph = () => {
     const bild11 = nesting;
     const bild12 = lager;
 
-    const text1 = ["Microservice, Workflowmanagment und Broker-Software."] 
+    const text1 = ["Verwaltung von Workflows und Microservices."] 
     const text2 = ["Unmittelbar im GPE, z.B. bei telefonischem Kontakt."]
     const text3 = ["Automatische Auftragsgenerierung und Übernahme von Designs im GPE."]
     const text4 = ['Kiosk-System mit direktem Anschluss an das GPE ("GPE-Frontend").']
     const text5 = ["Angebote, Auftragsannahme, Proof-Mails."]
-    const text6 = ["Möglicher Anschluss von cloudgestützter Software für Buchhaltung, Design, Kunden-& Lagerverwaltung."]
-    const text7 = ["Interface für Graviermaschinen."]
-    const text8 = ["Software für die Montage und Zuordnung des Produktes."]
+    const text6 = ["Anschluss von lokaler und cloudgestüzter Software für Buchhaltung, Design, Kunden-& Lagerverwaltung."]
+    const text7 = ["Interface für Lasergravierer und andere Ausgabegeräte."]
+    const text8 = ["Software zur Hilfe bei der Zuordnung von Produktkomponenten und Aufträgen."]
     const text9 = ["Komissionierungs-und Versandmodul."]
     const text10 = ["Verwendung des Bolasys-Designer oder Anbindung von Design-Fremdsoftware an das GPE."]
-    const text11 = ["Software zum Erstellen von Aufträgen mit oder ohne Vorlage, sowie Anzeige von Arbeitsschritten."]
-    const text12 = ["Nestingsoftware für die die optimierte Anordnung von Designs mit Zeitersparnis und Materialeinsparung."]
+    const text11 = ["Anlegen und Editieren von Aufträgen und Workflow-Verwaltung."]
+    const text12 = ["Nestingsoftware für die bezüglich Material-und Zeitersparnis optimierte Anordnung von Designs."]
     const text13 = ["Komissionierungsmanagement mit Komponentenlisten und Produktionseinheiten für Wegoptimierung."]
 
 
   return (
  
     <div className="graph-position" style={{marginTop:"200px"}}> 
+    <div className="pfeil_gpe" style={{backgroundImage: `url(${pfeil.src})`}}></div>
     
 
     <div className="img1">
-      <DesignerTooltip top="15%" left="15%" titel="Microservice" beschreibung={text1} bildpfad={leerbild}/>
-      <OwnModal className="modal_klein_img1" links="-10px" oben="100px" link="service" titel="Microservice" inhalt={text1}/>
-      <Image src={bild0} alt="microservice" width={100} height={100}></Image>
+      <DesignerTooltip top="15%" left="15%" titel="GPE-Basis" beschreibung={text1} bildpfad={leerbild}/>
+      <OwnModal className="modal_klein_img1" links="0px" oben="100px" link="gpe" titel="GPE-Basis" inhalt={text1}/>
+      <Image src={bild0} alt="gpe" width={100} height={100}></Image>
     </div>
     
     <div className="img2">

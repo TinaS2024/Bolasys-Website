@@ -16,7 +16,7 @@ export default function GPE() {
       <> 
      <div style={{marginLeft:"50%"}}>
       <HeaderNeu></HeaderNeu>  
-      <Background left="-125px" opacity="20%"></Background>
+      <Background left="-250px" opacity="10%"></Background>
       </div>
       
     <div className="gpe_text">
