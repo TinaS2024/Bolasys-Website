@@ -18,7 +18,7 @@ const OwnModal = ({titel,inhalt,link,links,oben,className}:UserProps) =>
 
     return(
         <div style={{position:"absolute",left:`${links}`,top:`${oben}`}}>
-        <Button className={className} style={{background:"none",zIndex:"5",fontSize:"10pt",color:"#5ec4d2"}} onPress={onOpen}>{titel}</Button> 
+        <Button className={className} style={{background:"none",zIndex:"5",fontSize:"10pt",color:"white"}} onPress={onOpen}>{titel}</Button> 
         <Modal 
         isOpen={isOpen} 
         onOpenChange={onOpenChange}
