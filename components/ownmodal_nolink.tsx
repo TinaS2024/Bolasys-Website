@@ -6,17 +6,16 @@ export interface UserProps
     titel: string;
     inhalt:Array<any>;
     className: string;
-    links:string;
-    oben:string;
+    id:string;
 }
 
-const OwnModal_nolink = ({titel,inhalt,className,oben,links}:UserProps) =>
+const OwnModal_nolink = ({titel,inhalt,className,id}:UserProps) =>
 {
     const {isOpen,onOpen,onOpenChange} = useDisclosure();
 
     return(
-        <div className={className} style={{position:"absolute",left:`${links}`,top:`${oben}`}}>
-        <Button style={{background:"none",zIndex:"5"}} onPress={onOpen}></Button>
+        <div id={id} className={className} style={{position:"absolute"}}>
+        <Button isIconOnly style={{height:"25px",background:"none",zIndex:"5"}} onPress={onOpen}></Button>
         <Modal 
         isOpen={isOpen} 
         onOpenChange={onOpenChange}

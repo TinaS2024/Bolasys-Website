@@ -272,6 +272,12 @@ margin-left:-10%;
   left:38%;
 }
 
+#pfeil1
+{
+  top:-1%;
+  left:33%;
+}
+
    
 .pfeil2
 {
@@ -279,10 +285,23 @@ margin-left:-10%;
   left:5%;
 }
 
+#pfeil2
+{
+  top:16%;
+  left:4%;
+}
+
+
 .pfeil3
 {
   top:44%;
   left:61%;
+}
+
+#pfeil3
+{
+  top:47%;
+  left:56%;
 }
 
 .pfeil4
@@ -291,16 +310,34 @@ margin-left:-10%;
   left:30%;
 }
 
+#pfeil4
+{
+  top:16%;
+  left:29%;
+}
+
 .pfeil5
 {
   top:24%;
   left:61%;
 }
 
+#pfeil5
+{
+  top:27%;
+  left:56%;
+}
+
 .pfeil6
 {
   top:56%;
   left:15%;
+}
+
+#pfeil6
+{
+  top:59%;
+  left:14%;
 }
 
 
@@ -401,6 +438,20 @@ margin-left:-10%;
 }
    
 
+#magento
+{
+position:relative;
+margin-top:25%;
+margin-left:10%;
+}
+
+#next
+{
+position:relative;
+margin-top:45%;
+margin-left:10%;
+}
+
 @media screen and (max-width: 800px)
 {
 
@@ -417,10 +468,10 @@ margin-left:-10%;
 
   #designerbild
   {
-   width: 600px;
-   height: 390px;
-   margin-top: 15%;
-   margin-left: -0%;
+   width: 550px;
+   height: 298px;
+   margin-top: 20%;
+   margin-left: 3%;
   }
 
   #cydesigner
@@ -442,16 +493,34 @@ margin-left:-10%;
    left:43%;
   }
 
+  #pfeil1
+{
+  top:-4%;
+  left:31%;
+}
+
   .pfeil2
   {
    top:12%;
    left:5%;
   }
 
+  #pfeil2
+{
+  top:16%;
+  left:4%;
+}
+
   .pfeil3
   {
    top:44%;
    left:66%;
+  }
+
+  #pfeil3
+  {
+    top:53%;
+    left:54%;
   }
 
   .pfeil4
@@ -460,16 +529,34 @@ margin-left:-10%;
    left:30%;
   }
 
+  #pfeil4
+  {
+    top:16%;
+    left:29%;
+  }
+
   .pfeil5
   {
    top:24%;
    left:66%;
   }
 
+  #pfeil5
+  {
+    top:29%;
+    left:54%;
+  }
+
   .pfeil6
   {
    top:56%;
    left:15%;
+  }
+
+  #pfeil6
+  {
+    top:68%;
+    left:14%;
   }
 
   .nach_links
@@ -484,6 +571,19 @@ margin-left:-10%;
     margin-bottom:5%;
   }
 
+  #magento
+  {
+  position:relative;
+  margin-top:25%;
+  margin-left:0%;
+  }
+
+  #next
+  {
+  position:relative;
+  margin-top:45%;
+  margin-left:0%;
+  }
 
 }
   
@@ -506,8 +606,7 @@ margin-left:-10%;
   {
   z-index: 1;
   margin-left:5%;
-  margin-top:35%;
-  margin-bottom:45%;
+  top:320px;
   }
 
   .pfeil_gpe
@@ -721,17 +820,23 @@ margin-left:-10%;
     margin-top: 0px;
   }
 
-    .card-container
+  .card-container
   {
     position: absolute;
     left: 35%;
     top: 40%;
   }
 
-  .nesting_text, .gpe_text
+  .nesting_text
   {
-    width:450px;
-    margin-left:8%;
+    width:400px;
+    margin-left:10%;
+    margin-bottom:5%;
+  }
+  .gpe_text
+  {
+    width:400px;
+    margin-left:4%;
     margin-bottom:5%;
   }
 

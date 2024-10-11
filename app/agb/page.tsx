@@ -18,11 +18,12 @@ export default function AGB() {
 <div>
     <Titel_Subtitel_nolink titel="AGB" subtitel={text}/>  
     </div>
-<ul>
+<ul style={{fontSize:"14pt"}}>
  
-  <li>Bolasy GmbH</li>
+  <li style={{fontSize:"20pt"}}>Bolasy GmbH</li>
   <li>Herstellung, Installation und Wartung von Software- und Hardwaresystemen</li>
-  <li>Amtsgericht Chemnitz HRB 31641 </li>
+  <li><br/></li>
+  <li>Amtsgericht: Chemnitz HRB 31641 </li>
   <li>Fritz-Wagner-Siedlung 16, D-09116 Chemnitz</li>
 </ul>
    

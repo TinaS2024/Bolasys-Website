@@ -88,12 +88,12 @@ export default function Designer()
       </div> 
     <Titel_Subtitel_nolink titel="Designer" subtitel={text0}/>  
           <div id="designerbild" className="flex">
-            <div><DesignerTooltip top="-1%" left="30%" titel="Header" beschreibung={text1} bildpfad={bild_rechts}/><OwnModal_nolink oben="-2%" links="30%" className="pfeil1" titel="Header" inhalt={text1}/></div>
-            <div><DesignerTooltip top="10%" left="5%" titel="Zeichenelemente" beschreibung={text2} bildpfad={bild_links}/><OwnModal_nolink oben="12%" links="5%" className="pfeil2" titel="Zeichenelemente" inhalt={text2}/></div>
-            <div><DesignerTooltip top="30%" left="53%" titel="Attribute" beschreibung={text3} bildpfad={bild_rechts}/><OwnModal_nolink oben="45%" links="52%" className="pfeil3" titel="Attribute" inhalt={text3}/></div>
-            <div><DesignerTooltip top="10%" left="30%" titel="Canvas" beschreibung={text4} bildpfad={bild_links}/><OwnModal_nolink oben="15%" links="30%" className="pfeil4" titel="Canvas" inhalt={text4}/></div>
-            <div><DesignerTooltip top="17%" left="53%" titel="Produktdetails" beschreibung={text5} bildpfad={bild_rechts}/><OwnModal_nolink oben="25%" links="52%" className="pfeil5" titel="Produktdetails" inhalt={text5}/></div>
-            <div><DesignerTooltip top="38%" left="15%" titel="Vorschau" beschreibung={text6} bildpfad={bild_links}/><OwnModal_nolink oben="55%" links="15%" className="pfeil6" titel="Vorschau" inhalt={text6}/></div>
+            <div><DesignerTooltip top="-1%" left="30%" titel="Header" beschreibung={text1} bildpfad={bild_rechts}/><OwnModal_nolink id="pfeil1" className="pfeil1" titel="Header" inhalt={text1}/></div>
+            <div><DesignerTooltip top="10%" left="5%" titel="Zeichenelemente" beschreibung={text2} bildpfad={bild_links}/><OwnModal_nolink id="pfeil2" className="pfeil2" titel="Zeichenelemente" inhalt={text2}/></div>
+            <div><DesignerTooltip top="30%" left="53%" titel="Attribute" beschreibung={text3} bildpfad={bild_rechts}/><OwnModal_nolink id="pfeil3" className="pfeil3" titel="Attribute" inhalt={text3}/></div>
+            <div><DesignerTooltip top="10%" left="30%" titel="Canvas" beschreibung={text4} bildpfad={bild_links}/><OwnModal_nolink id="pfeil4" className="pfeil4" titel="Canvas" inhalt={text4}/></div>
+            <div><DesignerTooltip top="17%" left="53%" titel="Produktdetails" beschreibung={text5} bildpfad={bild_rechts}/><OwnModal_nolink id="pfeil5" className="pfeil5" titel="Produktdetails" inhalt={text5}/></div>
+            <div><DesignerTooltip top="38%" left="15%" titel="Vorschau" beschreibung={text6} bildpfad={bild_links}/><OwnModal_nolink id="pfeil6" className="pfeil6" titel="Vorschau" inhalt={text6}/></div>
           </div> 
           <Button style={{marginTop:"25px"}} className="bg-[#5ec4d2] text-black" onPress={onOpen} ><p className="text-xl">Design-Beispiele</p></Button>
           <Modal 
@@ -101,7 +101,7 @@ export default function Designer()
         onOpenChange={onOpenChange}
         classNames={{base: "border-[#5ec4d2] bg-[#0e2d38] text-[#5ec4d2]"}}>
             
-            <ModalContent style={{marginLeft:"-2%",marginTop:"6%"}} className=" sm:min-w-[400px] sm:min-h-[300px]  md:min-w-[800px] md:min-h-[600px]  lg:min-w-[1200px] lg:min-h-[900px]">
+            <ModalContent style={{marginLeft:"5%",marginTop:"6%"}} className=" sm:max-w-[400px] sm:min-h-[300px]  md:min-w-[800px] md:min-h-[600px]  lg:min-w-[1200px] lg:min-h-[900px]">
                 {
                 (
                     <>

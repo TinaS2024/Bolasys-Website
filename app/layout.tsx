@@ -49,7 +49,7 @@ export default function RootLayout({
             <main id="main" className="container mx-auto max-w-7xl pt-20 px-6 flex-grow">
               {children}
             </main>
-            <footer id="footer" style={{zIndex:"1"}} className="w-full flex items-center justify-center py-3  bg-black">
+            <footer id="footer" style={{zIndex:"1"}} className="w-full flex items-center justify-center py-1  bg-black" >
               <Link
                 isExternal
                 className="flex items-center gap-1 text-current"

@@ -3,7 +3,6 @@
 import HeaderNeu from "@/components/header_new";
 import { Background } from "@/components/background";
 import Titel_Subtitel_nolink from "@/components/titel_subtitel_nolink";
-import OwnModal_nolink from "@/components/ownmodal_nolink";
 import magento_bild from "@/app/bilder/magento.png";
 import next_bild from "@/app/bilder/Next.jpg";
 
@@ -30,8 +29,8 @@ export default function UI() {
           <Titel_Subtitel_nolink titel="UI" subtitel={text0}/>  
   
 
-          <div style={{position:"relative",marginTop:"25%",marginLeft:"10%"}}><DesignerTooltip top="5%" left="35%" titel="Magento" beschreibung={text1} bildpfad={leerbild}/><OwnModal_nolink className="" links="35%" oben="30%" titel="Magento 2" inhalt={text1}/><Image style={{marginTop:"-80px",marginLeft:"100px"}} src={bild1} alt="magento" width={200} height={200}></Image></div>
-          <div style={{position:"relative",marginTop:"45%",marginLeft:"10%"}}><DesignerTooltip top="5%" left="35%" titel="Next JS" beschreibung={text2} bildpfad={leerbild}/><OwnModal_nolink className="" links="35%" oben="30%" titel="Next JS 14" inhalt={text2}/><Image style={{marginTop:"-120px",marginLeft:"100px"}} src={bild2} alt="next-js" width={200} height={200}></Image></div>
+          <div id="magento"><DesignerTooltip top="5%" left="55%" titel="Magento" beschreibung={text1} bildpfad={leerbild}/><Image style={{marginTop:"-80px",marginLeft:"100px"}} src={bild1} alt="magento" width={200} height={200}></Image></div>
+          <div id="next"><DesignerTooltip top="5%" left="35%" titel="Next JS" beschreibung={text2} bildpfad={leerbild}/><Image style={{marginTop:"-120px",marginLeft:"100px"}} src={bild2} alt="next-js" width={200} height={200}></Image></div>
 
     </>
     );
