@@ -50,7 +50,7 @@ const MyCard = () =>
 
 <Card style={{margin:"15px",marginBottom:"100px"}} className="w-[400px] sm-links">
     <div id="auftragsannahme" className="sprung"></div>
-      <CardHeader style={{zIndex: "0"}}> <h3 className="text-[#2695a0] text-xl">Auftragsvorbereitung und Annahme</h3></CardHeader>
+      <CardHeader style={{zIndex: "0"}}> <h3 className="text-[#2695a0] text-xl">Auftragsvorbereitung & Annahme</h3></CardHeader>
       <CardBody>
         <Punkt text={text1}/>
         <Punkt text={text2}/>
@@ -121,7 +121,7 @@ const MyCard = () =>
 
     <Card style={{margin:"15px",marginBottom:"100px"}} className="w-[400px] sm-links ">
     <div id="transport" className="sprung"></div>
-      <CardHeader style={{zIndex: "0"}}> <h3 className="text-[#2695a0] text-xl">Komissionierungs-und Versandmodul</h3></CardHeader>
+      <CardHeader style={{zIndex: "0"}}> <h3 className="text-[#2695a0] text-xl">Komissionierungs-& Versandmodul</h3></CardHeader>
       <CardBody>
         <Punkt text={text25}/>
         <Punkt text={text26}/>
