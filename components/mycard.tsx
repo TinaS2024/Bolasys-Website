@@ -20,8 +20,8 @@ const MyCard = () =>
   const text13 = ["Die Einbindung von Fremdsoftware wird durch Makros unterstützt."]
   const text14 = ["Logos oder fertige Designs können hochgeladen werden."]
 
-  const text15 = ["Beim Nesting werden Einzeldesigns optimiert für Arbeitstische oder Materialplatten angeordnet. Dabei erfolgen verschiedene Vorverarbeitungsschritte der Design-Dateien.",<br/>,"Einzelheiten erfahren Sie"]
-  const text16 = ["Zusätzlich werden Schneidlinien und zur Weiterverarbeitung notwendige Daten erzeugt und für nachfolgendene Arbeitsschritte aufbereitet."]
+  const text15 = ["Beim Nesting werden Einzeldesigns optimiert für Arbeitstische oder Materialplatten angeordnet.",<br/>,"Dabei erfolgen verschiedene Vorverarbeitungsschritte der Design-Dateien. Einzelheiten erfahren Sie"]
+  const text16 = ["Zusätzlich werden Schneidlinien und zur Weiterverarbeitung notwendige Daten erzeugt und für nachfolgende Arbeitsschritte aufbereitet."]
   
   const text17 = ["Erstellung von Komponentenlisten angepasst an Produktionseinheiten wie z.B. Gummiplatten bei der Herstellung von Gummistempeln."]
   const text18 = ["Wegoptimierung im Lager."]
@@ -32,7 +32,7 @@ const MyCard = () =>
   const text22 = ["Für die Stempelproduktion ist eine umfassende Integration der Drumfire-Maschine der Cylas Ag vorhanden."]
 
   const text23 = ["Die Station (Software) ist für die Montage von Gummitextplatten auf Stempelgeräte optimiert."]
-  const text24 = ["Die Zuordnung einzelner Textplatten und zugehöriger Geräte wird in einfacher Weise auftragsorientiert gewährleistet. Hier kann auch bereits die Verpackung und der Ausdruck von Adressaufklebern erfolgen."]
+  const text24 = ["Die Zuordnung einzelner Textplatten und zugehöriger Geräte wird in einfacher Weise auftragsorientiert gewährleistet.",<br/>,"Hier kann auch bereits die Verpackung und der Ausdruck von Adressaufklebern erfolgen."]
 
   const text25 = ["Es können Teil- und Sammellieferungen durchgeführt werden."]
   const text26 = ["Die Beauftragung unterschiedlicher Lieferdienste wird unterstützt."]
@@ -41,7 +41,7 @@ const MyCard = () =>
   const text28 = ["Andere Module externer Software können angeschlossen oder synchronisiert werden (z.B. Designeditoren oder Kundenverwaltung und Lagerverwaltung)."]
   const text29 = ["Die Verwendung einer Datev-Schnittstelle ist möglich."]
 
-  const text30 = ["Workflowsystem mit BPMN. Schnittstelle zur Verwaltung von Microservices."]
+  const text30 = ["Workflowsystem mit BPMN.",<br/>,"Schnittstelle zur Verwaltung von Microservices."]
   const text31 = ["Message-Broker."]
   const text32 = ["Datenbank POSGREQL"]
 
@@ -85,7 +85,7 @@ const MyCard = () =>
     <div id="nest" className="sprung"></div>
       <CardHeader style={{zIndex: "0"}}> <h3 className="text-[#2695a0] text-xl">Nesting</h3></CardHeader>
       <CardBody>
-        <Punkt text={text15}/><Link style={{marginTop:"-53px",marginLeft:"225px",paddingBottom:"30px"}} className="text-md text-[#5ec4d2]" href="/produkte/nestingsoftware">hier</Link>
+        <Punkt text={text15}/><Link style={{marginTop:"-53px",marginLeft:"290px",paddingBottom:"30px"}} className="text-md text-[#5ec4d2]" href="/produkte/nestingsoftware">hier</Link>
         <Punkt text={text16}/>
         </CardBody>
     </Card>
