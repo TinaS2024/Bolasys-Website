@@ -5,6 +5,7 @@ import Image from "next/image";
 
 export interface UserProps
 {
+    key:number;
     titel: string;
     subject: string;
     content: string;
