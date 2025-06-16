@@ -23,7 +23,7 @@ export default function UI() {
      
           <>
       <HeaderNeu></HeaderNeu>  
-      <Background left="-255px" opacity="10%"></Background>
+      <Background top="-350px" left="0px" opacity="10%"></Background>
 
           <Titel_Subtitel_nolink titel="UI" subtitel={text0}/>  
   

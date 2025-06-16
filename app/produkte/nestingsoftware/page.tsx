@@ -33,7 +33,7 @@ export default function Nesting() {
       <>
       <div>
       <HeaderNeu></HeaderNeu>  
-      <Background left="-240px" opacity="10%"></Background>
+      <Background top="-350px" left="0px" opacity="10%"></Background>
       </div> 
       <div className="nesting_text sm:px-7"><Titel_Subtitel_nolink titel="Nesting" subtitel={text1}/></div>
       <div style={{width:"500px"}}>

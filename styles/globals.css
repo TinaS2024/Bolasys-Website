@@ -847,6 +847,11 @@ margin-left:10%;
 @media only screen and (max-width: 576px) 
 {
 
+   #home_bg
+  {
+    margin-top: -150px;
+  }
+
    .abstand_oben
   {
     margin-top: 150px;
@@ -962,6 +967,11 @@ margin-left:10%;
 /* Kleine Smartphones*/
  @media only screen and (max-width: 380px) 
 {
+
+  #home_bg
+  {
+    margin-top: -240px;
+  }
 
    .abstand_oben
   {

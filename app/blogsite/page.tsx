@@ -21,7 +21,7 @@ export default async function generateStaticParams() {
 <>
 <div>
       <HeaderNeu></HeaderNeu>  
-      <Background left="-238px" opacity="10%"></Background>
+      <Background top="-350px" left="0px" opacity="10%"></Background>
       </div>
 <div>
  <Titel_Subtitel_nolink titel="Bolasys Blog" subtitel={text}/>  

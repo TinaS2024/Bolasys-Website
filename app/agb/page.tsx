@@ -11,9 +11,9 @@ export default function AGB() {
 
   return (  
 <>
-<div style={{marginLeft:"50%"}}>
+<div>
       <HeaderNeu></HeaderNeu>  
-      <Background left="-250px" opacity="10%"></Background>
+      <Background top="-350px" left="0px" opacity="10%"></Background>
       </div>
 <div>
     <Titel_Subtitel_nolink titel="AGB" subtitel={text}/>  

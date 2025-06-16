@@ -84,7 +84,7 @@ export default function Designer()
       <>
      
       <HeaderNeu></HeaderNeu>  
-      <Background left="-246px" opacity="10%"></Background>
+      <Background top="-350px" left="0px" opacity="10%"></Background>
        
     <Titel_Subtitel_nolink titel="Designer" subtitel={text0}/>  
           <div id="designerbild" className="flex relative">

@@ -16,7 +16,7 @@ export default function ImpressumPage() {
 <>
 <div>
       <HeaderNeu></HeaderNeu>  
-      <Background left="-200px" opacity="10%"></Background>
+      <Background top="-350px" left="0px" opacity="10%"></Background>
       </div>
 <div>
  <Titel_Subtitel_nolink titel="Impressum" subtitel={text}/>  

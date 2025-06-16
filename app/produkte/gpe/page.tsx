@@ -16,7 +16,7 @@ export default function GPE() {
       <> 
      <div>
       <HeaderNeu></HeaderNeu>  
-      <Background left="-250px" opacity="10%"></Background>
+      <Background top="-350px" left="0px" opacity="10%"></Background>
       </div>
       
     <div className="gpe_text sm:pr-9 pl-1 ">

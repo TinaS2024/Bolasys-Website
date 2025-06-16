@@ -3,10 +3,12 @@ import banner1 from "@/app/bilder/banner2.png";
 export interface UserProps
 {
   opacity: string;
+  top: string;
   left: string;
+  
 }
 
-export const Background = ({opacity,left}:UserProps) => {
+export const Background = ({opacity,top,left}:UserProps) => {
 
  
 
@@ -16,7 +18,7 @@ export const Background = ({opacity,left}:UserProps) => {
     style={{
     backgroundImage: `url(${banner1.src})`,
     position: "fixed",
-    marginTop: `-200px`,
+    marginTop: `${top}`,
     marginLeft:  `${left}`,
     backgroundSize: "cover",
     backgroundRepeat: "no-repeat",
