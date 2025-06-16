@@ -13,12 +13,12 @@ const NewNavbar = () =>
     }
      {/*endContent={icon.chevron}*/}
     return(
-        <div className="fixed h-screen-full" style={{zIndex:"10",width:"100%",marginTop:"500px"}}>
+        <div className="fixed top-0 left-0 right-0 w-full" style={{zIndex:"10",width:"100%"}}>
             <hr className="new1"/>
         <Navbar maxWidth="full"  style={{opacity:"100%"}} classNames={{base: "bg-blue"}}>
             <NavbarContent justify="start">
 
-            <NavbarBrand className="mr-50">
+            <NavbarBrand className="mr-0 sm:mr-4">
                 <Image src={myLogo} width={20} height={20} alt="logo"/>
                 <Link color="foreground" className="text-lg" href="/"> <p className="font-bold text-xl text-inherit">BOLASYS GMBH &nbsp; </p></Link>    
                 </NavbarBrand>

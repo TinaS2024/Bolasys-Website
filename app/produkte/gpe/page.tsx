@@ -14,12 +14,12 @@ export default function GPE() {
   
     return (
       <> 
-     <div style={{marginLeft:"50%"}}>
+     <div>
       <HeaderNeu></HeaderNeu>  
       <Background left="-250px" opacity="10%"></Background>
       </div>
       
-    <div className="gpe_text">
+    <div className="gpe_text sm:pr-9 pl-1 ">
     <Titel_Subtitel_nolink titel="GPE" subtitel={text}/>  
     </div>
      

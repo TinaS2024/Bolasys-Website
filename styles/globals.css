@@ -494,10 +494,10 @@ margin-left:10%;
   }
 
   #pfeil1
-{
-  top:-4%;
-  left:31%;
-}
+  {
+    top:-4%;
+    left:31%;
+  }
 
   .pfeil2
   {
@@ -506,10 +506,10 @@ margin-left:10%;
   }
 
   #pfeil2
-{
-  top:16%;
-  left:4%;
-}
+  {
+    top:16%;
+    left:4%;
+  }
 
   .pfeil3
   {
@@ -610,81 +610,81 @@ margin-left:10%;
   }
 
   .pfeil_gpe
+  {
+    position:absolute;
+    margin-top:-50px;
+    margin-left:-20px;
+    width:170px;
+    height:170px;
+    z-index:0;
+    background-size:contain;
+    background-repeat: no-repeat;
+  }
+
+
+.graph-position
 {
-  position:absolute;
-  margin-top:-50px;
-  margin-left:-20px;
-  width:170px;
-  height:170px;
-  z-index:0;
-  background-size:contain;
-  background-repeat: no-repeat;
+  margin-left:40%;
 }
 
+/* GPE-Basis */
+.img1
+{
+  margin-top: -5%;
+  margin-left: 7%;
+  width:70px;
+}
 
-  .graph-position
-  {
-    margin-left:40%;
-  }
+.modal_klein_img1
+{
+  top:-40px;
+  left:-15px;
+}
 
-  /* GPE-Basis */
-  .img1
-  {
-    margin-top: -5%;
-    margin-left: 7%;
-    width:70px;
-  }
+/* Telefon */
+.img2
+{
+  margin-top: -38%;
+  margin-left: 25%;
+  width:50px;
+}
 
-  .modal_klein_img1
-  {
-    top:-40px;
-    left:-15px;
-  }
+.modal_klein_img2
+{
+  top:-35px;
+  left:-12px;
+}
 
-  /* Telefon */
-  .img2
-  {
-    margin-top: -38%;
-    margin-left: 25%;
-    width:50px;
-  }
+/* Webstore */
+.img3
+{
+  margin-top:-21%;
+  margin-left: -20%;
+  width:50px;
+}
 
-  .modal_klein_img2
-  {
-    top:-35px;
-    left:-12px;
-  }
+.modal_klein_img3
+{
+  top:-25px;
+  left:-15px;
+}
 
-  /* Webstore */
-  .img3
-  {
-    margin-top:-21%;
-    margin-left: -20%;
-    width:50px;
-  }
+/* Shop */
+.img4
+{
+  margin-top: -35%;
+  margin-left: -10%;
+  width:70px;
+}
 
-  .modal_klein_img3
-  {
-    top:-25px;
-    left:-15px;
-  }
+.modal_klein_img4
+{
+  top:-25px;
+  left:-15px;
+}
 
-  /* Shop */
-  .img4
-  {
-    margin-top: -35%;
-    margin-left: -10%;
-    width:70px;
-  }
-
-  .modal_klein_img4
-  {
-    top:-25px;
-    left:-15px;
-  }
-
-  /* E-Mail */
-  .img5
+/* E-Mail */
+.img5
   {
     margin-top: -38%;
     margin-left: 9%;
@@ -842,3 +842,235 @@ margin-left:10%;
 
 }
 
+
+/* Große Smartphones*/
+@media only screen and (max-width: 576px) 
+{
+
+   .abstand_oben
+  {
+    margin-top: 150px;
+  }
+
+  #designerbild
+  {
+   width: 550px;
+   height: 298px;
+   margin-top: 25%;
+   margin-left: 0%;
+  }
+
+  .img1,.img2,.img3,.img4,.img5,.img6, .img7,.img8,.img9,.img10,.img11,.img12,.img13
+  {
+    width:40px;
+    height:40px;
+  }
+
+  .img1
+  {
+    margin-top: -2%;
+    margin-left: 7%;
+  }
+
+  .modal_klein_img1
+  {
+    top:-70px;
+    left:-28px;
+  }
+
+  .modal_klein_img2
+  {
+    top:-45px;
+    left:-12px;
+  }
+
+  .modal_klein_img3
+  {
+    top:-35px;
+    left:-22px;
+  }
+
+  .modal_klein_img4
+  {
+    top:-55px;
+    left:-30px;
+  }
+
+   .modal_klein_img5
+  {
+    top:-20px;
+    left:-10px;
+  }
+
+  .modal_klein_img6
+  {
+    top:-40px;
+    left:-25px;
+  }
+
+  .modal_klein_img7
+  {
+    top:-35px;
+    left:-15px;
+  }
+
+   .modal_klein_img8
+   {
+     top:-42px;
+     left:-20px;
+   }
+
+    .modal_klein_img9
+    {
+      top:-32px;
+      left:-15px;
+    }
+
+     .modal_klein_img10
+    {
+      top:-50px;
+      left:-25px;
+    }
+
+    .modal_klein_img11
+    {
+      top:-25px;
+      left:-10px;
+    }
+
+    .modal_klein_img12
+    {
+      top:-22px;
+      left:-10px;
+    }
+
+    .modal_klein_img13
+    {
+      top:-30px;
+      left:-15px;
+    }
+
+    
+    .pfeil_gpe
+    {
+      width:150px;
+      height:150px;
+    }
+}
+
+
+/* Kleine Smartphones*/
+ @media only screen and (max-width: 380px) 
+{
+
+   .abstand_oben
+  {
+    margin-top: 200px;
+  }
+
+  #designerbild
+  {
+   width: 450px;
+   height: 244px;
+   margin-top: 25%;
+   margin-left: 03%;
+  }
+
+   .img1,.img2,.img3,.img4,.img5,.img6, .img7,.img8,.img9,.img10,.img11,.img12,.img13
+  {
+    width:40px;
+    height:40px;
+  }
+
+  .img1
+  {
+    margin-top: -2%;
+    margin-left: 8%;
+  }
+
+    .modal_klein_img1
+  {
+    top:-70px;
+    left:-28px;
+  }
+
+  .modal_klein_img2
+  {
+    top:-45px;
+    left:-12px;
+  }
+
+  .modal_klein_img3
+  {
+    top:-35px;
+    left:-22px;
+  }
+
+  .modal_klein_img4
+  {
+    top:-55px;
+    left:-30px;
+  }
+
+   .modal_klein_img5
+  {
+    top:-20px;
+    left:-10px;
+  }
+
+  .modal_klein_img6
+  {
+    top:-40px;
+    left:-25px;
+  }
+
+  .modal_klein_img7
+  {
+    top:-35px;
+    left:-15px;
+  }
+
+   .modal_klein_img8
+   {
+     top:-42px;
+     left:-20px;
+   }
+
+  .modal_klein_img9
+  {
+    top:-32px;
+    left:-15px;
+  }
+
+  .modal_klein_img10
+  {
+    top:-50px;
+    left:-25px;
+  }
+
+  .modal_klein_img11
+  {
+    top:-25px;
+    left:-10px;
+  }
+
+  .modal_klein_img12
+  {
+    top:-22px;
+    left:-10px;
+  }
+
+  .modal_klein_img13
+  {
+    top:-30px;
+    left:-15px;
+  }  
+    
+  .pfeil_gpe
+  {
+    width:150px;
+    height:150px;
+  }
+
+
+}

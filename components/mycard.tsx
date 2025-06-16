@@ -46,9 +46,9 @@ const MyCard = () =>
   const text32 = ["Datenbank POSGREQL"]
 
     return (
-<div style={{marginLeft:"-25%",marginTop:"600px"}} className="card-container flex sm:flex-col md:flex-row flex-wrap">
+<div style={{marginLeft:"-25%",marginTop:"750px"}} className="card-container flex sm:flex-col md:flex-row flex-wrap">
 
-<Card style={{margin:"15px",marginBottom:"100px"}} className="w-[400px] sm-links">
+<Card style={{margin:"15px",marginBottom:"100px"}} className="md:w-[400px] sm:max-w-[320px] sm-links">
     <div id="auftragsannahme" className="sprung"></div>
       <CardHeader style={{zIndex: "0"}}> <h3 className="text-[#2695a0] text-xl">Auftragsvorbereitung & Annahme</h3></CardHeader>
       <CardBody>
@@ -59,7 +59,7 @@ const MyCard = () =>
         </CardBody>
     </Card>
 
-    <Card style={{margin:"15px",marginBottom:"100px"}} className="w-[400px] sm-links">
+    <Card style={{margin:"15px",marginBottom:"100px"}} className="md:w-[400px] sm:max-w-[320px] sm-links">
     <div id="auftragsverwaltung" className="sprung"></div>
       <CardHeader style={{zIndex: "0"}}> <h3 className="text-[#2695a0] text-xl">Auftragsverwaltung</h3></CardHeader>
       <CardBody>
@@ -70,7 +70,7 @@ const MyCard = () =>
         </CardBody>
     </Card>
 
-    <Card style={{margin:"15px",marginBottom:"100px"}} className="w-[400px] sm-links">
+    <Card style={{margin:"15px",marginBottom:"100px"}} className="md:w-[400px] sm:max-w-[320px] sm-links">
     <div id="design" className="sprung"></div>
       <CardHeader style={{zIndex: "0"}}> <h3 className="text-[#2695a0] text-xl">Designer</h3></CardHeader>
       <CardBody>
@@ -81,16 +81,17 @@ const MyCard = () =>
         </CardBody>
     </Card>
 
-    <Card style={{margin:"15px",marginBottom:"100px"}} className="w-[400px] sm-links">
+    <Card style={{margin:"15px",marginBottom:"100px"}} className="md:w-[400px] sm:max-w-[320px] sm-links">
     <div id="nest" className="sprung"></div>
       <CardHeader style={{zIndex: "0"}}> <h3 className="text-[#2695a0] text-xl">Nesting</h3></CardHeader>
       <CardBody>
-        <Punkt text={text15}/><Link style={{marginTop:"-53px",marginLeft:"290px",paddingBottom:"30px"}} className="text-md text-[#5ec4d2]" href="/produkte/nestingsoftware">hier</Link>
+        <Punkt text={text15}/>
+        <Link style={{marginTop:"-53px",marginLeft:"110px",paddingBottom:"30px"}} className="text-md text-[#5ec4d2]" href="/produkte/nestingsoftware">hier</Link>
         <Punkt text={text16}/>
         </CardBody>
     </Card>
 
-    <Card style={{margin:"15px",marginBottom:"100px"}} className="w-[400px] sm-links">
+    <Card style={{margin:"15px",marginBottom:"100px"}} className="md:w-[400px] sm:max-w-[320px] sm-links">
       <div id="lager" className="sprung"></div>
       <CardHeader style={{zIndex: "0"}}> <h3 className="text-[#2695a0] text-xl">Komissionierungsmanagement</h3></CardHeader>
       <CardBody>
@@ -100,7 +101,7 @@ const MyCard = () =>
         </CardBody>
     </Card>
 
-    <Card style={{margin:"15px",marginBottom:"100px"}} className="w-[400px] sm-links ">
+    <Card style={{margin:"15px",marginBottom:"100px"}} className="md:w-[400px] sm:max-w-[320px] sm-links ">
     <div id="gravier" className="sprung"></div>
       <CardHeader style={{zIndex: "0"}}> <h3 className="text-[#2695a0] text-xl">Interface für Graviermaschinen</h3></CardHeader>
       <CardBody>
@@ -110,7 +111,7 @@ const MyCard = () =>
         </CardBody>
     </Card>
     
-    <Card style={{margin:"15px",marginBottom:"100px"}} className="w-[400px] sm-links ">
+    <Card style={{margin:"15px",marginBottom:"100px"}} className="md:w-[400px] sm:max-w-[320px] sm-links ">
     <div id="montage" className="sprung"></div>
       <CardHeader style={{zIndex: "0"}}> <h3 className="text-[#2695a0] text-xl">Montagestation</h3></CardHeader>
       <CardBody>
@@ -119,7 +120,7 @@ const MyCard = () =>
         </CardBody>
     </Card>
 
-    <Card style={{margin:"15px",marginBottom:"100px"}} className="w-[400px] sm-links ">
+    <Card style={{margin:"15px",marginBottom:"100px"}} className="md:w-[400px] sm:max-w-[320px] sm-links ">
     <div id="transport" className="sprung"></div>
       <CardHeader style={{zIndex: "0"}}> <h3 className="text-[#2695a0] text-xl">Komissionierungs-& Versandmodul</h3></CardHeader>
       <CardBody>
@@ -128,7 +129,7 @@ const MyCard = () =>
         </CardBody>
     </Card>
 
-    <Card style={{margin:"15px",marginBottom:"100px"}} className="w-[400px] sm-links">
+    <Card style={{margin:"15px",marginBottom:"100px"}} className="md:w-[400px] sm:max-w-[320px] sm-links">
     <div id="software" className="sprung"></div>
       <CardHeader style={{zIndex: "0"}}> <h3 className="text-[#2695a0] text-xl">Externe Software</h3></CardHeader>
       <CardBody>
@@ -138,7 +139,7 @@ const MyCard = () =>
         </CardBody>
     </Card>
 
-    <Card style={{margin:"15px",marginBottom:"500px"}} className="w-[400px] sm-links">
+    <Card style={{margin:"15px",marginBottom:"500px"}} className="md:w-[400px] sm:max-w-[320px] sm-links">
     <div id="gpe" className="sprung"></div>
       <CardHeader style={{zIndex: "0"}}> <h3 className="text-[#2695a0] text-xl">GPE-Basis</h3></CardHeader>
       <CardBody>

@@ -29,7 +29,7 @@ const OwnModal = ({titel,inhalt,link,links,oben,className}:UserProps) =>
                 (
                     <>
                     <ModalHeader><h3 style={{fontSize:"20pt"}} className="text-[#5ec4d2]">{titel}&nbsp;</h3></ModalHeader>
-                    <ModalBody><p style={{fontSize: "14pt"}} className="text-white">{inhalt}</p>
+                    <ModalBody><p className="text-white text-xs">{inhalt}</p>
                     <Link onClick={onClose} href={"#"+link}>Mehr Text</Link>
                     </ModalBody>
                     </>       

@@ -14,7 +14,7 @@ export default function ImpressumPage() {
 
   return (  
 <>
-<div style={{marginLeft:"50%"}}>
+<div>
       <HeaderNeu></HeaderNeu>  
       <Background left="-200px" opacity="10%"></Background>
       </div>

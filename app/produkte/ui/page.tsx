@@ -22,16 +22,15 @@ export default function UI() {
     return (
      
           <>
-     <div style={{marginLeft:"50%"}}>
       <HeaderNeu></HeaderNeu>  
       <Background left="-255px" opacity="10%"></Background>
-      </div>
+
           <Titel_Subtitel_nolink titel="UI" subtitel={text0}/>  
   
-
-          <div id="magento"><DesignerTooltip top="5%" left="55%" titel="Magento" beschreibung={text1} bildpfad={leerbild}/><Image style={{marginTop:"-80px",marginLeft:"100px"}} src={bild1} alt="magento" width={200} height={200}></Image></div>
-          <div id="next"><DesignerTooltip top="5%" left="35%" titel="Next JS" beschreibung={text2} bildpfad={leerbild}/><Image style={{marginTop:"-120px",marginLeft:"100px"}} src={bild2} alt="next-js" width={200} height={200}></Image></div>
-
+          <div id="magento" className="relative flex flex-col items-center mb-8"><DesignerTooltip top="4%" left="4%" titel="Magento" beschreibung={text1} bildpfad={leerbild}/><Image src={bild1} alt="magento" width={200} height={200}></Image></div>
+          <p>{text1}</p>
+          <div id="next" className="relative flex flex-col items-center"><DesignerTooltip top="5%" left="-5%" titel="Next JS" beschreibung={text2} bildpfad={leerbild}/><Image src={bild2} alt="next-js" width={200} height={200}></Image></div>
+          <p>{text2}</p>
     </>
     );
   }

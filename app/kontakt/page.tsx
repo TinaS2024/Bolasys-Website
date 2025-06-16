@@ -52,11 +52,11 @@ const KontaktPage = () =>{
   }
 
   return (
-    <div style={{marginLeft:"50%"}}>
+    <div>
       <HeaderNeu></HeaderNeu>  
       <Background left="-238px" opacity="10%"></Background>
    
-        <div style={{marginLeft:"-100%"}} className="py-8 text-left">   
+        <div style={{margin:"auto"}} className="py-8 text-left">   
         <div>
                <Titel_Subtitel_nolink titel="Kontakt" subtitel={text}/>  
             </div>

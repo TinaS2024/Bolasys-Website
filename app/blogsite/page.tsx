@@ -19,7 +19,7 @@ export default async function generateStaticParams() {
   return (  
 
 <>
-<div style={{marginLeft:"50%"}}>
+<div>
       <HeaderNeu></HeaderNeu>  
       <Background left="-238px" opacity="10%"></Background>
       </div>

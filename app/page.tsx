@@ -18,7 +18,7 @@ export default function Home()
     </div>
   <div className="flex justify-center">  
     
-    <h3 style={{fontSize:"40pt",marginTop:"-50px"}} className="text-white pt-20">Bolasys GmbH</h3>
+    <h3 style={{fontSize:"40pt",marginTop:"-50px"}} className="text-white pt-20 text-center">Bolasys GmbH</h3>
     </div>
    
 
