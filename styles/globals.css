@@ -129,7 +129,7 @@ margin-left:-10%;
 {
   position:absolute;
   margin-top:0px;
-  margin-left:-20px;
+  margin-left:5%;
   width:350px;
   height:350px;
   z-index:0;
@@ -171,91 +171,91 @@ margin-left:-10%;
 .img1
 {
   margin-top: 5%;
-  margin-left: 5%;
+  margin-left: 11%;
 }
 
 /* Telefon */
 .img2
 {
   margin-top: -8%;
-  margin-left: 13%;
+  margin-left: 18%;
 }
 
 /* Webstore */
 .img3
 {
   margin-top:-3%;
-  margin-left: -7%;
+  margin-left: -2%;
 }
 
 /* Shop */
 .img4
 {
   margin-top: -8%;
-  margin-left: -2%;
+  margin-left: 3%;
 }
 
 /* E-Mail */
 .img5
 {
   margin-top: -8%;
-  margin-left: 6%;
+  margin-left: 11%;
 }
 
 /* Computer */
 .img6
 {
   margin-top: -1%;
-  margin-left: 19%;
+  margin-left: 24%;
 }
 
 /* Maschine */
 .img7
 {
   margin-top: 19%; 
-  margin-left: 14%; 
+  margin-left: 19%; 
 }
 
 /* Montage */
 .img8
 {
   margin-top: 13%;
-  margin-left: 20%;
+  margin-left: 25%;
 }
 
 /* Transporter */
 .img9
 {
   margin-top: 7%;
-  margin-left: 22%;
+  margin-left: 27%;
 }
 
 /* Designer */
 .img10
 {
   margin-top: 12%; 
-  margin-left: -10%; 
+  margin-left: -5%; 
 }
 
 /* Auftrag */
 .img11
   {
   margin-top: 4%; 
-  margin-left: -10%; 
+  margin-left: -5%; 
   }
 
 /* Nesting */
 .img12
 {
   margin-top: 20%; 
-  margin-left: -2%; 
+  margin-left: 3%; 
 }
 
  /* Lager */
 .img13
 {
   margin-top: 20%; 
-  margin-left: 5%; 
+  margin-left: 10%; 
 }
 
 
@@ -411,7 +411,7 @@ margin-left:-10%;
 .card-container
 {
   position: absolute;
-  margin-left: -30%;
+  margin-left: -20%;
   margin-top: 50%;
 }
 
@@ -425,12 +425,20 @@ margin-left:-10%;
   margin-left: -50%;
 }
 
-.nesting_text, .gpe_text
+.nesting_text
 {
   width:1000px;
   margin-left:-40%;
   margin-bottom:5%;
 }
+
+..gpe_text
+{
+  width:1000px;
+  margin-left:-5%;
+  margin-bottom:5%;
+}
+
 
 .graph-position
 {
@@ -482,10 +490,6 @@ margin-left:10%;
     margin-left: -45%;
   }
     
-  #nesting-card1, #nesting-card2, #nesting-card3
-  {
-    margin-left: 10%;
-  }
 
   .pfeil1
   {
@@ -609,205 +613,13 @@ margin-left:10%;
   top:320px;
   }
 
-  .pfeil_gpe
-  {
-    position:absolute;
-    margin-top:-50px;
-    margin-left:-20px;
-    width:170px;
-    height:170px;
-    z-index:0;
-    background-size:contain;
-    background-repeat: no-repeat;
-  }
+  
 
 
 .graph-position
 {
   margin-left:40%;
 }
-
-/* GPE-Basis */
-.img1
-{
-  margin-top: -5%;
-  margin-left: 7%;
-  width:70px;
-}
-
-.modal_klein_img1
-{
-  top:-40px;
-  left:-15px;
-}
-
-/* Telefon */
-.img2
-{
-  margin-top: -38%;
-  margin-left: 25%;
-  width:50px;
-}
-
-.modal_klein_img2
-{
-  top:-35px;
-  left:-12px;
-}
-
-/* Webstore */
-.img3
-{
-  margin-top:-21%;
-  margin-left: -20%;
-  width:50px;
-}
-
-.modal_klein_img3
-{
-  top:-25px;
-  left:-15px;
-}
-
-/* Shop */
-.img4
-{
-  margin-top: -35%;
-  margin-left: -10%;
-  width:70px;
-}
-
-.modal_klein_img4
-{
-  top:-25px;
-  left:-15px;
-}
-
-/* E-Mail */
-.img5
-  {
-    margin-top: -38%;
-    margin-left: 9%;
-    width:50px;
-  }
-
-  .modal_klein_img5
-  {
-    top:-15px;
-    left:-10px;
-  }
-
-  /* Computer */
-  .img6
-  {
-    margin-top: -20%;
-    margin-left: 33%;
-    width:70px;
-  }
-
-  .modal_klein_img6
-  {
-    top:-20px;
-    left:-15px;
-  }
-
-  /* Maschine */
-  .img7
-  {
-    margin-top: 30%; 
-    margin-left: 26%; 
-    width:50px;
-  }
-
-  .modal_klein_img7
-  {
-    top:-25px;
-    left:-15px;
-  }
-
-   /* Montage */
-   .img8
-   {
-     margin-top: 12%;
-     margin-left: 38%;
-     width:70px;
-   }
-
-   .modal_klein_img8
-   {
-     top:-22px;
-     left:-10px;
-   }
-
-  /* Transporter */
-  .img9
-  {
-    margin-top: -2%;
-    margin-left: 40%;
-    width:70px;
-  }
-
-  .modal_klein_img9
-  {
-    top:-12px;
-    left:-5px;
-  }
-
-  /* Designer */
-  .img10
-  {
-    margin-top: 14%; 
-    margin-left: -23%; 
-    width:60px;
-  }
-
-  .modal_klein_img10
-  {
-    top:-40px;
-    left:-15px;
-  }
-
-  /* Auftrag */
-  .img11
-  {
-    margin-top: -5%;
-    margin-left: -25%;
-    width:40px;
-  }
-
-  .modal_klein_img11
-  {
-    top:-22px;
-    left:-10px;
-  }
-
-  /* Nesting */
-  .img12
-  {
-    margin-top: 32%;
-    margin-left: -10%;
-    width:40px;
-  }
-
-  .modal_klein_img12
-  {
-    top:-22px;
-    left:-10px;
-  }
-
-  /* Lager */
-  .img13
-  {
-    margin-top: 32%;
-    margin-left: 7%; 
-    width:50px;
-  }
-
-  .modal_klein_img13
-  {
-    top:-25px;
-    left:-10px;
-  }
 
   .img_unten
   {
@@ -842,8 +654,246 @@ margin-left:10%;
 
 }
 
+/* Tablets */
+ @media only screen and (max-width: 820px) 
+{
+#designerbild
+{
+  width: 1000px;
+  height: 541px;
+  margin-top: 15%;
+  margin-left: -10%;
+}
 
-/* Große Smartphones*/
+  .nesting_text
+  {
+    width:800px;  
+    margin-bottom:5%;
+    margin-left:-30%;
+    padding-left:10%;
+  }
+
+   #nesting-card1, #nesting-card2, #nesting-card3
+  {
+    display:flex;
+    flex-direction:row;
+    min-width:900px;
+    margin-left:-20%;
+  }
+
+ .gpe_text
+  {
+    width:800px;  
+    margin-bottom:5%;
+    margin-left:-30%;
+    padding-left:10%;
+  }
+
+  .pfeil_gpe
+  {
+    margin-top:-10px;
+    margin-left:-40px;
+  }
+  
+  /* GPE-Basis */
+  .img1
+  {
+    margin-top: 13%;
+    margin-left: 12%;
+    width:70px;
+  }
+
+  .modal_klein_img1
+  {
+    top:-40px;
+    left:-15px;
+  }
+
+  /* Telefon */
+  .img2
+  {
+    margin-top: -18%;
+    margin-left: 25%;
+    width:50px;
+  }
+
+  .modal_klein_img2
+  {
+    top:-35px;
+    left:-12px;
+  }
+
+  /* Webstore */
+  .img3
+  {
+    margin-top:-1%;
+    margin-left: -20%;
+    width:50px;
+  }
+
+  .modal_klein_img3
+  {
+    top:-25px;
+    left:-15px;
+  }
+
+  /* Shop */
+  .img4
+  {
+    margin-top: -15%;
+    margin-left: -10%;
+    width:70px;
+  }
+
+  .modal_klein_img4
+  {
+    top:-25px;
+    left:-15px;
+  }
+
+/* E-Mail */
+  .img5
+  {
+    margin-top: -18%;
+    margin-left: 9%;
+    width:50px;
+  }
+
+  .modal_klein_img5
+  {
+    top:-15px;
+    left:-10px;
+  }
+
+  /* Computer */
+  .img6
+  {
+    margin-top: -5%;
+    margin-left: 38%;
+    width:70px;
+  }
+
+  .modal_klein_img6
+  {
+    top:-20px;
+    left:-15px;
+  }
+
+  /* Maschine */
+  .img7
+  {
+    margin-top: 48%; 
+    margin-left: 30%; 
+    width:50px;
+  }
+
+  .modal_klein_img7
+  {
+    top:-25px;
+    left:-15px;
+  }
+
+   /* Montage */
+   .img8
+   {
+     margin-top: 32%;
+     margin-left: 43%;
+     width:70px;
+   }
+
+   .modal_klein_img8
+   {
+     top:-22px;
+     left:-10px;
+   }
+
+  /* Transporter */
+  .img9
+  {
+    margin-top: 18%;
+    margin-left: 45%;
+    width:70px;
+  }
+
+  .modal_klein_img9
+  {
+    top:-12px;
+    left:-5px;
+  }
+
+  /* Designer */
+  .img10
+  {
+    margin-top: 34%; 
+    margin-left: -23%; 
+    width:60px;
+  }
+
+  .modal_klein_img10
+  {
+    top:-40px;
+    left:-15px;
+  }
+
+  /* Auftrag */
+  .img11
+  {
+    margin-top: 15%;
+    margin-left: -25%;
+    width:40px;
+  }
+
+  .modal_klein_img11
+  {
+    top:-22px;
+    left:-10px;
+  }
+
+  /* Nesting */
+  .img12
+  {
+    margin-top: 45%;
+    margin-left: -10%;
+    width:40px;
+  }
+
+  .modal_klein_img12
+  {
+    top:-22px;
+    left:-10px;
+  }
+
+  /* Lager */
+  .img13
+  {
+    margin-top: 52%;
+    margin-left: 7%; 
+    width:50px;
+  }
+
+  .modal_klein_img13
+  {
+    top:-25px;
+    left:-10px;
+  }
+
+   .card-container
+  {
+    flex-direction:row;
+    min-width:900px;
+    margin-left:-22%;
+  }
+
+  #footer
+  {
+    margin-left:-2%;
+  }
+  
+}
+
+
+
+/* Große Smartphones */
 @media only screen and (max-width: 576px) 
 {
 
@@ -852,7 +902,7 @@ margin-left:10%;
     margin-top: -150px;
   }
 
-   .abstand_oben
+  .abstand_oben
   {
     margin-top: 150px;
   }
@@ -863,6 +913,13 @@ margin-left:10%;
    height: 298px;
    margin-top: 25%;
    margin-left: 0%;
+  }
+
+  .gpe_text
+  {
+    width:400px;
+    margin-left:-4%;
+    margin-bottom:5%;
   }
 
   .img1,.img2,.img3,.img4,.img5,.img6, .img7,.img8,.img9,.img10,.img11,.img12,.img13
@@ -961,10 +1018,37 @@ margin-left:10%;
       width:150px;
       height:150px;
     }
+
+    .card-container
+    {
+      position: absolute;
+      margin-left:-50%;
+    }
+
+     .nesting_text
+    {
+      width:450px;  
+      margin-bottom:10%;
+      margin-left:5%
+    }
+
+     #nesting-card1, #nesting-card2, #nesting-card3
+    {
+      display:flex;
+      flex-direction:column;
+      min-width:500px;
+      margin-left:10%;
+    }
+
+    #footer
+    {
+      margin-left:-25%;
+    }
+
 }
 
 
-/* Kleine Smartphones*/
+/* Kleine Smartphones */
  @media only screen and (max-width: 380px) 
 {
 
@@ -986,6 +1070,13 @@ margin-left:10%;
    margin-left: 03%;
   }
 
+   .gpe_text
+  {
+    width:400px;
+    margin-left:-4%;
+    margin-bottom:5%;
+  }
+
    .img1,.img2,.img3,.img4,.img5,.img6, .img7,.img8,.img9,.img10,.img11,.img12,.img13
   {
     width:40px;
@@ -998,7 +1089,7 @@ margin-left:10%;
     margin-left: 8%;
   }
 
-    .modal_klein_img1
+  .modal_klein_img1
   {
     top:-70px;
     left:-28px;
@@ -1040,11 +1131,11 @@ margin-left:10%;
     left:-15px;
   }
 
-   .modal_klein_img8
-   {
-     top:-42px;
-     left:-20px;
-   }
+  .modal_klein_img8
+  {
+    top:-42px;
+    left:-20px;
+  }
 
   .modal_klein_img9
   {
@@ -1080,6 +1171,24 @@ margin-left:10%;
   {
     width:150px;
     height:150px;
+  }
+
+   .nesting_text
+  {
+    width:400px;  
+    margin-bottom:10%;
+    margin-left:10%
+  }
+
+  .card-container
+  {
+    position: absolute;
+    margin-left:-60%;
+  }
+
+  #footer
+  {
+    margin-left:-25%;
   }
 
 

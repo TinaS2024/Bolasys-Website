@@ -19,7 +19,7 @@ export default function GPE() {
       <Background top="-350px" left="0px" opacity="10%"></Background>
       </div>
       
-    <div className="gpe_text sm:pr-9 pl-1 ">
+    <div className="gpe_text">
     <Titel_Subtitel_nolink titel="GPE" subtitel={text}/>  
     </div>
      
