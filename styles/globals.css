@@ -450,14 +450,14 @@ margin-left:-10%;
 {
 position:relative;
 margin-top:25%;
-margin-left:10%;
+margin-left:0%;
 }
 
 #next
 {
 position:relative;
 margin-top:45%;
-margin-left:10%;
+margin-left:0%;
 }
 
 @media screen and (max-width: 800px)
@@ -613,13 +613,12 @@ margin-left:10%;
   top:320px;
   }
 
-  
 
+  .graph-position
+  {
+    margin-left:40%;
+  }
 
-.graph-position
-{
-  margin-left:40%;
-}
 
   .img_unten
   {
@@ -651,6 +650,23 @@ margin-left:10%;
     margin-left:4%;
     margin-bottom:5%;
   }
+
+}
+
+@media screen and (max-width:1280px) 
+{
+  .graph_bilder
+  {
+    margin-left:10%;
+    margin-top:10%;
+  }
+
+   .pfeil_gpe
+    {
+      width:250px;
+      height:250px;
+      margin-left:10%;
+    }
 
 }
 
@@ -699,15 +715,22 @@ margin-left:10%;
 
   .pfeil_gpe
   {
+    width:350px;
+    height:350px;
     margin-top:-10px;
-    margin-left:-40px;
+    margin-left:-30px;
   }
-  
+
+   .graph_bilder
+    {
+      margin-left:5%;
+    }
+
   /* GPE-Basis */
   .img1
   {
     margin-top: 13%;
-    margin-left: 12%;
+    margin-left: 9%;
     width:70px;
   }
 
@@ -959,6 +982,11 @@ margin-left:10%;
       width:150px;
       height:150px;
       margin-left:-5%;
+    }
+
+     .graph_bilder
+    {
+      margin-left:0%;
     }
 
 
@@ -1247,6 +1275,10 @@ margin-left:10%;
       margin-top:-15%;
     }
 
+    .graph_bilder
+    {
+      margin-left:0%;
+    }
 
    .img1
   {

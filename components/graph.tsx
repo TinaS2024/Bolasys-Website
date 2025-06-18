@@ -55,6 +55,7 @@ export const Graph = () => {
     <div className="graph-position" style={{marginTop:"200px"}}> 
     <div className="pfeil_gpe" style={{backgroundImage: `url(${pfeil.src})`}}></div>
     
+    <div className="graph_bilder">
     {/* GPE-Basis */}
     <div className="img1">
       <DesignerTooltip top="15%" left="15%" titel="GPE-Basis" beschreibung={text1} bildpfad={leerbild}/>
@@ -145,6 +146,7 @@ export const Graph = () => {
         <DesignerTooltip top="10%" left="5%" titel="Lager" beschreibung={text13} bildpfad={leerbild}/>
         <OwnModal className="modal_klein_img13" links="-5px" oben="60px" link="lager" titel="Lager" inhalt={text12}/>
         <Image src={bild12} alt="lager" width={70} height={70}></Image>
+      </div>
       </div>
     
     </div>   
