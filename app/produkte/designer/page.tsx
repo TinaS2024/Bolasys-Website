@@ -86,16 +86,20 @@ export default function Designer()
       <HeaderNeu></HeaderNeu>  
       <Background top="-350px" left="0px" opacity="10%"></Background>
        
+       
     <Titel_Subtitel_nolink titel="Designer" subtitel={text0}/>  
-          <div id="designerbild" className="flex relative">
-            <div><DesignerTooltip top="-1%" left="30%" titel="Header" beschreibung={text1} bildpfad={bild_rechts}/><OwnModal_nolink id="pfeil1" className="pfeil1" titel="Header" inhalt={text1}/></div>
-            <div><DesignerTooltip top="10%" left="5%" titel="Zeichenelemente" beschreibung={text2} bildpfad={bild_links}/><OwnModal_nolink id="pfeil2" className="pfeil2" titel="Zeichenelemente" inhalt={text2}/></div>
-            <div><DesignerTooltip top="30%" left="53%" titel="Attribute" beschreibung={text3} bildpfad={bild_rechts}/><OwnModal_nolink id="pfeil3" className="pfeil3" titel="Attribute" inhalt={text3}/></div>
-            <div><DesignerTooltip top="10%" left="30%" titel="Canvas" beschreibung={text4} bildpfad={bild_links}/><OwnModal_nolink id="pfeil4" className="pfeil4" titel="Canvas" inhalt={text4}/></div>
-            <div><DesignerTooltip top="17%" left="53%" titel="Produktdetails" beschreibung={text5} bildpfad={bild_rechts}/><OwnModal_nolink id="pfeil5" className="pfeil5" titel="Produktdetails" inhalt={text5}/></div>
-            <div><DesignerTooltip top="38%" left="15%" titel="Vorschau" beschreibung={text6} bildpfad={bild_links}/><OwnModal_nolink id="pfeil6" className="pfeil6" titel="Vorschau" inhalt={text6}/></div>
+    
+          <div id="designerbild" className="flex relative overflow-hidden">
+            <DesignerTooltip top="-1%" left="30%" titel="Header" beschreibung={text1} bildpfad={bild_rechts}/><OwnModal_nolink id="pfeil1" className="pfeil1" titel="Header" inhalt={text1}/>
+            <DesignerTooltip top="10%" left="5%" titel="Zeichenelemente" beschreibung={text2} bildpfad={bild_links}/><OwnModal_nolink id="pfeil2" className="pfeil2" titel="Zeichenelemente" inhalt={text2}/>
+            <DesignerTooltip top="30%" left="53%" titel="Attribute" beschreibung={text3} bildpfad={bild_rechts}/><OwnModal_nolink id="pfeil3" className="pfeil3" titel="Attribute" inhalt={text3}/>
+            <DesignerTooltip top="10%" left="30%" titel="Canvas" beschreibung={text4} bildpfad={bild_links}/><OwnModal_nolink id="pfeil4" className="pfeil4" titel="Canvas" inhalt={text4}/>
+            <DesignerTooltip top="17%" left="53%" titel="Produktdetails" beschreibung={text5} bildpfad={bild_rechts}/><OwnModal_nolink id="pfeil5" className="pfeil5" titel="Produktdetails" inhalt={text5}/>
+            <DesignerTooltip top="38%" left="15%" titel="Vorschau" beschreibung={text6} bildpfad={bild_links}/><OwnModal_nolink id="pfeil6" className="pfeil6" titel="Vorschau" inhalt={text6}/>
+          
           </div> 
           <Button style={{marginTop:"25px"}} className="bg-[#5ec4d2] text-black" onPress={onOpen} ><p className="text-xl">Design-Beispiele</p></Button>
+          
           <Modal 
         isOpen={isOpen} 
         onOpenChange={onOpenChange}

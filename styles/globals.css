@@ -1142,6 +1142,7 @@ margin-left:10%;
     
     .card-container
     {
+      flex-direction:column;
       position: absolute;
       margin-left:-50%;
     }
@@ -1425,8 +1426,9 @@ margin-left:10%;
 
   .card-container
   {
+    flex-direction:column;
     position: absolute;
-    margin-left:-60%;
+    margin-left:-110%;
   }
 
   .gif
