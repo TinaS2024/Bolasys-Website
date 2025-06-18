@@ -89,7 +89,7 @@ export default function Designer()
        
     <Titel_Subtitel_nolink titel="Designer" subtitel={text0}/>  
     
-          <div id="designerbild" className="flex relative overflow-hidden">
+          <div id="designerbild" className="flex relative">
             <DesignerTooltip top="-1%" left="30%" titel="Header" beschreibung={text1} bildpfad={bild_rechts}/><OwnModal_nolink id="pfeil1" className="pfeil1" titel="Header" inhalt={text1}/>
             <DesignerTooltip top="10%" left="5%" titel="Zeichenelemente" beschreibung={text2} bildpfad={bild_links}/><OwnModal_nolink id="pfeil2" className="pfeil2" titel="Zeichenelemente" inhalt={text2}/>
             <DesignerTooltip top="30%" left="53%" titel="Attribute" beschreibung={text3} bildpfad={bild_rechts}/><OwnModal_nolink id="pfeil3" className="pfeil3" titel="Attribute" inhalt={text3}/>

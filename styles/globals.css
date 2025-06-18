@@ -666,10 +666,11 @@ margin-left:10%;
 
 #designerbild
 {
-  width: 1000px;
-  height: 541px;
+  width: 700px;
+  height: 379px;
   margin-top: 15%;
-  margin-left: -10%;
+  margin-left:0%;
+  left:22%;
 }
 
   .nesting_text
@@ -684,7 +685,7 @@ margin-left:10%;
   {
     display:flex;
     flex-direction:row;
-    min-width:900px;
+    min-width:800px;
     margin-left:-20%;
   }
 
@@ -899,6 +900,20 @@ margin-left:10%;
     height:400px;
   }
 
+  #magento
+  {
+  position:relative;
+  margin-top:25%;
+  margin-left:0%;
+  }
+
+  #next
+  {
+  position:relative;
+  margin-top:45%;
+  margin-left:0%;
+  }
+
   
 }
 
@@ -920,10 +935,10 @@ margin-left:10%;
 
   #designerbild
   {
-   width: 550px;
-   height: 298px;
+   max-width: 340px;
+   height: 185px;
    margin-top: 25%;
-   margin-left: 0%;
+   margin-left: 1%;
   }
 
   .gpe_text
@@ -1159,15 +1174,16 @@ margin-left:10%;
     {
       width:450px;  
       margin-bottom:10%;
-      margin-left:5%
+      margin-left:1%
     }
 
      #nesting-card1, #nesting-card2, #nesting-card3
     {
       display:flex;
       flex-direction:column;
-      min-width:500px;
-      margin-left:10%;
+      min-width:400px;
+      max-width:400px;
+      margin-left:7%;
     }
 
     .gif
@@ -1198,10 +1214,10 @@ margin-left:10%;
 
   #designerbild
   {
-   width: 450px;
-   height: 244px;
+   max-width: 300px;
+   height: 163px;
    margin-top: 25%;
-   margin-left: 03%;
+   margin-left:5;
   }
 
    .gpe_text
@@ -1451,6 +1467,22 @@ margin-left:10%;
       margin-left:-5%;
       width:380px;
       height:280px;
+    }
+
+    .nesting_text
+    {
+      width:350px;  
+      margin-bottom:10%;
+      margin-left:0%
+    }
+
+    #nesting-card1, #nesting-card2, #nesting-card3
+    {
+      display:flex;
+      flex-direction:column;
+      min-width:350px;
+      max-width:350px;
+      margin-left:7%;
     }
 
 
