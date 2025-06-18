@@ -1145,6 +1145,14 @@ margin-left:10%;
       flex-direction:column;
       position: absolute;
       margin-left:-50%;
+      position: absolute; 
+      width: 90vw; 
+      max-width: 500px; 
+      left: 52%;
+      transform: translateX(-50%);
+      margin-left: 0; 
+      min-width: unset;
+      
     }
 
      .nesting_text
@@ -1428,7 +1436,13 @@ margin-left:10%;
   {
     flex-direction:column;
     position: absolute;
-    margin-left:-110%;
+    position: absolute; 
+    width: 90vw; 
+    max-width: 450px; 
+    left: 46%;
+    transform: translateX(-50%);
+    margin-left: 0; 
+    min-width: unset; 
   }
 
   .gif

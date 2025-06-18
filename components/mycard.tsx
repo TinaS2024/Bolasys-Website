@@ -46,7 +46,7 @@ const MyCard = () =>
   const text32 = ["Datenbank POSGREQL"]
 
     return (
-<div style={{marginTop:"750px"}} className="card-container flex flex-col md:flex-row flex-wrap justify-center items-center md:items-start">
+<div style={{marginTop:"750px"}} className="card-container flex flex-col md:flex-row flex-wrap justify-center">
 
 <Card style={{margin:"15px",marginBottom:"100px",height:"680px"}} className="lg:w-[400px] sm:max-w-[320px]">
     <div id="auftragsannahme" className="sprung"></div>
