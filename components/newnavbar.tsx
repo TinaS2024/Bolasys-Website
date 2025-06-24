@@ -87,6 +87,10 @@ const NewNavbar = () =>
                         <Link color="foreground" className="text-lg" href="/blogsite">Bolasys Blog</Link>
                         </DropdownItem>
 
+                         <DropdownItem key="download">
+                        <Link color="foreground" className="text-lg" href="/download">Downloads</Link>
+                        </DropdownItem>
+
                         <DropdownItem key="contact">
                         <Link color="foreground" className="text-lg" href="/kontakt">Kontakt</Link>
                         </DropdownItem>
@@ -100,6 +104,10 @@ const NewNavbar = () =>
                 <NavbarItem className="lg:block md:block sm:hidden">
                     <Link color="foreground" className="text-lg" href="/blogsite">Bolasys Blog</Link>
                 </NavbarItem> 
+
+                 <NavbarItem className="lg:block md:block sm:hidden">
+                    <Link color="foreground" className="text-lg" href="/download">Downloads</Link>
+                </NavbarItem>
                 
                 <NavbarItem className="lg:block md:block sm:hidden">
                     <Link color="foreground" className="text-lg" href="/kontakt">Kontakt</Link>
