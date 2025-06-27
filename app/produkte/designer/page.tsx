@@ -16,6 +16,8 @@ import bild1 from "@/app/bilder/satz1.png";
 import bild2 from "@/app/bilder/satz2.png";
 import bild3 from "@/app/bilder/satz3.png";
 
+
+
 //Slider: https://medium.com/@dissanayakewishwajith/creating-an-image-slider-with-next-js-tailwind-css-and-typescript-4dbeeb9c0df6#:~:text=In%20this%20tutorial,%20I%E2%80%99ll%20show%20you
 
 

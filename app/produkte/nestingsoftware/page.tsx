@@ -17,6 +17,7 @@ import stempel4 from "@/app/bilder/gpe_schrumpfen.png";
 import stempel5 from "@/app/bilder/anordnung_bolanest.png";
 import stempel6 from "@/app/bilder/anordnen_gpe.png";
 
+
 export default function Nesting() {
 
   const text1 = ["Platzsparendes automatisches Anordnen ihrer Designs auf einer Arbeitsfläche oder Materialplatte.",<br/> ,"Die Software gestattet automatische (voreingestellte) Vorverarbeitung von Designs, automatisches Entfernen und Hinzufügen von Schneidkonturen, verschiedene Anordnungsoptionen und Weitergabe von Anordnungsdaten für nachfolgende Arbeitsschritte.",<br/>,"Die im Weiteren verwerteten Anordnungsdaten gestatten das Softwaregestützte Auffinden von Designs auf der Materialplatte bei der Weiterverarbeitung.",<br/>, "Die folgenden Beispiele beziehen sich auf das Nesting von Stempeldesigns auf Gummiplatten."]

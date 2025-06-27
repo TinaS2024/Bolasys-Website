@@ -10,6 +10,7 @@ import Image from "next/image";
 import DesignerTooltip from "@/components/designer_tooltip";
 import leerbild from "@/app/bilder/leerbild.png";
 
+
 export default function UI() {
 
   const bild1 = magento_bild;

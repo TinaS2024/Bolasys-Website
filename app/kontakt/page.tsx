@@ -8,10 +8,10 @@ import { RadioGroup,Radio, Textarea, Input} from "@nextui-org/react";
 import { Button } from "@nextui-org/react";
 import Swal from "sweetalert2";
 
+import Chatbot from "@/components/chatbot";
+
 import {FormEvent } from "react";
 import {useState} from "react";
-
-//Hier wird eigentlich ein Captcha benötigt
 
 
 const KontaktPage = () =>{
@@ -53,6 +53,7 @@ const KontaktPage = () =>{
 
   return (
     <div>
+
       <HeaderNeu></HeaderNeu>  
       <Background top="-350px" left="0px" opacity="10%"></Background>
    
@@ -122,6 +123,7 @@ const KontaktPage = () =>{
           
        
         </div>
+        <Chatbot/>
         </div>
   );
 }

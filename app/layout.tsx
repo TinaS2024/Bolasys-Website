@@ -6,6 +6,9 @@ import { Providers } from "./providers";
 import { siteConfig } from "@/config/site";
 import { fontSans } from "@/config/fonts";
 import { Divider } from "@nextui-org/react";
+import dynamic from "next/dynamic";
+
+
 
 export const metadata: Metadata = {
   title: {
@@ -52,9 +55,8 @@ export default function RootLayout({
             <footer id="footer" style={{zIndex:"1"}} className="w-full flex items-center justify-center py-1  bg-black" >
                 <Link color="foreground" className="text-lg" href="/impressum"><p className="text-cyan-800">Impressum |</p></Link>
                 <Link color="foreground" className="text-lg" href="/agb"><p className="text-cyan-800">&nbsp;AGB</p></Link>
-
-
             </footer>
+               
           </div>
         </Providers>
       </body>

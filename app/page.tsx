@@ -3,6 +3,7 @@ import { Background } from "@/components/background";
 import Titel_Subtitel from "@/components/titel_subtitel";
 import logo from "@/app/bilder/logo.png";
 import Image from "next/image";
+import Chatbot from "@/components/chatbot";
 
 
 export default function Home() 
@@ -34,7 +35,9 @@ export default function Home()
     <Titel_Subtitel titel="NESTING" subtitel="zur optimalen Nutzung ihrer Produktionssysteme" path="/produkte/nestingsoftware"></Titel_Subtitel>
     <Titel_Subtitel titel="UI" subtitel="Bedienoberflächen für Lasergravierer und ähnliche Produktionssysteme" path="/produkte/ui"></Titel_Subtitel>
   </div>  
-  <div id="home_bg"><Background top="-350px" left="0px" opacity="40%"></Background></div>
+  <div id="home_bg"><Background top="-350px" left="0px" opacity="40%"></Background>
+  <Chatbot/>
+  </div>
 
   </>
 

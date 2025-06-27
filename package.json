@@ -37,6 +37,8 @@
 		"autoprefixer": "10.4.19",
 		"axios": "^1.7.7",
 		"clsx": "^2.0.0",
+		"flowise-embed": "^3.0.3",
+		"flowise-embed-react": "^3.0.3",
 		"framer-motion": "^11.11.10",
 		"gif-encoder-2": "^1.0.5",
 		"intl-messageformat": "^10.5.0",
