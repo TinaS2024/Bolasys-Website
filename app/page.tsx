@@ -36,7 +36,8 @@ export default function Home()
     <Titel_Subtitel titel="UI" subtitel="Bedienoberflächen für Lasergravierer und ähnliche Produktionssysteme" path="/produkte/ui"></Titel_Subtitel>
   </div>  
   <div id="home_bg"><Background top="-350px" left="0px" opacity="40%"></Background>
-  <Chatbot/>
+  {/*<Chatbot/> */}
+  
   </div>
 
   </>

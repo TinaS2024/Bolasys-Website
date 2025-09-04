@@ -123,7 +123,8 @@ const KontaktPage = () =>{
           
        
         </div>
-        <Chatbot/>
+        {/*<Chatbot/> */}
+        
         </div>
   );
 }
