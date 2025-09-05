@@ -8,7 +8,7 @@
 		"build": "next build",
 		"start": "next start",
 		"vercel-build": "npm run prepare && next build",
-		"prepare": "tsc",
+		"prepare": "tsc"
 	},
 	"dependencies": {
 		"@ai-sdk/openai": "^0.0.45",
