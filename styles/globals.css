@@ -133,6 +133,7 @@ margin-left:-10%;
   width:350px;
   height:350px;
   z-index:0;
+  background-image: url("../public/big_arrow.png");
   background-size:contain;
   background-repeat: no-repeat;
 }
@@ -458,6 +459,14 @@ margin-left:0%;
 position:relative;
 margin-top:45%;
 margin-left:0%;
+}
+
+.bannerbackground
+{
+  background-image: url("../public/banner2.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+
 }
 
 @media screen and (max-width: 800px)

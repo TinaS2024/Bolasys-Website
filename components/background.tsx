@@ -1,4 +1,3 @@
-import banner1 from "@/public/banner2.png";
 
 export interface UserProps
 {
@@ -14,14 +13,11 @@ export const Background = ({opacity,top,left}:UserProps) => {
 
   return (
     <header className="w-full flex items-center justify-center py-60">
-    <div className="w-full h-full flex items-center justify-center background"
+    <div className="w-full h-full flex items-center justify-center bannerbackground"
     style={{
-    backgroundImage: `url(${banner1.src})`,
     position: "fixed",
     marginTop: `${top}`,
     marginLeft:  `${left}`,
-    backgroundSize: "cover",
-    backgroundRepeat: "no-repeat",
     width: "100vw",
     height: "100vh",
     opacity: `${opacity}`,

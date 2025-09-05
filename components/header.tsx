@@ -14,7 +14,7 @@ const Header = ({opacity}:UserProps) =>
             <header id="header" style={{zIndex:"1",height:"30px"}}  className="w-full flex items-center justify-center abstand_unten relative">
             <div className="w-full flex items-center justify-center py-15 "
            style={{
-           backgroundImage: `url(${banner_dunkel.src})`,
+           //backgroundImage: `url(${banner_dunkel.src})`,
            backgroundSize: "cover",
            backgroundRepeat: "no-repeat",
            width: "100vw",

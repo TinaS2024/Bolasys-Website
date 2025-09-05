@@ -12,8 +12,6 @@ import auftrag from "@/public/Auftragsverwaltung.png";
 import nesting from"@/public/nesting_darkblue.png";
 import lager from "@/public/Lagermanagement_darkblue.png";
 
-import pfeil from "@/public/big_arrow.png";
-
 import OwnModal from "@/components/ownmodal";
 import Image from "next/image";
 import DesignerTooltip from "@/components/designer_tooltip";
@@ -53,7 +51,7 @@ export const Graph = () => {
   return (
  
     <div className="graph-position" style={{marginTop:"200px"}}> 
-    <div className="pfeil_gpe" style={{backgroundImage: `url(${pfeil.src})`}}></div>
+    <div className="pfeil_gpe"></div>
     
     <div className="graph_bilder">
     {/* GPE-Basis */}
