@@ -23,7 +23,7 @@ import bild3 from "@/public/satz3.png";
 
 interface ImageData
 {
-    src: StaticImageData;
+    src: StaticImageData | string;
 }
 
 const bilder: ImageData[] =

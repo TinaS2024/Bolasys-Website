@@ -3,7 +3,7 @@ import Image, { StaticImageData } from "next/image";
 
 export interface UserProps{
     produkt: string;
-    bildpfad: StaticImageData;
+    bildpfad: StaticImageData | string;
     bildname: string;
 }
 

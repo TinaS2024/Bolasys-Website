@@ -4,12 +4,12 @@ import Image, { StaticImageData } from "next/image";
 ;export interface UserProps
 {
     titel:string;
-    path:StaticImageData;
+    path:StaticImageData | string;
     beschreibung: Array<any>;
     className: string;
     width: number;
     height: number;
-    pathstemp:StaticImageData;
+    pathstemp:StaticImageData | string;
 }
 
 const NestingCard = ({titel,path,beschreibung,className,width,height,pathstemp}:UserProps) =>

@@ -4,7 +4,7 @@ import Image, {StaticImageData } from "next/image";
 export interface UserProps{
     titel: string;
     beschreibung: Array<any>;
-    bildpfad: StaticImageData;
+    bildpfad: StaticImageData | string;
     top:string;
     left:string;
 }
