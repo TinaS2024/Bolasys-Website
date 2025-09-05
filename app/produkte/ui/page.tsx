@@ -3,10 +3,11 @@
 import HeaderNeu from "@/components/header_new";
 import { Background } from "@/components/background";
 import Titel_Subtitel_nolink from "@/components/titel_subtitel_nolink";
-import magento_bild from "@/public/magento.png";
-import next_bild from "@/public/Next.jpg";
-
 import Image from "next/image";
+import magento_bild from "@/public/magento.png";
+import next_bild from "@/public/next.jpg";
+
+
 import DesignerTooltip from "@/components/designer_tooltip";
 import leerbild from "@/public/leerbild.png";
 
