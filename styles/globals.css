@@ -351,7 +351,7 @@ margin-left:-10%;
 
 #designerbild
 {
-  background-image: url("../app/bilder/Designer.png");
+  background-image: url("../public/Designer.png");
   position: absolute;
   background-size: contain;
   background-repeat: no-repeat;
@@ -365,7 +365,7 @@ margin-left:-10%;
 #screen
 {
   position: absolute;
-  background-image: url("../app/bilder/cy_screen_dark.png");
+  background-image: url("../public/cy_screen_dark.png");
   background-size: contain;
   background-repeat: no-repeat;
   width:882px;
@@ -376,13 +376,13 @@ margin-left:-10%;
 
 #screen:hover
 {
-  background-image: url("../app/bilder/cy_screen.png");
+  background-image: url("../public/cy_screen.png");
 }
 
 
 .gif
 {
-  background-image: url("../app/bilder/galaxy.gif");
+  background-image: url("../public/galaxy.gif");
   margin-left: -100%;
   width:1200px;
   height: 800px;
@@ -597,7 +597,7 @@ margin-left:0%;
   #screen
   {
    position: absolute;
-   background-image: url("../app/bilder/cy_screen_dark.png");
+   background-image: url("../public/cy_screen_dark.png");
    background-size: contain;
    background-repeat: no-repeat;
    width:441px;

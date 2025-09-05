@@ -1,4 +1,4 @@
-import banner_dunkel from "@/app/bilder/banner2_dark.png";
+import banner_dunkel from "@/public/banner2_dark.png";
 import NewNavbar from "./newnavbar";
 import Titel_Subtitel from "@/components/titel_subtitel";
 

@@ -4,18 +4,18 @@ import { Background } from "@/components/background";
 import Titel_Subtitel_nolink from "@/components/titel_subtitel_nolink";
 
 import NestingCard from "@/components/nesting_card";
-import bild1 from "@/app/bilder/clipping_abstand.svg";
-import bild2 from "@/app/bilder/schrumpfen_nest.svg";
-import bild3 from "@/app/bilder/schrumpfen_gpe.svg";
-import bild4 from "@/app/bilder/grosse_formen.svg";
-import bild5 from "@/app/bilder/gleiche_formen.svg";
-import bild6 from "@/app/bilder/clipping_ohne_abstand.svg";
-import stamp1 from "@/app/bilder/2_ausschnitt.png";
-import stamp2 from "@/app/bilder/1_ausschnitt.png";
-import stempel3 from "@/app/bilder/schrumpfen_bolanest.png";
-import stempel4 from "@/app/bilder/gpe_schrumpfen.png";
-import stempel5 from "@/app/bilder/anordnung_bolanest.png";
-import stempel6 from "@/app/bilder/anordnen_gpe.png";
+import bild1 from "@/public/clipping_abstand.svg";
+import bild2 from "@/public/schrumpfen_nest.svg";
+import bild3 from "@/public/schrumpfen_gpe.svg";
+import bild4 from "@/public/grosse_formen.svg";
+import bild5 from "@/public/gleiche_formen.svg";
+import bild6 from "@/public/clipping_ohne_abstand.svg";
+import stamp1 from "@/public/2_ausschnitt.png";
+import stamp2 from "@/public/1_ausschnitt.png";
+import stempel3 from "@/public/schrumpfen_bolanest.png";
+import stempel4 from "@/public/gpe_schrumpfen.png";
+import stempel5 from "@/public/anordnung_bolanest.png";
+import stempel6 from "@/public/anordnen_gpe.png";
 
 
 export default function Nesting() {

@@ -1,23 +1,23 @@
-import gpe from "@/app/bilder/Bediensoftware_GPE.png";
-import phone from "@/app/bilder/Telephon_green.png";
-import webstore from "@/app/bilder/Webstore_green.png";
-import shop from "@/app/bilder/Shop_green.png";
-import maschine from "@/app/bilder/Graviermaschine_darkblue.png";
-import email from "@/app/bilder/E-mail_green.png";
-import computer from "@/app/bilder/Computer_extern.png";
-import montage from "@/app/bilder/Tools_darkblue.png";
-import transporter from "@/app/bilder/Car_Transport.png";
-import designer from "@/app/bilder/designer_icon.png";
-import auftrag from "@/app/bilder/Auftragsverwaltung.png";
-import nesting from"@/app/bilder/nesting_darkblue.png";
-import lager from "@/app/bilder/Lagermanagement_darkblue.png";
+import gpe from "@/public/Bediensoftware_GPE.png";
+import phone from "@/public/Telephon_green.png";
+import webstore from "@/public/Webstore_green.png";
+import shop from "@/public/Shop_green.png";
+import maschine from "@/public/Graviermaschine_darkblue.png";
+import email from "@/public/E-mail_green.png";
+import computer from "@/public/Computer_extern.png";
+import montage from "@/public/Tools_darkblue.png";
+import transporter from "@/public/Car_Transport.png";
+import designer from "@/public/designer_icon.png";
+import auftrag from "@/public/Auftragsverwaltung.png";
+import nesting from"@/public/nesting_darkblue.png";
+import lager from "@/public/Lagermanagement_darkblue.png";
 
-import pfeil from "@/app/bilder/big_arrow.png";
+import pfeil from "@/public/big_arrow.png";
 
 import OwnModal from "@/components/ownmodal";
 import Image from "next/image";
 import DesignerTooltip from "@/components/designer_tooltip";
-import leerbild from "@/app/bilder/leerbild.png";
+import leerbild from "@/public/leerbild.png";
 
 export const Graph = () => {
 

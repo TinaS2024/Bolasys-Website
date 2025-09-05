@@ -1,7 +1,7 @@
 "use client"
 import { Background } from "@/components/background";
 import Titel_Subtitel from "@/components/titel_subtitel";
-import logo from "@/app/bilder/logo.png";
+import logo from "@/public/logo.png";
 import Image from "next/image";
 import Chatbot from "@/components/chatbot";
 

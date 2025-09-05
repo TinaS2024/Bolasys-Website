@@ -4,17 +4,17 @@ import { Background } from "@/components/background";
 import OwnModal_nolink from "@/components/ownmodal_nolink";
 import Titel_Subtitel_nolink from "@/components/titel_subtitel_nolink";
 import DesignerTooltip from "@/components/designer_tooltip";
-import pfeil_r from "@/app/bilder/pfeil_rechts.png";
-import pfeil_l from "@/app/bilder/pfeil_links.png";
+import pfeil_r from "@/public/pfeil_rechts.png";
+import pfeil_l from "@/public/pfeil_links.png";
 
 import { Button } from "@nextui-org/button";
 import { Modal, ModalBody, ModalContent, useDisclosure } from "@nextui-org/react";
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import { StaticImageData } from "next/image";
-import bild1 from "@/app/bilder/satz1.png";
-import bild2 from "@/app/bilder/satz2.png";
-import bild3 from "@/app/bilder/satz3.png";
+import bild1 from "@/public/satz1.png";
+import bild2 from "@/public/satz2.png";
+import bild3 from "@/public/satz3.png";
 
 
 

@@ -3,12 +3,12 @@
 import HeaderNeu from "@/components/header_new";
 import { Background } from "@/components/background";
 import Titel_Subtitel_nolink from "@/components/titel_subtitel_nolink";
-import magento_bild from "@/app/bilder/magento.png";
-import next_bild from "@/app/bilder/Next.jpg";
+import magento_bild from "@/public/magento.png";
+import next_bild from "@/public/Next.jpg";
 
 import Image from "next/image";
 import DesignerTooltip from "@/components/designer_tooltip";
-import leerbild from "@/app/bilder/leerbild.png";
+import leerbild from "@/public/leerbild.png";
 
 
 export default function UI() {

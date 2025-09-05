@@ -1,4 +1,4 @@
-import banner1 from "@/app/bilder/banner2.png";
+import banner1 from "@/public/banner2.png";
 
 export interface UserProps
 {
