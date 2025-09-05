@@ -28,9 +28,9 @@ export default function UI() {
 
           <Titel_Subtitel_nolink titel="UI" subtitel={text0}/>  
   
-          <div id="magento" className="relative flex flex-col items-center mb-8"><DesignerTooltip top="4%" left="4%" titel="Magento" beschreibung={text1} bildpfad={leerbild}/><Image src={bild1} alt="magento" width={200} height={200}></Image></div>
+          <div id="magento" className="relative flex flex-col items-center mb-8"><DesignerTooltip top="4%" left="4%" titel="Magento" beschreibung={text1} bildpfad={leerbild}/><Image src={bild1.src} alt="magento" width={200} height={200}></Image></div>
           <p>{text1}</p>
-          <div id="next" className="relative flex flex-col items-center"><DesignerTooltip top="5%" left="-5%" titel="Next JS" beschreibung={text2} bildpfad={leerbild}/><Image src={bild2} alt="next-js" width={200} height={200}></Image></div>
+          <div id="next" className="relative flex flex-col items-center"><DesignerTooltip top="5%" left="-5%" titel="Next JS" beschreibung={text2} bildpfad={leerbild}/><Image src={bild2.src} alt="next-js" width={200} height={200}></Image></div>
           <p>{text2}</p>
     </>
     );
